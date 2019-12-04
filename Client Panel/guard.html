@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--	style link-->
+	<link rel="stylesheet" href="./css/style.CSS">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+	<!--	Font awesom-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+		 crossorigin="anonymous">
+
+</head>
+<body>
+
+<div class="wrapper">
+	<!-- Sidebar  -->
+	<nav id="sidebar" class="shadow">
+		<div class="sidebar-header">
+			<div class="contain">
+				<img src="../images/Mask Group 11.png" style="width: 251px;">
+				<div class="bottom-left">
+					<img src="../images/test.png" class="avatar img-fluid uk-border-rounded" style="border-radius: 50%;
+              border: 4px white solid;
+              width: 100px;
+              height: 100px;
+              object-fit: cover;">
+					<sub style="display: inline-block;font-size: 13px;">
+						<p class="mb-0 write-color">Alexanstad</p>
+						<p class="">alexanstad@.com</p>
+					</sub>
+					<span style="display: inline-block">
+						<img src="../images/ChosenLogo.png" class="agent-menu-logo-img">
+					</span>
+				</div>
+			</div>
+		</div>
+		<ul class="list-unstyled components">
+			<li>
+				<a routerLInk="/#">Home</a>
+			</li>
+			<li>
+				<a routerLink="/AgentProfile">Profile</a>
+			</li>
+			<li>
+				<a routerLink="/AgentPayment">Payments</a>
+			</li>
+			<li>
+				<a routerLink="/AgentEarning">Earning</a>
+			</li>
+			<li>
+				<a routerLink="/#">Help</a>
+			</li>
+			<li>
+				<a href="#" style="font-weight: bold;color:#FC7605" class="logout">Log Out</a>
+			</li>
+		</ul>
+
+
+	</nav>
+
+	<!-- Page Content  -->
+	<div id="content">
+
+		<!--		<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+		<div class="container-fluid p-0">
+
+			<div class="container-map">
+
+				<!------------------Map------------------------>
+				<div class="mapouter" style="min-height: 100vh;">
+					<div class="gmap_canvas" style="min-height: 76vh;">
+						<iframe style="width: 100%;min-height: 100vh;" id="gmap_canvas"
+							   src="https://maps.google.com/maps?q=treat%20well%20uk&t=&z=13&ie=UTF8&iwloc=&output=embed"
+							   frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+						<style>
+							.mapouter {
+								position: relative;
+								text-align: right;
+								height: 500px;
+								width: 100%;
+							}
+
+
+							.gmap_canvas {
+								overflow: hidden;
+								background: none !important;
+								/*height: 500px;*/
+								width: 100%;
+							}</style>
+					</div>
+				</div>
+				<!------------------Map End------------------------>
+
+
+				<div class="top-left-map text-black-50">
+					<button type="button" id="sidebarCollapse" class="btn shadow-none" style="color: #FC7605;">
+						<i class="fas fa-align-left"></i>
+					</button>
+				</div>
+
+
+
+			</div>
+
+		</div>
+
+
+		<div class="container-fluid">
+
+			<div class="d-flex flex-row justify-content-start">
+				<div class="p-2">
+					<img src="../images/test.png" alt="Avatar" class="avatar rounded-circle">
+				</div>
+				<div class="p-2 d-flex flex-column justify-content-end">
+					<p class="write-color mb-0">Alexanstad</p>
+				</div>
+			</div>
+
+			<div class="d-flex flex-row justify-content-start m-2">
+				<div style="border: 1px #FC7605 solid;display: inline-flex;height: 3rem;" class="text-center ">
+					<span class="p-2" style="background-color: #FC7605">
+						<p class="text-white text-center mb-0 " style="background-color: #FC7605">4.5</p>
+					</span>
+					<span class="p-2">
+						<img src="../images/rate-star-button.png" class="img-fluid">
+					</span>
+				</div>
+				<div class="p-2 d-flex flex-column justify-content-between" style="margin-top: -13px;">
+					<p style="color: #FC7605;font-weight: 700;" class="mb-0">Type</p>
+					<p class="mb-0" style="color: #787878;">Body Guard, Security Officer</p>
+				</div>
+			</div>
+
+			<div class="d-flex flex-row justify-content-start">
+				<div class="p-2">
+					<button class="btn mr-1 p-1" style="width: 8rem;outline: none;background-color: #7E7E7E;color:white;" id="sidebarCollapse1">Cancel</button>
+				</div>
+				<div class="p-2">
+					<button class="btn ml-1 p-1 btn-style" style="width: 8rem;outline: none;" id="sidebarCollapseCancel">Message</button>
+				</div>
+			</div>
+
+
+		</div>
+		<!--		</nav>-->
+
+
+	</div>
+	<!--	Right Bar Cancel-->
+	<nav id="cancelPanel" class="shadow">
+
+		<div style="background-color: white">
+			<div class="d-flex flex-row justify-content-between">
+				<div class="p-2">
+					<p style="color: #FC7605;" class="mb-0">Message</p>
+				</div>
+
+				<div class="p-2">
+					<button class="btn shadow-none" id="sidebarCollapseCancel1">
+						<i class="fa fa-times" aria-hidden="true" style="color: #FC7605;"></i>
+					</button>
+				</div>
+
+
+			</div>
+		</div>
+
+
+		<div class="d-flex flex-column justify-content-end p-2" style="background-color: #F5F5F5;height: 95%;">
+
+			<div class="p-2 mb-2 chat-grey">
+				Duis vestibulum elit vel neque pharetra vulputate. Quisque scelerisque nisi urna. Duis
+			</div>
+
+			<div class="p-2 mb-2 chat-orange">
+				Duis vestibulum elit vel neque pharetra vulputate. Quisque scelerisque nisi urna. Duis
+			</div>
+
+			<div class="p-2 mb-2 chat-grey">
+				Duis vestibulum elit vel neque pharetra vulputate. Quisque scelerisque nisi urna. Duis
+			</div>
+
+			<div class="p-2 mb-2 chat-orange">
+				Duis vestibulum elit vel neque pharetra vulputate. Quisque scelerisque nisi urna. Duis
+			</div>
+
+			<div class="p-2 mb-2 chat-grey">
+				Duis vestibulum elit vel neque pharetra vulputate. Quisque scelerisque nisi urna. Duis
+			</div>
+
+			<div class="p-2 mb-2 chat-orange">
+				Duis vestibulum elit vel neque pharetra vulputate. Quisque scelerisque nisi urna. Duis
+			</div>
+
+			<div class="p-2 mb-2 chat-grey">
+				Duis vestibulum elit vel neque pharetra vulputate. Quisque scelerisque nisi urna. Duis
+			</div>
+
+			<div class="p-2 mb-2 chat-orange">
+				Duis vestibulum elit vel neque pharetra vulputate. Quisque scelerisque nisi urna. Duis
+			</div>
+
+			<div class="p-2 mb-2 chat-grey">
+				Duis vestibulum elit vel neque pharetra vulputate. Quisque scelerisque nisi urna. Duis
+			</div>
+
+			<div class="p-2 mb-2 chat-orange">
+				Duis vestibulum elit vel neque pharetra vulputate. Quisque scelerisque nisi urna. Duis
+			</div>
+
+			<div class="p-2 mb-2 chat-grey">
+				Duis vestibulum elit vel neque pharetra vulputate. Quisque scelerisque nisi urna. Duis
+			</div>
+
+			<div class="p-2 mb-2 chat-orange">
+				Duis vestibulum elit vel neque pharetra vulputate. Quisque scelerisque nisi urna. Duis
+			</div>
+
+			<div class="pt-3 pr-2 pb-2 pl-2">
+				<div class="input-group " style="border: 2px #FC7605 solid;padding: 2px;">
+					<input type="text" class="form-control shadow-none border-0"
+						  placeholder="Write something...">
+					<div class="input-group-append">
+                          <span class="input-group-text border-0 p-0" style="background-color: white;height: 38px;">
+                            <span class="input-group-text p-0" style="background-color:white;border: none;">
+                               <button class="btn shadow-none" style="height: 42px;padding-top: 4px;">
+                                  <img src="../images/Group 12429.png">
+                               </button>
+                            </span>
+                          </span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!--	Right Bar message-->
+	<nav id="messagePanel" class="shadow">
+
+		<div style="background-color: #FC7605;">
+			<div class="d-flex flex-row justify-content-between">
+				<div class="p-2">
+					<p style="color: white;" class="mb-0">Cancel Job</p>
+				</div>
+
+				<div class="p-2">
+					<button class="btn shadow-none" id="sidebarCollapse11" style="background-color: #FC7605;">
+						<i class="fa fa-times" aria-hidden="true" style="color: white;"></i>
+					</button>
+				</div>
+
+
+			</div>
+		</div>
+
+		<nav>
+			<div class="nav nav-tabs" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
+				   aria-selected="true">Reason</a>
+				<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Other
+					Reason</a>
+
+			</div>
+		</nav>
+		<div class="tab-content" id="nav-tabContent">
+			<div class="tab-pane fade show active p-3" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" class="custom-control-input" id="forgetPassword">
+					<label class="custom-control-label" for="forgetPassword">I forgot my password</label>
+				</div>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" class="custom-control-input" id="linkNotWorking">
+					<label class="custom-control-label" for="linkNotWorking">My password reset link isn't working</label>
+				</div>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" class="custom-control-input" id="notSignIn">
+					<label class="custom-control-label" for="notSignIn">I can't sign in to my account</label>
+				</div>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" class="custom-control-input" id="outStanding">
+					<label class="custom-control-label" for="outStanding">I have an outstanding payment</label>
+				</div>
+			</div>
+			<div class="tab-pane fade p-3" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+				<textarea class="form-control shadow-none " style="resize: none;" rows="6"></textarea>
+			</div>
+
+		</div>
+		<div class="text-center">
+			<button class="btn btn-style mt-4 mb-4" style="width: 8rem;">Submit</button>
+		</div>
+	</nav>
+</div>
+
+<!--Script-->
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+
+<!--Side Navbar-->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+        });
+    });
+</script>
+<!--End-->
+
+
+<!--Right Side Panel -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebarCollapse1 , #sidebarCollapse11 ').on('click', function () {
+            $('#messagePanel').toggleClass('active');
+        });
+        $('#sidebarCollapseCancel, #sidebarCollapseCancel1 ').on('click', function () {
+            $('#cancelPanel').toggleClass('active');
+        });
+    });
+</script>
+<!--End-->
+</body>
+</html>

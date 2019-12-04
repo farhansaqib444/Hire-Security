@@ -1,0 +1,30 @@
+.custom-form {
+  max-width: 345px;
+  width: 100%;
+  margin: 0 auto;
+}
+.custom-form .input-group {
+  padding:5px;
+  margin-top: 16px;
+  border: 1px #8D8D8D solid;
+  border-radius: 10px;
+}
+.form-control:focus {
+  color: inherit;
+  background-color: #fff;
+  border-color: transparent;
+  outline: 0;
+  box-shadow: none;
+}
+.custom-form  .input-group .form-control{
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+}
+.custom-form .input-group-prepend {
+  margin-right: 1px;
+}
+.custom-form .form-btn {
+  width: 156px;
+  height: 52px;
+}

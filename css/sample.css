@@ -1,0 +1,260 @@
+#container{
+	height: 100%;
+	width: 100%;
+}
+
+/*Agent side start */
+/* You can add global styles to this file, and also import other style files */
+/*
+    DEMO STYLE
+*/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+/* body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+} */
+
+p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.1em;
+	font-weight: 300;
+	line-height: 1.7em;
+
+}
+
+a,
+a:hover,
+a:focus {
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+.agent-side-bar-navbar {
+	padding: 15px 10px;
+	/* background: #fff; */
+	border: none;
+	/* border-radius: 0; */
+	/* margin-bottom: 40px; */
+	/* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
+}
+
+.agent-side-bar-navbar-btn {
+	box-shadow: none;
+	outline: none !important;
+	border: none;
+}
+
+.agent-side-bar-line {
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px dashed #ddd;
+	margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.agent-side-bar-wrapper {
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+#agent-side-bar-sidebar {
+	min-width: 325px;
+	max-width: 325px;
+	background: white;
+	color: black;
+	transition: all 0.3s;
+	/* box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.1); */
+}
+
+#agent-side-bar-sidebar.active {
+	margin-left: -326px;
+}
+
+#agent-side-bar-sidebar .sidebar-header {
+	padding: 20px 20px 20px 35px;
+	background: white;
+}
+
+#agent-side-bar-sidebar ul.agent-side-bar-components {
+	padding: 20px 0;
+	/* border-bottom: 1px solid #47748b; */
+}
+
+#agent-side-bar-sidebar ul p {
+	color: #fff;
+	padding: 10px;
+}
+
+#agent-side-bar-sidebar ul li a {
+	padding: 10px 10px 10px 20px;
+	font-size: 1.1em;
+	display: block;
+}
+
+#agent-side-bar-sidebar ul li a:hover {
+	color: white;
+	background: #FC7605;
+}
+
+#agent-side-bar-sidebar ul li.active>a,
+a[aria-expanded="true"] {
+	color: #fff;
+	background: #6d7fcc;
+}
+
+a[data-toggle="collapse"] {
+	position: relative;
+}
+
+.agent-side-bar-dropdown-toggle::after {
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+}
+
+ul ul a {
+	font-size: 0.9em !important;
+	padding-left: 30px !important;
+	background: #6d7fcc;
+}
+
+ul.CTAs {
+	padding: 20px;
+}
+
+ul.CTAs a {
+	text-align: center;
+	font-size: 0.9em !important;
+	display: block;
+	border-radius: 5px;
+	margin-bottom: 5px;
+}
+
+a.agent-side-bar-download {
+	background: #fff;
+	color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+	background: #6d7fcc !important;
+	color: #fff !important;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#agent-side-bar-content {
+	width: 100%;
+	/* padding: 20px; */
+	min-height: 100vh;
+	transition: all 0.3s;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+	#agent-side-bar-sidebar {
+		margin-left: -326px;
+	}
+	#agent-side-bar-sidebar.active {
+		margin-left: 0;
+	}
+	#agent-side-bar-sidebarCollapse span {
+		display: none;
+	}
+
+}
+
+/* own css */
+/* .bg{
+    background-color: #FC7605;
+    color: white;
+} */
+.agent-side-bar-ava{
+	width: 40px;
+	height: 40px;
+	object-fit: cover;
+	margin-right: 4px;
+	/* padding-top: 5px; */
+	margin-top: -4px;
+}
+.agent-side-bar-btn-col{
+	background: none;
+	color: #FC7605;
+	outline: none;
+	border: none;
+}
+
+.agent-side-bar-background-orange{
+	background-color: #FC7605;
+
+}
+
+.agent-side-bar-contain {
+	position: relative;
+	/* text-align: center; */
+	/* color: white; */
+}
+.agent-side-bar-centered {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);}
+
+.agent-side-bar-center {
+	/* position: absolute; */
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);}
+.agent-side-bar-bottom-left {
+	position: absolute;
+	bottom: 27px;
+	left: 4px;
+	display: inline-block;
+}
+.agent-side-bar-top-left {
+	position: absolute;
+	top: 8px;
+	left: 16px;
+}
+agm-map{
+	height: -webkit-fill-available;
+	width: 100%;
+}
+
+.agent-side-bar-centering {
+	position: absolute;
+	top: 50%;
+	left: 51%;
+	transform: translate(-51%, -9%);
+	/* background-color: #6d7fcc; */
+	width: -webkit-fill-available;
+}
+
+/*Agent side end */
+
+/*Agent menu start*/
+
+.agent-home-1-contain {
+	position: relative;
+	top: 55px;
+	left: 4px;
+}
+.agent-home-1-centered {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);}
+/*Agent menu end*/

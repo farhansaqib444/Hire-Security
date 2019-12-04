@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--	style link-->
+	<link rel="stylesheet" href="./css/style.CSS">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+	<!--	Font awesom-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+		 crossorigin="anonymous">
+
+</head>
+<body>
+
+<div class="wrapper">
+	<!-- Sidebar  -->
+	<nav id="sidebar" class="shadow">
+		<div class="sidebar-header">
+			<div class="contain">
+				<img src="../images/Mask Group 11.png" style="width: 251px;">
+				<div class="bottom-left">
+					<img src="../images/test.png" class="avatar img-fluid uk-border-rounded" style="border-radius: 50%;
+              border: 4px white solid;
+              width: 100px;
+              height: 100px;
+              object-fit: cover;">
+					<sub style="display: inline-block;font-size: 13px;">
+						<p class="mb-0 write-color">Alexanstad</p>
+						<p class="">alexanstad@.com</p>
+					</sub>
+					<span style="display: inline-block">
+						<img src="../images/ChosenLogo.png" class="agent-menu-logo-img">
+					</span>
+				</div>
+			</div>
+		</div>
+		<ul class="list-unstyled components">
+			<li>
+				<a routerLInk="/#">Home</a>
+			</li>
+			<li>
+				<a routerLink="/AgentProfile">Profile</a>
+			</li>
+			<li>
+				<a routerLink="/AgentPayment">Payments</a>
+			</li>
+			<li>
+				<a routerLink="/AgentEarning">Earning</a>
+			</li>
+			<li>
+				<a routerLink="/#">Help</a>
+			</li>
+			<li>
+				<a href="#" style="font-weight: bold;color:#FC7605" class="logout">Log Out</a>
+			</li>
+		</ul>
+
+
+	</nav>
+
+	<!-- Page Content  -->
+	<div id="content">
+
+		<!--		<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+		<div class="container-fluid p-0">
+
+			<div class="container-map">
+
+				<!------------------Map------------------------>
+				<div class="mapouter" style="min-height: 100vh;">
+					<div class="gmap_canvas" style="min-height: 76vh;">
+						<iframe style="width: 100%;min-height: 100vh;" id="gmap_canvas"
+							   src="https://maps.google.com/maps?q=treat%20well%20uk&t=&z=13&ie=UTF8&iwloc=&output=embed"
+							   frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+						<style>
+							.mapouter {
+								position: relative;
+								text-align: right;
+								height: 500px;
+								width: 100%;
+							}
+
+
+							.gmap_canvas {
+								overflow: hidden;
+								background: none !important;
+								/*height: 500px;*/
+								width: 100%;
+							}</style>
+					</div>
+				</div>
+				<!------------------Map End------------------------>
+
+
+				<div class="top-left-map text-black-50">
+					<button type="button" id="sidebarCollapse" class="btn shadow-none" style="color: #FC7605;">
+						<i class="fas fa-align-left"></i>
+					</button>
+				</div>
+				<div class="top-right-map text-black-50">
+					<div class="input-group mb-3 shadow" style="width: 18rem;">
+						<input type="text" class="form-control shadow-none border-0"
+							  placeholder="Where to?" aria-label="Recipient's username"
+							  aria-describedby="basic-addon2">
+						<div class="input-group-append">
+							<span class="input-group-text border-0 p-0" id="basic-addon2" style="height: 38px;border-radius: 0px;">
+								<span class="input-group-text" style="background-color:
+                      white;
+                      border: none;">
+									<img src="../images/facebook-placeholder-for-locate-places-on-maps.png">
+								</span>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 col-md-12 pt-2 ">
+					<p class="mb-0 write-color" style="font-weight: 500;">Dan Mendez (ClientName)</p>
+					<div class="text-center">
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star unchecked"></span>
+						<span class="fa fa-star unchecked"></span>
+					</div>
+				</div>
+			</div>
+			<hr>
+
+			<div class="row">
+				<div class="col-sm-12 col-md-4 col-lg-4 pt-3 pb-3 m-auto">
+					<button class="btn-block btn  text-center  text-white" style="outline: none;background-color: #FC7605;">Give Review</button>
+				</div>
+			</div>
+		</div>
+		<!--		</nav>-->
+
+
+	</div>
+
+
+</div>
+
+<!--Script-->
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+
+<!--Side Navbar-->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+        });
+    });
+</script>
+<!--End-->
+
+
+
+</body>
+</html>
