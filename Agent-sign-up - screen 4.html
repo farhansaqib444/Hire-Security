@@ -9,6 +9,8 @@
 	<!--	Font awesome-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
 		 crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
   <!--custom styling-->
   <link rel="stylesheet" href=css/pre-style.css>
   <link rel="stylesheet" href="css/custom-style.css">
@@ -19,29 +21,29 @@
     <div class="container">
       <div class="d-flex flex-column flex-md-row justify-content-between flex-sm-column">
         <a href="">
-          <img alt="hire-security-icon" src="images/logo.png" class="img-fluid logo-img">
+          <img alt="hire-security-icon" src="./images/logo.png" class="img-fluid logo-img">
         </a>
 
         <div class="card  p-0 border-0 header-blur ml-auto header-card-width">
           <div class="card-body p-0">
             <div class="d-flex justify-content-between justify-content-sm-end">
               <div class="header-set">
-                <a href="#" style="color: #FC7605;">AGENT</a>
+                <a href="https://dev.hs.jobesk.com/agent" style="color: #FC7605;">AGENT</a>
               </div>
               <div class="header-set">
-                <a href="#" style="color: #FC7605;">CLIENT</a>
+                <a href="https://dev.hs.jobesk.com/client" style="color: #FC7605;">CLIENT</a>
               </div>
               <div class="header-set">
-                <a href="#" style="color: #160F53">HELP</a>
+                <a href="https://dev.hs.jobesk.com/help" style="color: #160F53">HELP</a>
               </div>
               <div class="header-set">
-                <a href="#" style="color: #160F53"> SIGN IN</a>
+                <a href="https://dev.hs.jobesk.com/signin" style="color: #160F53"> SIGN IN</a>
               </div>
               <div class="header-set" style="border-left: 1px #CBD9E7 solid;">
                 <a href="#" style="color: #160F53"> <i class="fas fa-map-marker-alt"></i></a>
               </div>
               <div class="header-bg header-set header-sign-up-btn-2">
-                <a href="#" class=""> <img alt="hire-security-icon" src="https://dev.hs.jobesk.com/frontend/images/ic_contacts_24px.png" class="mr-2 align-middle">
+                <a href="/SignUp" class=""> <img alt="hire-security-icon" src="https://dev.hs.jobesk.com/frontend/images/ic_contacts_24px.png" class="mr-2 align-middle">
                   <p class="text-white mb-0" style="display: inline-block">BECOME AN AGENT </p></a>
               </div>
             </div>
@@ -52,46 +54,123 @@
 	</div>
 
   <div class="container">
-    <div class="d-flex justify-content-center vh-100 align-items-center">
-      <div class="welcome-page text-center">
-        <h1 class="head-title">
-          Welcome back!
-        </h1>
-        <h2 class="page-title mb-3 mb-sm-5">
-          Continue your Application
-        </h2>
-        <div class="text-center">
-          <button type="button"  class="btn btn-style start-btn text-uppercase text-center">
-            Sign up
-          </button>
-        </div>
+<!--    <div class="root">-->
+<!--      <div class="progress-container">-->
+<!--        <ul class="progressbar">-->
+<!--          <li class="active"></li>-->
+<!--          <li class="active"></li>-->
+<!--          <li></li>-->
+<!--          <li></li>-->
+<!--          <li></li>-->
+<!--          <li></li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </div>-->
+
+    <div class="agent-form" style="margin-top: 70px">
+      <div class="">
+        <form class="">
+          <div class="form-body">
+            <div class="row">
+              <div class="col">
+                <h2 class="form-title">
+                  Personal Details
+                </h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2">
+                <div class="form-group">
+                  <label class="mb-2" for="title">Title</label>
+                  <select id="title" class="form-control input-lg">
+                    <option value="option-1">Option 1</option>
+                    <option value="option-2">Option 2</option>
+                  </select>
+                  <i class="material-icons">
+                    keyboard_arrow_down
+                  </i>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="form-group">
+                  <label class="mb-2" for="surename">Surename</label>
+                  <input type="text" class="form-control" id="surename" aria-describedby="surename" placeholder="Surename">
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="form-group">
+                  <label class="mb-2" for="forename">Forename</label>
+                  <input type="text" class="form-control" id="forename" aria-describedby="forename" placeholder="Forename">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="mb-2" for="insurance-number">National Insurance Number</label>
+              <input type="text" class="form-control" id="insurance-number" aria-describedby="insurance-number" placeholder="National Insurance Number">
+            </div>
+            <div class="row">
+              <div class="col-md-8">
+                <div class="form-group">
+                  <label class="mb-2" for="sia-number">S.I.A Licence Number</label>
+                  <input type="text" class="form-control" id="sia-number" aria-describedby="sia-number" placeholder="S.I.A Licence Number">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="mb-2" for="Expires">Expires on</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="Expires" aria-describedby="Expires" placeholder="MM/DD/YYY">
+                    <i class="material-icons">
+                      date_range
+                    </i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-footer">
+            <div class="d-flex justify-content-between">
+              <div class=""></div>
+              <div class="">
+                <button type="button"  class="btn btn-style start-btn text-uppercase text-center mr-3">
+                  Save
+                </button>
+                <button type="button"  class="btn btn-style start-btn text-uppercase text-center">
+                  Next
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
       </div>
+
     </div>
   </div>
   <!--    Footer Start-->
-  <div id="footer" class="theme-footer">
+  <div style="margin-top: 100px" id="footer" class="theme-footer">
     <!--    Top Footer Start-->
     <div class="container">
       <div class="row">
         <div class="col-sm-12  col-md-12 col-lg-3">
           <div class="d-flex flex-column justify-content-center">
             <div class="text-center">
-              <img alt="hire-security-icon" src="images/logodoorzz.png" class="img-fluid">
+              <img alt="hire-security-icon" src="./images/logodoorzz.png" class="img-fluid">
             </div>
             <div class="p-2">
               <div class="d-flex flex-row justify-content-center">
                 <div class="">
-                  <a href="#" class="btn shadow-none"><img alt="hire-security-icon" src="images/Twitter.png"></a>
+                  <a href="#" class="btn shadow-none"><img alt="hire-security-icon" src="./images/Twitter.png"></a>
                 </div>
                 <div class="">
-                  <a href="" class="btn shadow-none"><img alt="hire-security-icon" src="images/Facebook.png"></a>
+                  <a href="" class="btn shadow-none"><img alt="hire-security-icon" src="./images/Facebook.png"></a>
                 </div>
                 <div class="">
-                  <a href="" class="btn shadow-none"><img alt="hire-security-icon" src="images/Google+.png"></a>
+                  <a href="" class="btn shadow-none"><img alt="hire-security-icon" src="./images/Google+.png"></a>
                 </div>
                 <div class="">
                   <a href="" class="btn shadow-none">
-                    <img alt="social-icon" src="images/Instagram.png"></a>
+                    <img alt="social-icon" src="./images/Instagram.png"></a>
                 </div>
               </div>
             </div>
@@ -159,6 +238,8 @@
             </div>
             <div class="subscribe-field">
               <form>
+
+
                 <div class="input-group mb-3">
                   <input type="text" class="form-control" placeholder="Your Email">
                   <div class="input-group-append">
@@ -180,7 +261,7 @@
         <div class="col-sm-12  col-md-12">
           <div class="d-flex justify-content-between align-items-center bottom-footer">
             <div>
-              <p class="mb-2">Made with <img alt="hire-security-icon" src="images/Heart-Icon.png"> by Designer's Logics</p>
+              <p class="mb-2">Made with <img alt="hire-security-icon" src="./images/Heart-Icon.png"> by Designer's Logics</p>
             </div>
             <div>
               <p class="mb-2 text-right" >© Doorzz, 2018. All Rights Reserved.</p>
@@ -193,8 +274,8 @@
   </div>
   <!--      Footer end-->
 
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
 
 </body>
 </html>

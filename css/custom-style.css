@@ -1,5 +1,5 @@
 /* CSS Rest*/
-
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,6 +19,12 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+}
+::placeholder{
+  font-size: 18px;
+  letter-spacing: 0;
+  color: #8D8D8D;
+  opacity: 1;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -71,6 +77,11 @@ a:hover, a:focus, a:active {
   width: 100%;
   margin: 0 auto;
 }
+.mini-container {
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+}
 h1.head-title {
   font-size: 40px;
   font-weight: 400;
@@ -93,8 +104,9 @@ h1.head-title {
   width: 100%;
   margin: 0 auto;
 }
-.form-control {
+input.form-control {
   padding: 10px 30px;
+  height: 40px;
 }
 .custom-form .input-group {
   padding:5px;
@@ -190,10 +202,137 @@ h1.head-title {
 
 /*welcome-page*/
 
-.welcome-page .start-btn {
+.welcome-page .start-btn, .start-btn {
   width: 156px;
   height: 52px;
   background: #FC7605 0% 0% no-repeat padding-box;
   border-radius: 10px;
   opacity: 1;
+}
+
+.agent-form {
+  background-color: #FCFCFC;
+  padding: 30px 40px
+}
+.agent-form .form-title {
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #000000;
+  opacity: 1;
+  border-bottom: 1px solid #707070;
+  padding-bottom: 5px;
+  margin-bottom: 35px;
+}
+.agent-form .form-group {
+  margin-bottom: 17px;
+}
+.agent-form .form-group label {
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #000000;
+  opacity: 1;
+}
+.agent-form .form-group input.form-control ,.agent-form .form-group select.form-control {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 0.25px solid #707070;
+  border-radius: 10px;
+  opacity: 1;
+}
+.agent-form .form-group input::placeholder{
+  font-size: 15px;
+  letter-spacing: 0;
+  color: #8D8D8D;
+  opacity: 1;
+}
+.agent-form .form-group input.form-control {
+  padding: 15px 15px;
+}
+.form-group .input-group i {
+  position: absolute;
+  right: 5px;
+  top: 8px;
+  color: #FC7605;
+  z-index: 9;
+}
+.form-group select.input-lg {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  /* no standardized syntax available, no ie-friendly solution available */
+}
+
+
+.form-group select + i {
+  float: right;
+  margin-top: -30px;
+  margin-right: 5px;
+  /* this is so when you click on the chevron, your click actually goes on the dropdown menu */
+  pointer-events: none;
+  /* everything after this is just to cover up the original arrow */
+  /* (for browsers that don't support the syntax used above) */
+  background-color: #fff;
+  padding-right: 5px;
+  color: #FC7605;
+}
+.agent-form .form-lead-text {
+  font-size: 18px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #000000;
+  opacity: 1;
+  line-height: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.progress-container{
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.progressbar li{
+  float: left;
+  width: calc(100% / 6);
+  position: relative;
+  text-align: center;
+}
+.progressbar li:after{
+  content: url(../images/progress-icon.png);
+}
+
+.progressbar li:before{
+  content: '';
+  position: absolute;
+  width:100%;
+  height: 3px;
+  background: #979797;
+  top: 23px;
+  left: -50%;
+  z-index: -1;
+}
+
+.progressbar li:first-child:before{
+  content: none;
+}
+
+.progressbar li.active:before{
+  background: #FC7605 ;
+}
+.progressbar li.active:after{
+  content: url(../images/progress-icon-2.png);
+  color: white
 }
