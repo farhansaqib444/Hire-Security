@@ -141,9 +141,6 @@ body {
   .header-blur {
     border-radius: 0;
   }
-  .agent-register {
-    margin-bottom: 75px;
-  }
 }
 @media (max-width: 425px) {
   .header-set {
@@ -169,10 +166,7 @@ body {
 
 /*footer start*/
 ::placeholder{
-  font-size: 18px;
-  letter-spacing: 0;
-  color: #8D8D8D;
-  opacity: 1;
+	color: #8493A8;
 }
 
 a{color: #3D4D65;
