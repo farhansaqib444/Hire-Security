@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Agent SingUp - Screen 4 </title>
+	<title>Agent SingUp - Screen 5 </title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--	style link-->
@@ -75,7 +75,7 @@
               <div class="row">
                 <div class="col">
                   <h2 class="form-title">
-                    Personal Details
+                    Partner/Wife/Husband Details
                   </h2>
                 </div>
               </div>
@@ -108,8 +108,8 @@
               <div class="row">
                 <div class="col-md-5">
                   <div class="form-group">
-                    <label class="mb-2" for="sia-number">S.I.A Licence Number</label>
-                    <input type="text" class="form-control" id="sia-number" aria-describedby="sia-number" placeholder="S.I.A Licence Number">
+                    <label class="mb-2" for="sia-number">Previous Surname (Changed by marriage, deed poll etc.)</label>
+                    <input type="text" class="form-control" id="sia-number" aria-describedby="sia-number" placeholder="Previous Surname">
                   </div>
                 </div>
                 <div class="col-md-3">
@@ -184,12 +184,19 @@
                 </div>
                 <div class="col-md-4">
                   <div class="form-group">
+                    <label class="mb-2" for="extension">Extension</label>
+                    <input type="text" class="form-control" id="extension" aria-describedby="extension" placeholder="Extension">
+                  </div>
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
                     <label class="mb-2" for="mobile-number">Mobile Phone No.</label>
                     <input type="text" class="form-control" id="mobile-number" aria-describedby="mobile-number" placeholder="+01 00000000">
                   </div>
                 </div>
-              </div>
-              <div class="row">
                 <div class="col-md-4">
                   <div class="form-group">
                     <label class="mb-2" for="email">Email Address</label>
@@ -236,27 +243,7 @@
                   <div class="form-group d-flex align-items-center">
                     <span class="mr-2 switch-title">Are you subject to Immigration control</span>
                     <label class="switch">
-                      <input type="checkbox">
-                      <span class="slider round"></span>
-                      <span class="absolute-no">No</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="col-12" >
-                  <div class="form-group d-flex align-items-center">
-                    <span class="mr-2 switch-title">If yes do you have unrestricted entitlement to take up employment within the UK</span>
-                    <label class="switch">
                       <input type="checkbox" checked>
-                      <span class="slider round"></span>
-                      <span class="absolute-no">No</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-group d-flex align-items-center">
-                    <span class="mr-2 switch-title">Do you have student visa</span>
-                    <label class="switch">
-                      <input type="checkbox">
                       <span class="slider round"></span>
                       <span class="absolute-no">No</span>
                     </label>
@@ -268,52 +255,6 @@
                   <div class="form-group">
                     <label class="mb-2" for="entry-date">Date of entry (or re-entry) into the UK</label>
                     <input type="text" class="form-control" id="entry-date" aria-describedby="entry-date" placeholder="MM/DD/YYY">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-3">
-                  <div class="form-group">
-                    <label class="mb-2" for="height">Height</label>
-                    <input type="text" class="form-control" id="height" aria-describedby="height" placeholder="height">
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="form-group">
-                    <label class="mb-2" for="weight">Weight</label>
-                    <input type="text" class="form-control" id="weight" aria-describedby="weight" placeholder="weight">
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="form-group">
-                    <label class="mb-2" for="eyes">Colour of eyes</label>
-                    <select id="eyes" class="form-control input-lg">
-                      <option value="option-1">Option 1</option>
-                      <option value="option-2">Option 2</option>
-                    </select>
-                    <i class="material-icons">
-                      keyboard_arrow_down
-                    </i>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="form-group">
-                    <label class="mb-2" for="hairs">Colour of hairs</label>
-                    <select id="hairs" class="form-control input-lg">
-                      <option value="option-1">Option 1</option>
-                      <option value="option-2">Option 2</option>
-                    </select>
-                    <i class="material-icons">
-                      keyboard_arrow_down
-                    </i>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <div class="form-group">
-                    <label class="mb-2" for="scars">Distinguishing marks or scars</label>
-                    <input type="text" class="form-control" id="scars" aria-describedby="scars" placeholder="Previous Address">
                   </div>
                 </div>
               </div>
@@ -340,29 +281,8 @@
                 </div>
                 <div class="col-md-4">
                   <div class="form-group">
-                    <label class="mb-2" for="kin">Next of kin</label>
-                    <input type="text" class="form-control" id="kin" aria-describedby="kin" placeholder="Next of kin">
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label class="mb-2" for="relationship">Relationship</label>
-                    <input type="text" class="form-control" id="relationship" aria-describedby="relationship" placeholder="Relationship">
-                  </div>
-                </div>
-
-              </div>
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label class="mb-2" for="c-number">Contact Numbers</label>
-                    <input type="text" class="form-control" id="c-number" aria-describedby="c-number" placeholder="+1 000 0000">
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label class="mb-2" for="dependents-number">Number of dependents</label>
-                    <input type="text" class="form-control" id="dependents-number" aria-describedby="dependents-number" placeholder="Number of dependents">
+                    <label class="mb-2" for="Children">No. of Children</label>
+                    <input type="text" class="form-control" id="Children" aria-describedby="Children" placeholder="No. of Children">
                   </div>
                 </div>
                 <div class="col-md-4">
@@ -372,107 +292,19 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="form-section">
-              <div class="row">
-                <div class="col">
-                  <h2 class="form-title">
-                  </h2>
-                </div>
-              </div>
               <div class="row">
                 <div class="col-12">
                   <div class="form-group d-flex align-items-center">
-                    <span class="mr-2 switch-title">Do you own a car/motor cycle?</span>
+                    <span class="mr-2 switch-title">Do they live with you</span>
                     <label class="switch">
-                      <input type="checkbox">
-                      <span class="slider round"></span>
-                      <span class="absolute-no">No</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="col-12" >
-                  <div class="form-group d-flex align-items-center">
-                    <span class="mr-2 switch-title">If yes do you have unrestricted entitlement to take up employment within the UK</span>
-                    <label class="switch">
-                      <input type="checkbox">
-                      <span class="slider round"></span>
-                      <span class="absolute-no">No</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-group d-flex align-items-center">
-                    <span class="mr-2 switch-title">Do you have student visa</span>
-                    <label class="switch">
-                      <input type="checkbox">
+                      <input type="checkbox" checked>
                       <span class="slider round"></span>
                       <span class="absolute-no">No</span>
                     </label>
                   </div>
                 </div>
               </div>
-              <div class="row">
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label class="mb-2" for="make">Make</label>
-                  <select id="make" class="form-control input-lg">
-                    <option value="option-1">Option 1</option>
-                    <option value="option-2">Option 2</option>
-                  </select>
-                  <i class="material-icons">
-                    keyboard_arrow_down
-                  </i>
-                </div>
               </div>
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label class="mb-2" for="model">Model</label>
-                  <input type="text" class="form-control" id="model" aria-describedby="model" placeholder="Model">
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label class="mb-2" for="registration-no">Registration No.</label>
-                  <input type="text" class="form-control" id="registration-no" aria-describedby="registration-no" placeholder="Registration No">
-                </div>
-              </div>
-            </div>
-            </div>
-            <div class="form-section">
-              <div class="row">
-                <div class="col">
-                  <h2 class="form-title">
-                  </h2>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <div class="form-group d-flex align-items-center">
-                    <span class="mr-2 switch-title">Do you hold a current full UK driving licence?</span>
-                    <label class="switch">
-                      <input type="checkbox">
-                      <span class="slider round"></span>
-                      <span class="absolute-no">No</span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label class="mb-2" for="l-number">Number</label>
-                    <input type="text" class="form-control" id="l-number" aria-describedby="l-number" placeholder="Number">
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label class="mb-2" for="issue-date">Date of Issue</label>
-                    <input type="text" class="form-control" id="issue-date" aria-describedby="issue-date" placeholder="Date of Issue">
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
           <div class="form-footer">
             <div class="d-flex justify-content-between">
