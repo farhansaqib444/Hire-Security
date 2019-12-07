@@ -168,10 +168,23 @@ body {
 /*Header End*/
 
 /*footer start*/
+.form-item__element--select:invalid {
+	color: gray;
+}
+.form-item__element--select [disabled] {
+	color: gray;
+}
+.form-item__element--select option {
+	color: #444;
+}
+option:first-of-type {
+	color: #C9C9C9;
+	font-size: 18px;
+}
 ::placeholder{
   font-size: 18px;
   letter-spacing: 0;
-  color: #8D8D8D;
+  color: #C9C9C9;
   opacity: 1;
 }
 

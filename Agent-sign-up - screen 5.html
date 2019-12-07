@@ -83,7 +83,8 @@
                 <div class="col-md-2">
                   <div class="form-group">
                     <label class="mb-2" for="title">Title</label>
-                    <select id="title" class="form-control input-lg">
+                    <select id="title" class="form-control input-lg form-item__element form-item__element--select">
+                      <option disabled selected value="">Mr/Mrs</option>
                       <option value="option-1">Option 1</option>
                       <option value="option-2">Option 2</option>
                     </select>
@@ -242,11 +243,12 @@
                 <div class="col-12">
                   <div class="form-group d-flex align-items-center">
                     <span class="mr-2 switch-title">Are you subject to Immigration control</span>
-                    <label class="switch">
-                      <input type="checkbox" checked>
-                      <span class="slider round"></span>
-                      <span class="absolute-no">No</span>
-                    </label>
+                    <div class="switch">
+                      <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                      <label for="cmn-toggle-1"></label>
+                      <label class="yes-absolute">Yes</label>
+                      <label class="no-absolute">No</label>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -270,7 +272,8 @@
                 <div class="col-md-4">
                   <div class="form-group">
                     <label class="mb-2" for="Status">Martial Status</label>
-                    <select id="Status" class="form-control input-lg">
+                    <select id="Status" class="form-control input-lg form-item__element form-item__element--select">
+                      <option disabled selected value="">Mr/Mrs</option>
                       <option value="option-1">Option 1</option>
                       <option value="option-2">Option 2</option>
                     </select>
@@ -296,11 +299,12 @@
                 <div class="col-12">
                   <div class="form-group d-flex align-items-center">
                     <span class="mr-2 switch-title">Do they live with you</span>
-                    <label class="switch">
-                      <input type="checkbox" checked>
-                      <span class="slider round"></span>
-                      <span class="absolute-no">No</span>
-                    </label>
+                    <div class="switch">
+                      <input id="cmn-toggle-2" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                      <label for="cmn-toggle-2"></label>
+                      <label class="yes-absolute">Yes</label>
+                      <label class="no-absolute">No</label>
+                    </div>
                   </div>
                 </div>
               </div>
