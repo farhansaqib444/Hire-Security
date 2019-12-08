@@ -98,53 +98,7 @@ body {
 	left: 409px;
 }
 
-@media (min-width: 768px) {
-	.header-sign-up-btn-1 {
-		display: none;
-	}
-	.header-sign-up-btn-2 {
-		display: block;
-	}
-  .header-set{
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-	.header-card-width{
-		max-width: 609px !important;
-		height: 52px !important;
-    position: absolute;
-    right: 0;
-    top: 0;
-	}
 
-}
-@media (max-width: 767px) {
-	.header-sign-up-btn-1 {
-		display: block;
-	}
-	.header-sign-up-btn-2 {
-		display: none;
-	}
-  .header-card-width {
-    width: 100%;
-    height: 52px !important;
-  }
-  .header-set {
-    margin-left: 15px;
-    height: 52px;
-    margin-right: 15px;
-  }
-  .header-set:last-child, .header-set:nth-last-child(2) {
-    margin: 0;
-    padding: 0 15px;
-  }
-  .header-blur {
-    border-radius: 0;
-  }
-  .agent-register {
-    margin-bottom: 75px;
-  }
-}
 @media (max-width: 425px) {
   .header-set {
     margin-left: 10px;

@@ -1,6 +1,7 @@
 /* CSS Rest*/
 /*https://xd.adobe.com/view/8d0a2169-ac32-4e25-6870-61bc7172f10e-fb3b/*/
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -30,6 +31,9 @@ time, mark, audio, video {
   opacity: 1;
 }
 /* HTML5 display-role reset for older browsers */
+.bg-semi-dark {
+  background-color: #F1EFEF;
+}
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -97,9 +101,48 @@ ul li a {
 a:hover, a:focus, a:active {
   color: #FC7605 ;
 }
-
+.paragraph-text {
+  font-size: 22px;
+  margin-bottom: 40px;
+  line-height: 35px;
+  font-weight: 400;
+  font-family: Roboto;
+  letter-spacing: 0;
+  color: #000000;
+}
 /* CSS Rest*/
+/*File Picker Button css Start*/
 
+.file-picker {
+  position: relative;
+  cursor: pointer;
+}
+.file-picker label {
+  background: #BFBCBC 0% 0% no-repeat padding-box;
+  border: 0.25px solid #707070;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: Roboto;
+  padding: 8px 12px;
+  opacity: 1;
+  transition: all .4s;
+}
+.file-picker input {
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  top: 0;
+  opacity: 0.01;
+  cursor: pointer;
+}
+.file-picker input:hover + label,
+.file-picker input:focus + label {
+  background: #BFBCBC 0% 0% no-repeat padding-box;
+  border: 0.25px solid #707070;
+  color: #000;
+}
+/*File Picker Button css End*/
 /*elements Toggle switch Button*/
 .switch {
   position: relative;
@@ -313,6 +356,8 @@ input.form-control {
 .welcome-page .start-btn, .start-btn {
   width: 156px;
   height: 52px;
+  font-size: 16px;
+  font-weight: 400;
   background: #FC7605 0% 0% no-repeat padding-box;
   border-radius: 10px;
   opacity: 1;
@@ -334,6 +379,36 @@ input.form-control {
   border-bottom: 1px solid #707070;
   padding-bottom: 5px;
   margin-bottom: 35px;
+}
+.agent-form .form-title + p.title-description {
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 400;
+  margin-bottom: 50px;
+  letter-spacing: 0;
+  color: #979797;
+  opacity: 1;
+}
+.agent-form h3.mini-title {
+  font-family:  Roboto;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  letter-spacing: 0;
+  color: #000000;
+  opacity: 1;
+}
+
+.row.vdivide [class*='col-']:not(:last-child):after {
+  border-right: 1px solid #707070;
+  width: 1px;
+  content: "";
+  display:block;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  min-height: 70px;
 }
 .agent-form .form-tag-line {
   font-family: Roboto;
@@ -381,6 +456,52 @@ input.form-control {
 .agent-form .form-group input.form-control {
   padding: 5px 15px;
 }
+.agent-form .form-done-screen img {
+  max-width: 156px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.agent-form .form-done-screen h1 {
+  ont-family: Roboto;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  letter-spacing: 0;
+  color: #160F53;
+  opacity: 1;
+}
+.agent-form .form-done-screen h1 + p {
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-bottom: 25px;
+  color: #9B9B9B;
+  opacity: 1;
+}
+.agent-form .form-done-screen p.ref-text {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  letter-spacing: 0;
+  color: #FC7605;
+  opacity: 1;
+}
+.agent-form .form-done-screen p.box-text {
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #000000;
+  margin-bottom: 24px;
+  opacity: 1;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #FC7605;
+  opacity: 1;
+  padding: 2px 5px;
+}
+
 .form-group .input-group i {
   position: absolute;
   right: 5px;
@@ -401,7 +522,7 @@ input.form-control {
   position: relative;
   float: right;
   margin-top: -30px;
-  margin-right: 5px;
+  margin-right: 5px;/
   /* this is so when you click on the chevron, your click actually goes on the dropdown menu */
   pointer-events: none;
   /* everything after this is just to cover up the original arrow */
@@ -488,3 +609,70 @@ input.form-control {
   content: url(../images/progress-icon-2.png);
   color: white
 }
+
+@media (min-width: 768px) {
+  .agent-form .vdivide > div:first-child, .agent-form .v-spacer > div:first-child {
+    padding-right: 50px;
+  }
+  .agent-form .row.vdivide > div:last-child, .agent-form .row.v-spacer > div:last-child{
+    padding-left: 50px;
+  }
+  .header-sign-up-btn-1 {
+    display: none;
+  }
+  .header-sign-up-btn-2 {
+    display: block;
+  }
+  .header-set{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .header-card-width{
+    max-width: 609px !important;
+    height: 52px !important;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+}
+@media (max-width: 767px) {
+  .row.vdivide [class*='col-']:not(:last-child):after {
+    border-right: none;
+    width: 0;
+    content: "";
+    display:block;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    min-height: 70px;
+  }
+
+  .header-sign-up-btn-1 {
+    display: block;
+  }
+  .header-sign-up-btn-2 {
+    display: none;
+  }
+  .header-card-width {
+    width: 100%;
+    height: 52px !important;
+  }
+  .header-set {
+    margin-left: 15px;
+    height: 52px;
+    margin-right: 15px;
+  }
+  .header-set:last-child, .header-set:nth-last-child(2) {
+    margin: 0;
+    padding: 0 15px;
+  }
+  .header-blur {
+    border-radius: 0;
+  }
+  .agent-register {
+    margin-bottom: 75px;
+  }
+}
+
