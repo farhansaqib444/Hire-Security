@@ -320,7 +320,8 @@ input.form-control {
 
 .agent-form {
   background-color: #FCFCFC;
-  padding: 30px 40px
+  padding: 30px 40px;
+  margin-bottom: 70px;
 }
 .agent-form .form-title {
 
@@ -431,51 +432,59 @@ input.form-control {
 
 
 /*https://codepen.io/athimannil/pen/wWPYkQ/*/
-.root {
-  position: relative;
-  width: 100%;
-  float: left;
-}
 .progress-container{
-  width: 100%;
-  float: left;
+  margin-top: 40px;
+  margin-bottom: 60px;
   z-index: 1;
 }
 .progressbar {
-  float: left;
+  display: table;
   width: 100%;
-}
-.progressbar li{
-  float: left;
-  width: calc(100% / 6);
   position: relative;
 }
-.progressbar li:after{
-  content: url(../images/progress-icon.png);
+.progressbar li{
+  width: calc(100% / 6);
+  position: relative;
+  display: table-cell;
+  text-align: center;
+}
+.progressbar li label {
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #FC7605;
+  opacity: 1;
+}
+.progressbar span:after{
+  content: url(../images/progress-icon.jpg);
   z-index: 9999999;
   background: #fff;
-  float: left;
 }
 
-.progressbar li:before{
+.progressbar span:before{
   content: '';
   position: absolute;
-  width:100%;
+  width: 100%;
   height: 3px;
   background: #979797;
   top: 23px;
-  left: -85%;
+  left: -50%;
   z-index: -1;
 }
 
-.progressbar li:first-child:before{
+.progressbar li:first-child span:before{
   content: none;
 }
 
-.progressbar li.active:before{
+.progressbar li span.active:before{
   background: #FC7605 ;
 }
-.progressbar li.active:after{
+.progressbar li span.active:after{
   content: url(../images/progress-icon-2.png);
   color: white
 }
