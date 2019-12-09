@@ -101,6 +101,12 @@ ul li a {
 a:hover, a:focus, a:active {
   color: #FC7605 ;
 }
+.border-bottom {
+  border-bottom: 1px solid #707070!important;
+}
+.border-top {
+  border-top: 1px solid #707070!important;
+}
 .paragraph-text {
   font-size: 22px;
   margin-bottom: 40px;
@@ -109,6 +115,45 @@ a:hover, a:focus, a:active {
   font-family: Roboto;
   letter-spacing: 0;
   color: #000000;
+}
+.btn-style{
+   background: #FC7605 0% 0% no-repeat padding-box;
+   border-radius: 10px;
+   opacity: 1;
+   font-size: 18px;
+   letter-spacing: 0;
+   color: #FFFFFF;
+   opacity: 1;
+ }
+.btn-style:hover {
+  color: #FFFFFF;
+}
+.btn-dark-style{
+  width: 156px;
+  height: 52px;
+  background: #707070 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
+  font-size: 18px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  opacity: 1;
+}
+.btn-dark-style:hover {
+  color: #FFFFFF;
+}
+.add-btn {
+  border: 1px solid #FC7605;
+  border-radius: 10px;
+  opacity: 1;
+  padding: 14px 60px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0;
+  color: #FC7605;
+  opacity: 1;
 }
 /* CSS Rest*/
 /*File Picker Button css Start*/
@@ -501,7 +546,39 @@ input.form-control {
   opacity: 1;
   padding: 2px 5px;
 }
-
+.agent-form .add-file-group {
+  padding-top: 25px;
+  padding-bottom: 50px;
+  margin-bottom: 7px;
+}
+.agent-form .add-file-group h2.add-file-ref-title {
+  display: inline-block;
+  font-family: Roboto;
+  font-size: 34px;
+  vertical-align: middle;
+  margin-right: 70px;
+  font-weight: 300;
+  letter-spacing: 0;
+  color: #FC7605;
+  opacity: 1;
+}
+.agent-form .add-file-group h2.add-file-ref-title span {
+  font-size: 22px;
+  font-weight: 500;
+  font-family: Roboto;
+  letter-spacing: 0;
+  color: #000000;
+  opacity: 1;
+}
+.agent-form .add-file-group + p.add-file-info {
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-bottom: 110px;
+  color: #B1B1B1;
+  opacity: 1;
+}
 .form-group .input-group i {
   position: absolute;
   right: 5px;

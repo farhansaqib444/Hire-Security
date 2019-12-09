@@ -159,18 +159,7 @@ a:hover{
 	color: #160F53;
 }
 
-.btn-style{
-  background: #FC7605 0% 0% no-repeat padding-box;
-  border-radius: 10px;
-  opacity: 1;
-  font-size: 18px;
-  letter-spacing: 0;
-  color: #FFFFFF;
-  opacity: 1;
-}
-.btn-style:hover {
-  color: #FFFFFF;
-}
+
 /*other end*/
 
 /*index start*/
