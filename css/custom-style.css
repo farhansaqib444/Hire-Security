@@ -581,7 +581,7 @@ input.form-control {
   color: #FC7605;
   opacity: 1;
 }
-.agent-form .add-file-group + p.add-file-info {
+.agent-form .add-file-group + p.add-file-info, p.add-file-info {
   font-size: 18px;
   font-family: Roboto;
   font-weight: 400;
