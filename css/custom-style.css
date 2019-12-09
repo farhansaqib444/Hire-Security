@@ -116,6 +116,9 @@ a:hover, a:focus, a:active {
   letter-spacing: 0;
   color: #000000;
 }
+.agent-employment-form .paragraph-text {
+  line-height: 25px;
+}
 .btn-style{
    background: #FC7605 0% 0% no-repeat padding-box;
    border-radius: 10px;
@@ -568,6 +571,14 @@ input.form-control {
   font-family: Roboto;
   letter-spacing: 0;
   color: #000000;
+  opacity: 1;
+}
+.agent-form .add-file-group a > ins {
+  font-size: 22px;
+  font-family: Roboto;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #FC7605;
   opacity: 1;
 }
 .agent-form .add-file-group + p.add-file-info {
