@@ -1,5 +1,6 @@
 /* CSS Rest*/
 /*https://xd.adobe.com/view/6e346c8a-9578-4c94-4cc8-d06aa012c247-1805/*/
+/*https://xd.adobe.com/view/26a1f490-da67-423c-4c4e-2fc3a54b2482-5090/*/   /*PM*/
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
 
 html, body, div, span, applet, object, iframe,
@@ -159,6 +160,128 @@ a:hover, a:focus, a:active {
   opacity: 1;
 }
 /* CSS Rest*/
+
+/*menu NavBar start*/
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
+.custom-nav {
+  position: static;
+}
+.custom-nav .profile-icon {
+  width: 34px;
+  height: 34px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50px;
+  border: 1px solid #eee;
+  background: #FC7605 0% 0% no-repeat padding-box;
+}
+.navbar-expand-lg.custom-nav .navbar-nav {
+  background: #FEFDFD 0% 0% no-repeat padding-box;
+  box-shadow: 0px 20px 100px #00000040;
+  border-radius: 0px 0px 0px 10px;
+  opacity: 1;
+}
+.custom-nav .material-icons {
+  font-size: 17px;
+}
+.navbar-nav .nav-link {
+  padding-right: 10px;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+@media (min-width: 991px){
+
+  .custom-nav .collapse {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar-expand-lg.custom-nav .navbar-nav {
+    align-items: center;
+  }
+  .navbar-expand-lg.custom-nav .navbar-nav .nav-item .nav-link{
+    padding: 10px 20px 10px 20px;
+    font-size: 12px;
+    font-family: Roboto;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #FC7605;
+    opacity: 1;
+  }
+  .navbar-expand-lg.custom-nav .navbar-nav .nav-item:first-child .nav-link{
+    padding-left: 40px;
+  }
+  .navbar-expand-lg.custom-nav .navbar-nav .nav-item:nth-child(3) .nav-link{
+    padding-right: 40px;
+  }
+  .navbar-expand-lg.custom-nav .navbar-nav .nav-item:last-child .nav-link {
+    min-width: 175px;
+    max-width: 175px;
+    width: 100%;
+    text-transform: capitalize;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    background: #C65239;
+    width: 436px;
+    padding: 0;
+    top: 45px;
+    left: -100px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu:before {
+    position: absolute;
+    left: 35%;
+    margin-left: -20px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #C65239;
+  }
+  .dropdown-item {
+    display: inline-block;
+    padding: 13px 30px;
+    width: 120px;
+    clear: both;
+    font-weight: 400;
+    color: #fff;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+  }
+  .dropdown-item:focus, .dropdown-item:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: inherit;
+    border-radius: 10px;
+    border: none;
+  }
+  .navbar-expand-lg.custom-nav .navbar-nav .nav-item .nav-link {
+
+  }
+  .navbar-expand-lg.custom-nav .dropdown-menu .dropdown-item a.nav-link {
+    color: #fff;
+    padding: 0 !important;
+    text-transform: capitalize;
+  }
+}
+
+/*menu NavBar End*/
 /*File Picker Button css Start*/
 
 .file-picker {
@@ -698,6 +821,62 @@ input.form-control {
   color: white
 }
 
+/*Edit Profile styling start*/
+
+.profile-edit-bar p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #160F53;
+  opacity: 1;
+}
+.application-status {
+  display: flex;
+  justify-content: space-between;
+  background: #FFE2CA 0% 0% no-repeat padding-box;
+  opacity: 1;
+  padding: 16px 26px;
+}
+.application-status span:first-child {
+  font-family: Roboto;
+  font-size: 22px;
+  padding-right: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #000;
+  opacity: 1;
+}
+.application-status span:nth-child(2) {
+  font-family: Roboto;
+  font-size: 25px;
+  padding-left: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #1BB90A;
+  opacity: 1;
+}
+.profile-edit-bar .blush-title, .blush-title {
+  font-family: Roboto;
+  font-size: 27px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #FC7605;
+  opacity: 1;
+}
+
+.bg-page-title {
+  padding: 24px 35px;
+  background: rgba(252, 118, 5, 0.21) 0% 0% no-repeat padding-box;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #FC7605;
+  opacity: 1;
+}
+
+/*Edit Profile styling End*/
 @media (min-width: 768px) {
   .agent-form .vdivide > div:first-child, .agent-form .v-spacer > div:first-child {
     padding-right: 50px;
