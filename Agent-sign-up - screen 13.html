@@ -16,41 +16,67 @@
   <link rel="stylesheet" href="css/custom-style.css">
 </head>
 <body>
-<div id="header" class="header">
-  <div class="container">
-    <div class="d-flex flex-column flex-md-row justify-content-between flex-sm-column">
-      <a href="">
-        <img alt="hire-security-icon" src="./images/logo.png" class="img-fluid logo-img">
-      </a>
+  <div id="header" class="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light custom-nav">
+        <a class="navbar-brand" href="#">
+          <img alt="hire-security-icon" src="./images/logo.png" class="img-fluid logo-img">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a href="#" id="menu" data-toggle="dropdown" class="nav-link dropdown-toggle">Agent</a>
+              <ul class="dropdown-menu">
+                <!--              dropdown-submenu-->
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link">Overview</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link" >Cities</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link" >How to Work</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link" >Safety</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link" >Cost Estimator</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link" >Business</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" id="menu" data-toggle="dropdown" class="nav-link dropdown-toggle">Client</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link" >menu-2</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link" >menu-2</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
 
-      <div class="card  p-0 border-0 header-blur ml-auto header-card-width">
-        <div class="card-body p-0">
-          <div class="d-flex justify-content-between justify-content-sm-end">
-            <div class="header-set">
-              <a href="https://dev.hs.jobesk.com/agent" style="color: #FC7605;">AGENT</a>
-            </div>
-            <div class="header-set">
-              <a href="https://dev.hs.jobesk.com/client" style="color: #FC7605;">CLIENT</a>
-            </div>
-            <div class="header-set">
-              <a href="https://dev.hs.jobesk.com/help" style="color: #160F53">HELP</a>
-            </div>
-            <div class="header-set">
-              <a href="https://dev.hs.jobesk.com/signin" style="color: #160F53"> SIGN IN</a>
-            </div>
-            <div class="header-set" style="border-left: 1px #CBD9E7 solid;">
-              <a href="#" style="color: #160F53"> <i class="fas fa-map-marker-alt"></i></a>
-            </div>
-            <div class="header-bg header-set header-sign-up-btn-2">
-              <a href="#" class=""> <img alt="hire-security-icon" src="https://dev.hs.jobesk.com/frontend/images/ic_contacts_24px.png" class="mr-2 align-middle">
-                <p class="text-white mb-0" style="display: inline-block">BECOME AN AGENT </p></a>
-            </div>
-          </div>
+            <li class="nav-item">
+              <a class="nav-link header-bg d-flex align-items-center justify-content-md-start justify-content-lg-center" href="#">
+                <img alt="hire-security-icon" class="profile-icon" src="images/pro-2.png" class="mr-2 align-middle">
+                <p class="text-white text-left mb-0 ml-2"> Profile </p>
+              </a>
+            </li>
+          </ul>
         </div>
-      </div>
+      </nav>
     </div>
   </div>
-</div>
 
 <div class="container">
   <div class="row">
@@ -89,243 +115,243 @@
   </div>
 
   <div class="agent-form">
-    <div class="agent-employment-form">
-      <form class="">
+  <div class="agent-employment-form">
+    <form class="">
 
-        <div class="form-body">
-          <div class="form-section">
+      <div class="form-body">
+        <div class="form-section">
 
-            <div class="row">
-              <div class="col-12">
-                <h2 class="form-title">
-                  EMPLOYMENT/UNEMPLOYMENT HISTORY FOR 5 YEARS.
-                </h2>
-                <div class="add-file-group border-bottom d-flex justify-content-between">
-                  <h2 class="add-file-ref-title">
-                    Ref No. 1
-                    <span>
+          <div class="row">
+            <div class="col-12">
+              <h2 class="form-title">
+                EMPLOYMENT/UNEMPLOYMENT HISTORY FOR 5 YEARS.
+              </h2>
+              <div class="add-file-group border-bottom d-flex justify-content-between">
+                <h2 class="add-file-ref-title">
+                  Ref No. 1
+                  <span>
                         (Most Recent Employment)
                       </span>
-                  </h2>
-                  <a href="" > <ins>View</ins> </a>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="add-file-group border-bottom">
-                  <h2 class="add-file-ref-title">
-                    Ref No. 2
-                  </h2>
-                  <button class="btn add-btn d-inline-block">
-                    Add
-                  </button>
-                </div>
-                <p class="add-file-info">
-                  YOU MUST HAVE COMPLETED THIS SECTION AS FULLY AS POSSIBLE <br>
-                  EVEN IF YOU WERE OUTSIDE THE UK FOR ANY PERIOD IN THAT TIME YOU MUST GIVE US DETAILS.
-                </p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <h2 class="form-title">
-                  ARMED SERVICE/ POLICE SERVICE PARTICULARS:
                 </h2>
+                <a href="" > <ins>View</ins> </a>
               </div>
             </div>
-
-            <div class="row">
-              <div class="col-12 col-sm-5">
-                <div class="form-group">
-                  <label class="mb-2" for="regiment">Regiment/ Force etc</label>
-                  <input type="text" class="form-control" id="regiment" placeholder="Regiment/ Force etc">
-                </div>
-              </div>
-              <div class="col-12 col-sm-7">
-                <div class="form-group">
-                  <label class="mb-2" for="rank">Rank</label>
-                  <input type="text" class="form-control" id="rank" placeholder="Rank">
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label class="mb-2" for="joined">Date Joined</label>
-                  <input type="text" class="form-control" id="joined" placeholder="Date Joined">
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label class="mb-2" for="retired">Date Discharged/ Retired</label>
-                  <input type="text" class="form-control" id="retired" placeholder="Date Discharged/ Retired">
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label class="mb-2" for="No">No</label>
-                  <input type="text" class="form-control" id="No" placeholder="No">
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-7">
-                <div class="form-group">
-                  <label class="mb-2" for="Discharge">Conduct (Ors only, as shown in Discharge Document)</label>
-                  <input type="text" class="form-control" id="Discharge" placeholder="Conduct (Ors only, as shown in Discharge Document)">
-                </div>
-              </div>
-            </div>
-
-            <p class="paragraph-text">
-              FULL TIME AND ANY PART TIME SPECIALIST COURSES ATTENDED &
-              DETAILS OF PROFESSIONAL QUALIFICATIONS OBTAINED ( EG. NVQ, CITY IN GUILDS ETC)
-            </p>
-
-            <div class="row">
-              <div class="col">
-                <div class="add-file-group mb-4">
-                  <h2 class="add-file-ref-title">
-                    Ref No. 1
-                  </h2>
-                  <button class="btn add-btn d-inline-block">
-                    Add
-                  </button>
-                </div>
-              </div>
-            </div>
-
           </div>
-          <div class="form-section">
-            <div class="row">
-              <div class="col-12">
-                <h2 class="form-title mb-5">
-                  SELF EMPLOYMENT:
+          <div class="row">
+            <div class="col-12">
+              <div class="add-file-group border-bottom">
+                <h2 class="add-file-ref-title">
+                  Ref No. 2
                 </h2>
+                <button class="btn add-btn d-inline-block">
+                  Add
+                </button>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-12 col-sm-5">
-                <div class="form-group">
-                  <label class="mb-2" for="full-name">Name</label>
-                  <input type="text" class="form-control" id="full-name" placeholder="Full Name">
-                </div>
-              </div>
-              <div class="col-12 col-sm-7">
-                <div class="form-group">
-                  <label class="mb-2" for="e-business">Address of business</label>
-                  <input type="text" class="form-control" id="e-business" placeholder="Address of business">
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="form-group">
-                  <label class="mb-2" for="n-Business">Nature of Business</label>
-                  <input type="text" class="form-control" id="n-Business" placeholder="Nature of Business">
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label class="mb-2" for="Start">Start Date</label>
-                  <input type="text" class="form-control" id="Start" aria-describedby="Start" placeholder="Start Date">
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label class="mb-2" for="end">End Date</label>
-                  <input type="email" class="form-control" id="end" aria-describedby="end" placeholder="End Date">
-                </div>
-              </div>
-            </div>
-
-            <div class="row vdivide mt-5">
-              <div class="col-12 col-sm-6">
-                <h3 class="mini-title">
-                  <ins>Refree 1</ins>
-                </h3>
-                <div class="form-group">
-                  <label class="mb-2" for="Name">Name</label>
-                  <input type="text" class="form-control" id="Name" aria-describedby="Name" placeholder="Name">
-                </div>
-                <div class="form-group">
-                  <label class="mb-2" for="address">Address of business</label>
-                  <input type="text" class="form-control" id="address" aria-describedby="address" placeholder="address">
-                </div>
-                <div class="form-group">
-                  <label class="mb-2" for="Profession">Profession</label>
-                  <input type="text" class="form-control" id="Profession" placeholder="Profession">
-                </div>
-              </div>
-              <div class="col-12 col-sm-6">
-                <h3 class="mini-title">
-                  <ins>Refree 2</ins>
-                </h3>
-                <div class="form-group">
-                  <label class="mb-2" for="Name2">Name</label>
-                  <input type="text" class="form-control" id="Name2" aria-describedby="Name" placeholder="Name">
-                </div>
-                <div class="form-group">
-                  <label class="mb-2" for="address2">Address of business</label>
-                  <input type="text" class="form-control" id="address2" aria-describedby="address" placeholder="Address of bussiness">
-                </div>
-                <div class="form-group">
-                  <label class="mb-2" for="Profession2">Profession</label>
-                  <input type="text" class="form-control" id="Profession2" aria-describedby="Profession" placeholder="Profession">
-                </div>
-              </div>
-            </div>
-            <div class="d-flex justify-content-center">
-              <p class="add-file-info mt-4 text-center mb-4">
-                Please note the following must be supplied for each period of self-employment.
+              <p class="add-file-info">
+                YOU MUST HAVE COMPLETED THIS SECTION AS FULLY AS POSSIBLE <br>
+                EVEN IF YOU WERE OUTSIDE THE UK FOR ANY PERIOD IN THAT TIME YOU MUST GIVE US DETAILS.
               </p>
             </div>
-
-            <div class="d-flex justify-content-end border-bottom pb-4 mt-4 mb-4">
-              <button class="btn add-btn">
-                Add
-              </button>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <h2 class="form-title">
+                ARMED SERVICE/ POLICE SERVICE PARTICULARS:
+              </h2>
             </div>
-            <div class="row">
-              <div class="col">
-                <div class="add-file-group border-bottom mb-4">
-                  <h2 class="add-file-ref-title">
-                    Ref No. 2
-                  </h2>
-                  <button class="btn add-btn d-inline-block">
-                    Add
-                  </button>
-                </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-sm-5">
+              <div class="form-group">
+                <label class="mb-2" for="regiment">Regiment/ Force etc</label>
+                <input type="text" class="form-control" id="regiment" placeholder="Regiment/ Force etc">
+              </div>
+            </div>
+            <div class="col-12 col-sm-7">
+              <div class="form-group">
+                <label class="mb-2" for="rank">Rank</label>
+                <input type="text" class="form-control" id="rank" placeholder="Rank">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="mb-2" for="joined">Date Joined</label>
+                <input type="text" class="form-control" id="joined" placeholder="Date Joined">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="mb-2" for="retired">Date Discharged/ Retired</label>
+                <input type="text" class="form-control" id="retired" placeholder="Date Discharged/ Retired">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="mb-2" for="No">No</label>
+                <input type="text" class="form-control" id="No" placeholder="No">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-7">
+              <div class="form-group">
+                <label class="mb-2" for="Discharge">Conduct (Ors only, as shown in Discharge Document)</label>
+                <input type="text" class="form-control" id="Discharge" placeholder="Conduct (Ors only, as shown in Discharge Document)">
+              </div>
+            </div>
+          </div>
+
+          <p class="paragraph-text">
+            FULL TIME AND ANY PART TIME SPECIALIST COURSES ATTENDED &
+            DETAILS OF PROFESSIONAL QUALIFICATIONS OBTAINED ( EG. NVQ, CITY IN GUILDS ETC)
+          </p>
+
+          <div class="row">
+            <div class="col">
+              <div class="add-file-group mb-4">
+                <h2 class="add-file-ref-title">
+                  Ref No. 1
+                </h2>
+                <button class="btn add-btn d-inline-block">
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="form-section">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="form-title mb-5">
+                SELF EMPLOYMENT:
+              </h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-5">
+              <div class="form-group">
+                <label class="mb-2" for="full-name">Name</label>
+                <input type="text" class="form-control" id="full-name" placeholder="Full Name">
+              </div>
+            </div>
+            <div class="col-12 col-sm-7">
+              <div class="form-group">
+                <label class="mb-2" for="e-business">Address of business</label>
+                <input type="text" class="form-control" id="e-business" placeholder="Address of business">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="form-group">
+                <label class="mb-2" for="n-Business">Nature of Business</label>
+                <input type="text" class="form-control" id="n-Business" placeholder="Nature of Business">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="mb-2" for="Start">Start Date</label>
+                <input type="text" class="form-control" id="Start" aria-describedby="Start" placeholder="Start Date">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="mb-2" for="end">End Date</label>
+                <input type="email" class="form-control" id="end" aria-describedby="end" placeholder="End Date">
+              </div>
+            </div>
+          </div>
+
+          <div class="row vdivide mt-5">
+            <div class="col-12 col-sm-6">
+              <h3 class="mini-title">
+                <ins>Refree 1</ins>
+              </h3>
+              <div class="form-group">
+                <label class="mb-2" for="Name">Name</label>
+                <input type="text" class="form-control" id="Name" aria-describedby="Name" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <label class="mb-2" for="address">Address of business</label>
+                <input type="text" class="form-control" id="address" aria-describedby="address" placeholder="address">
+              </div>
+              <div class="form-group">
+                <label class="mb-2" for="Profession">Profession</label>
+                <input type="text" class="form-control" id="Profession" placeholder="Profession">
+              </div>
+            </div>
+            <div class="col-12 col-sm-6">
+              <h3 class="mini-title">
+                <ins>Refree 2</ins>
+              </h3>
+              <div class="form-group">
+                <label class="mb-2" for="Name2">Name</label>
+                <input type="text" class="form-control" id="Name2" aria-describedby="Name" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <label class="mb-2" for="address2">Address of business</label>
+                <input type="text" class="form-control" id="address2" aria-describedby="address" placeholder="Address of bussiness">
+              </div>
+              <div class="form-group">
+                <label class="mb-2" for="Profession2">Profession</label>
+                <input type="text" class="form-control" id="Profession2" aria-describedby="Profession" placeholder="Profession">
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <p class="add-file-info mt-4 text-center mb-4">
+              Please note the following must be supplied for each period of self-employment.
+            </p>
+          </div>
+
+          <div class="d-flex justify-content-end border-bottom pb-4 mt-4 mb-4">
+            <button class="btn add-btn">
+              Add
+            </button>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="add-file-group border-bottom mb-4">
+                <h2 class="add-file-ref-title">
+                  Ref No. 2
+                </h2>
+                <button class="btn add-btn d-inline-block">
+                  Add
+                </button>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="form-footer">
-          <div class="d-flex justify-content-between">
-            <div class="">
-              <button type="button"  class="btn btn-style start-btn">
-                Previous
-              </button>
-            </div>
-            <div class="">
-              <button type="button"  class="btn btn-style start-btn mr-3">
-                Save
-              </button>
-              <button type="button"  class="btn btn-style start-btn">
-                Done
-              </button>
-            </div>
+      <div class="form-footer">
+        <div class="d-flex justify-content-between">
+          <div class="">
+            <button type="button"  class="btn btn-style start-btn">
+              Previous
+            </button>
+          </div>
+          <div class="">
+            <button type="button"  class="btn btn-style start-btn mr-3">
+              Save
+            </button>
+            <button type="button"  class="btn btn-style start-btn">
+              Done
+            </button>
           </div>
         </div>
-      </form>
-    </div>
-
+      </div>
+    </form>
   </div>
+
+</div>
 </div>
 <!--    Footer Start-->
 <div  id="footer" class="theme-footer">

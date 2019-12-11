@@ -764,7 +764,7 @@ tr{
 	text-align: center;
 	cursor: pointer;
 }
-input[type="file"] {
-	display: none;
-}
+/*input[type="file"] {*/
+/*	display: none;*/
+/*}*/
 /*Agent sign up end*/

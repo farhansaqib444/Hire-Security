@@ -19,8 +19,6 @@
 <body>
 <div id="header" class="header">
   <div class="container">
-
-
     <nav class="navbar navbar-expand-lg navbar-light custom-nav">
       <a class="navbar-brand" href="#">
         <img alt="hire-security-icon" src="./images/logo.png" class="img-fluid logo-img">
@@ -89,7 +87,7 @@
     </div>
     <div class="application-status">
       <span>Application</span>
-      <span>Approved</span>
+      <span class="cursor-pointer" data-toggle="modal" data-target="#application-status-modal">Approved</span>
     </div>
   </div>
   <h1 class="bg-page-title mb-5">
@@ -97,66 +95,1262 @@
   </h1>
   <div class="row">
     <div class="col">
-      <div class="agent-form">
-        <div class="mini-container">
-          <div class="page-title-icon mb-4">
-            <i class="fas fa-camera"></i>
-          </div>
-          <form class="">
-            <div class="form-body">
-              <div class="form-group">
-                <label class="mb-2" for="name">Candidate Name</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter name">
+      <ul class="nav nav-tabs nav-justified custom-tab mb-5" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#step1" role="tab" aria-controls="home" aria-selected="true">Employment Application</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#step2" role="tab" aria-controls="profile" aria-selected="false">Personal Details</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="messages-tab" data-toggle="tab" href="#step3" role="tab" aria-controls="partner" aria-selected="false">Partner Details</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="settings-tab" data-toggle="tab" href="#step4" role="tab" aria-controls="employment-history-tab" aria-selected="false">Employment History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="set-tab" data-toggle="tab" href="#step5" role="tab" aria-controls="personal-referees-tab" aria-selected="false">Personal Referees</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="step1" role="tabpanel" aria-labelledby="home-tab">
+          <div class="agent-form">
+            <div class="mini-container">
+              <div class="page-title-icon mb-4">
+                <i class="fas fa-camera"></i>
               </div>
-              <div class="form-group">
-                <label class="mb-2" for="insurance-number">National Insurance Number</label>
-                <input type="text" class="form-control" id="insurance-number" aria-describedby="insurance-number" placeholder="National Insurance Number">
-              </div>
-              <div class="row">
-                <div class="col-md-8">
+              <form class="">
+                <div class="form-body">
                   <div class="form-group">
-                    <label class="mb-2" for="sia-number">S.I.A Licence Number</label>
-                    <input type="text" class="form-control" id="sia-number" aria-describedby="sia-number" placeholder="S.I.A Licence Number">
+                    <label class="mb-2" for="name">Candidate Name</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter name">
+                  </div>
+                  <div class="form-group">
+                    <label class="mb-2" for="insurance-number">National Insurance Number</label>
+                    <input type="text" class="form-control" id="insurance-number" aria-describedby="insurance-number" placeholder="National Insurance Number">
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8">
+                      <div class="form-group">
+                        <label class="mb-2" for="sia-number">S.I.A Licence Number</label>
+                        <input type="text" class="form-control" id="sia-number" aria-describedby="sia-number" placeholder="S.I.A Licence Number">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label class="mb-2" for="Expires">Expires on</label>
+                        <div class="input-group">
+                          <input type="text" class="form-control" id="Expires" aria-describedby="Expires" placeholder="MM/DD/YYY">
+                          <i class="material-icons">
+                            date_range
+                          </i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <p class="form-lead-text mb-4">
+                        Providing false information with the aim of securing employment
+                        could lead to charges of obtaining pecuniary
+                        reward by Deception Theft Act 1968 - section 16.
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label class="mb-2" for="Expires">Expires on</label>
-                    <div class="input-group">
-                      <input type="text" class="form-control" id="Expires" aria-describedby="Expires" placeholder="MM/DD/YYY">
-                      <i class="material-icons">
-                        date_range
-                      </i>
+                <div class="form-footer">
+                  <div class="d-flex justify-content-between">
+                    <div class=""></div>
+                    <div class="">
+                      <button type="button" class="btn btn-style start-btn text-uppercase text-center mr-3">
+                        Save
+                      </button>
+                      <button type="button" class="btn btn-style start-btn text-uppercase text-center">
+                        Next
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+        <div class="tab-pane" id="step2" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="agent-form">
+            <div class="">
+              <form class="">
+                <div class="form-body">
+                  <div class="form-section">
+                    <div class="row">
+                      <div class="col">
+                        <h2 class="form-title">
+                          Personal Details
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label class="mb-2" for="title">Title</label>
+                          <select id="title" class="form-control input-lg form-item__element form-item__element--select">
+                            <option disabled selected value="">Title</option>
+                            <option value="option-1">Option 1</option>
+                            <option value="option-2">Option 2</option>
+                          </select>
+                          <i class="material-icons">
+                            keyboard_arrow_down
+                          </i>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="form-group">
+                          <label class="mb-2" for="sure-name">Surename</label>
+                          <input type="text" class="form-control" id="sure-name" aria-describedby="sure-name" placeholder="Surename">
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="form-group">
+                          <label class="mb-2" for="forename">Forename</label>
+                          <input type="text" class="form-control" id="forename" aria-describedby="forename" placeholder="Forename">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-5">
+                        <div class="form-group">
+                          <label class="mb-2" for="sia-number-2">S.I.A Licence Number</label>
+                          <input type="text" class="form-control" id="sia-number-2" aria-describedby="sia-number" placeholder="S.I.A Licence Number">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="mb-2" for="Expires-2">Date Name Changed</label>
+                          <div class="input-group">
+                            <input type="text" class="form-control" id="Expires-2" aria-describedby="Expires" placeholder="MM/DD/YYY">
+                            <!--                    <i class="material-icons">-->
+                            <!--                      date_range-->
+                            <!--                    </i>-->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <div class="form-group">
+                          <label class="mb-2" for="reason">Date Name Changed Reason</label>
+                          <input type="text" class="form-control" id="reason" aria-describedby="reason" placeholder="Reason">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-section">
+                    <div class="row">
+                      <div class="col">
+                        <h2 class="form-title">
+                          Contact Details
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-9">
+                        <div class="form-group">
+                          <label class="mb-2" for="p-address">Present Address</label>
+                          <input type="text" class="form-control" id="p-address" aria-describedby="p-address" placeholder="Present Address">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="mb-2" for="forename">Postcode</label>
+                          <input type="text" class="form-control" id="Postcode" aria-describedby="Postcode" placeholder="Postcode">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-9">
+                        <div class="form-group">
+                          <label class="mb-2" for="pre-address">Previous Address if less than 3 years Address</label>
+                          <input type="text" class="form-control" id="pre-address" aria-describedby="pre-address" placeholder="Previous Address if less than 3 years Address">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="mb-2" for="forename">Postcode</label>
+                          <input type="text" class="form-control" id="pre-postcode" aria-describedby="pre-postcode" placeholder="Postcode">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="home-number">Home Phone No.</label>
+                          <input type="text" class="form-control" id="home-number" aria-describedby="home-number" placeholder="+01 00000000">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="work-number">Work Phone No.</label>
+                          <input type="text" class="form-control" id="work-number" aria-describedby="work-number" placeholder="+01 00000000">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="mobile-number">Mobile Phone No.</label>
+                          <input type="text" class="form-control" id="mobile-number" aria-describedby="mobile-number" placeholder="+01 00000000">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="email">Email Address</label>
+                          <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Email">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-section">
+                    <div class="row">
+                      <div class="col">
+                        <h2 class="form-title">
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="mb-2" for="age">Age</label>
+                          <input type="text" class="form-control" id="age" aria-describedby="age" placeholder="Age">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="mb-2" for="birth-date">Date of Birth</label>
+                          <input type="text" class="form-control" id="birth-date" aria-describedby="birth-date" placeholder="MM/DD/YYY">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="mb-2" for="birth-place">Birth Place</label>
+                          <input type="text" class="form-control" id="birth-place" aria-describedby="work-number" placeholder="Birth Place">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="mb-2" for="nationality">Nationality</label>
+                          <input type="text" class="form-control" id="nationality" aria-describedby="nationality" placeholder="Nationality">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-group d-flex align-items-center">
+                          <span class="mr-2 switch-title">Are you subject to Immigration control</span>
+                          <div class="switch">
+                            <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                            <label for="cmn-toggle-1"></label>
+                            <label class="yes-absolute">Yes</label>
+                            <label class="no-absolute">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12" >
+                        <div class="form-group d-flex align-items-center">
+                          <span class="mr-2 switch-title">If yes do you have unrestricted entitlement to take up employment within the UK</span>
+                          <div class="switch">
+                            <input id="cmn-toggle-2" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                            <label for="cmn-toggle-2"></label>
+                            <label class="yes-absolute">Yes</label>
+                            <label class="no-absolute">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group d-flex align-items-center">
+                          <span class="mr-2 switch-title">Do you have student visa</span>
+                          <div class="switch">
+                            <input id="cmn-toggle-3" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                            <label for="cmn-toggle-3"></label>
+                            <label class="yes-absolute">Yes</label>
+                            <label class="no-absolute">No</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="mb-2" for="entry-date">Date of entry (or re-entry) into the UK</label>
+                          <input type="text" class="form-control" id="entry-date" aria-describedby="entry-date" placeholder="MM/DD/YYY">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="mb-2" for="height">Height</label>
+                          <input type="text" class="form-control" id="height" aria-describedby="height" placeholder="height">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="mb-2" for="weight">Weight</label>
+                          <input type="text" class="form-control" id="weight" aria-describedby="weight" placeholder="weight">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="mb-2" for="eyes">Colour of eyes</label>
+                          <select id="eyes" class="form-control input-lg form-item__element form-item__element--select">
+                            <option disabled selected value="">Colour of eyes</option>
+                            <option value="option-1">Option 1</option>
+                            <option value="option-2">Option 2</option>
+                          </select>
+                          <i class="material-icons">
+                            keyboard_arrow_down
+                          </i>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="mb-2" for="hairs">Colour of hairs</label>
+                          <select id="hairs" class="form-control input-lg form-item__element form-item__element--select">
+                            <option disabled selected value="">Colour of hairs</option>
+                            <option value="option-1">Option 1</option>
+                            <option value="option-2">Option 2</option>
+                          </select>
+                          <i class="material-icons">
+                            keyboard_arrow_down
+                          </i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label class="mb-2" for="scars">Distinguishing marks or scars</label>
+                          <input type="text" class="form-control" id="scars" aria-describedby="scars" placeholder="Previous Address">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="insurance-no">Nat. Insurance No</label>
+                          <input type="text" class="form-control" id="insurance-no" aria-describedby="insurance-no" placeholder="insurance-no">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="Status">Martial Status</label>
+                          <select id="Status" class="form-control input-lg form-item__element form-item__element--select">
+                            <option disabled selected value="">Status</option>
+                            <option value="option-1">Option 1</option>
+                            <option value="option-2">Option 2</option>
+                          </select>
+                          <i class="material-icons">
+                            keyboard_arrow_down
+                          </i>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="kin">Next of kin</label>
+                          <input type="text" class="form-control" id="kin" aria-describedby="kin" placeholder="Next of kin">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="relationship">Relationship</label>
+                          <input type="text" class="form-control" id="relationship" aria-describedby="relationship" placeholder="Relationship">
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="c-number">Contact Numbers</label>
+                          <input type="text" class="form-control" id="c-number" aria-describedby="c-number" placeholder="+1 000 0000">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="dependents-number">Number of dependents</label>
+                          <input type="text" class="form-control" id="dependents-number" aria-describedby="dependents-number" placeholder="Number of dependents">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="ages">Ages</label>
+                          <input type="text" class="form-control" id="ages" aria-describedby="ages" placeholder="Ages">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-section">
+                    <div class="row">
+                      <div class="col">
+                        <h2 class="form-title">
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-group d-flex align-items-center">
+                          <span class="mr-2 switch-title">Do you own a car/motor cycle?</span>
+                          <div class="switch">
+                            <input id="cmn-toggle-4" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                            <label for="cmn-toggle-4"></label>
+                            <label class="yes-absolute">Yes</label>
+                            <label class="no-absolute">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12" >
+                        <div class="form-group d-flex align-items-center">
+                          <span class="mr-2 switch-title">If yes do you have unrestricted entitlement to take up employment within the UK</span>
+                          <div class="switch">
+                            <input id="cmn-toggle-5" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                            <label for="cmn-toggle-5"></label>
+                            <label class="yes-absolute">Yes</label>
+                            <label class="no-absolute">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group d-flex align-items-center">
+                          <span class="mr-2 switch-title">Do you have student visa</span>
+                          <div class="switch">
+                            <input id="cmn-toggle-6" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                            <label for="cmn-toggle-6"></label>
+                            <label class="yes-absolute">Yes</label>
+                            <label class="no-absolute">No</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="make">Make</label>
+                          <select id="make" class="form-control input-lg form-item__element form-item__element--select">
+                            <option disabled selected value="">Make</option>
+                            <option value="option-1">Option 1</option>
+                            <option value="option-2">Option 2</option>
+                          </select>
+                          <i class="material-icons">
+                            keyboard_arrow_down
+                          </i>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="model">Model</label>
+                          <input type="text" class="form-control" id="model" aria-describedby="model" placeholder="Model">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="registration-no">Registration No.</label>
+                          <input type="text" class="form-control" id="registration-no" aria-describedby="registration-no" placeholder="Registration No">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-section">
+                    <div class="row">
+                      <div class="col">
+                        <h2 class="form-title">
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-group d-flex align-items-center">
+                          <span class="mr-2 switch-title">Do you hold a current full UK driving licence?</span>
+                          <div class="switch">
+                            <input id="cmn-toggle-7" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                            <label for="cmn-toggle-7"></label>
+                            <label class="yes-absolute">Yes</label>
+                            <label class="no-absolute">No</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="l-number">Number</label>
+                          <input type="text" class="form-control" id="l-number" aria-describedby="l-number" placeholder="Number">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="issue-date">Date of Issue</label>
+                          <input type="text" class="form-control" id="issue-date" aria-describedby="issue-date" placeholder="MM/DD/YYYY">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="ex-date">Date of Expiry</label>
+                          <input type="text" class="form-control" id="ex-date" aria-describedby="issue-date" placeholder="MM/DD/YYY">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-footer">
+                  <div class="d-flex justify-content-between">
+                    <div class="">
+                    </div>
+                    <div class="">
+                      <button type="button"  class="btn btn-style start-btn">
+                        Save
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+        <div class="tab-pane" id="step3" role="tabpanel" aria-labelledby="partner-tab">
+          <div class="agent-form">
+            <div class="">
+              <form class="">
+                <div class="form-body">
+                  <div class="form-section">
+                    <div class="row">
+                      <div class="col">
+                        <h2 class="form-title">
+                          Partner/Wife/Husband Details
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label class="mb-2" for="title">Title</label>
+                          <select id="title" class="form-control input-lg form-item__element form-item__element--select">
+                            <option disabled="" selected="" value="">Mr/Mrs</option>
+                            <option value="option-1">Option 1</option>
+                            <option value="option-2">Option 2</option>
+                          </select>
+                          <i class="material-icons">
+                            keyboard_arrow_down
+                          </i>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="form-group">
+                          <label class="mb-2" for="surename">Surename</label>
+                          <input type="text" class="form-control" id="surename" aria-describedby="surename" placeholder="Surename">
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="form-group">
+                          <label class="mb-2" for="forename">Forename</label>
+                          <input type="text" class="form-control" id="forename" aria-describedby="forename" placeholder="Forename">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-5">
+                        <div class="form-group">
+                          <label class="mb-2" for="sia-number">Previous Surname (Changed by marriage, deed poll etc.)</label>
+                          <input type="text" class="form-control" id="sia-number" aria-describedby="sia-number" placeholder="Previous Surname">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="mb-2" for="Expires">Date Name Changed</label>
+                          <div class="input-group">
+                            <input type="text" class="form-control" id="Expires" aria-describedby="Expires" placeholder="MM/DD/YYY">
+                            <!--                    <i class="material-icons">-->
+                            <!--                      date_range-->
+                            <!--                    </i>-->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <div class="form-group">
+                          <label class="mb-2" for="reason">Date Name Changed Reason</label>
+                          <input type="text" class="form-control" id="reason" aria-describedby="reason" placeholder="Reason">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-section">
+                    <div class="row">
+                      <div class="col">
+                        <h2 class="form-title">
+                          Contact Details
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-9">
+                        <div class="form-group">
+                          <label class="mb-2" for="p-address">Present Address</label>
+                          <input type="text" class="form-control" id="p-address" aria-describedby="p-address" placeholder="Present Address">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="mb-2" for="forename">Postcode</label>
+                          <input type="text" class="form-control" id="Postcode" aria-describedby="Postcode" placeholder="Postcode">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-9">
+                        <div class="form-group">
+                          <label class="mb-2" for="pre-address">Previous Address if less than 3 years Address</label>
+                          <input type="text" class="form-control" id="pre-address" aria-describedby="pre-address" placeholder="Previous Address if less than 3 years Address">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="mb-2" for="forename">Postcode</label>
+                          <input type="text" class="form-control" id="pre-postcode" aria-describedby="pre-postcode" placeholder="Postcode">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="home-number">Home Phone No.</label>
+                          <input type="text" class="form-control" id="home-number" aria-describedby="home-number" placeholder="+01 00000000">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="work-number">Work Phone No.</label>
+                          <input type="text" class="form-control" id="work-number" aria-describedby="work-number" placeholder="+01 00000000">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="extension">Extension</label>
+                          <input type="text" class="form-control" id="extension" aria-describedby="extension" placeholder="Extension">
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="mobile-number">Mobile Phone No.</label>
+                          <input type="text" class="form-control" id="mobile-number" aria-describedby="mobile-number" placeholder="+01 00000000">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="email">Email Address</label>
+                          <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Email">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-section">
+                    <div class="row">
+                      <div class="col">
+                        <h2 class="form-title">
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="mb-2" for="age2">Age</label>
+                          <input type="text" class="form-control" id="age2" aria-describedby="age" placeholder="Age">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="mb-2" for="birth-date1">Date of Birth</label>
+                          <input type="text" class="form-control" id="birth-date1" aria-describedby="birth-date" placeholder="MM/DD/YYY">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="mb-2" for="birth-place2">Birth Place</label>
+                          <input type="text" class="form-control" id="birth-place2" aria-describedby="work-number" placeholder="Birth Place">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="mb-2" for="nationality2">Nationality</label>
+                          <input type="text" class="form-control" id="nationality2" aria-describedby="nationality" placeholder="Nationality">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-group d-flex align-items-center">
+                          <span class="mr-2 switch-title">Are you subject to Immigration control</span>
+                          <div class="switch">
+                            <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                            <label for="cmn-toggle-1"></label>
+                            <label class="yes-absolute">Yes</label>
+                            <label class="no-absolute">No</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="mb-2" for="entry-date2">Date of entry (or re-entry) into the UK</label>
+                          <input type="text" class="form-control" id="entry-date2" aria-describedby="entry-date" placeholder="MM/DD/YYY">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="insurance-no2">Nat. Insurance No</label>
+                          <input type="text" class="form-control" id="insurance-no2" aria-describedby="insurance-no" placeholder="insurance-no">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="Status2">Martial Status</label>
+                          <select id="Status2" class="form-control input-lg form-item__element form-item__element--select">
+                            <option disabled="" selected="" value="">Mr/Mrs</option>
+                            <option value="option-1">Option 1</option>
+                            <option value="option-2">Option 2</option>
+                          </select>
+                          <i class="material-icons">
+                            keyboard_arrow_down
+                          </i>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="Children">No. of Children</label>
+                          <input type="text" class="form-control" id="Children" aria-describedby="Children" placeholder="No. of Children">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="ages2">Ages</label>
+                          <input type="text" class="form-control" id="ages2" aria-describedby="ages" placeholder="Ages">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-group d-flex align-items-center">
+                          <span class="mr-2 switch-title">Do they live with you</span>
+                          <div class="switch">
+                            <input id="cmn-toggle-5" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                            <label for="cmn-toggle-5"></label>
+                            <label class="yes-absolute">Yes</label>
+                            <label class="no-absolute">No</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-footer">
+                  <div class="d-flex justify-content-between">
+                    <div class="">
+
+                    </div>
+                    <div class="">
+                      <button type="button" class="btn btn-style start-btn">
+                        Save
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+        <div class="tab-pane" id="step4" role="tabpanel" aria-labelledby="employment-history-tab">
+          <div class="agent-form">
+            <div class="agent-employment-form">
+              <form class="">
+                <div class="form-body">
+                  <div class="form-section">
+
+                    <div class="row">
+                      <div class="col-12">
+                        <h2 class="form-title">
+                          EMPLOYMENT/UNEMPLOYMENT HISTORY FOR 5 YEARS.
+                        </h2>
+                        <div class="add-file-group border-bottom d-flex justify-content-between">
+                          <h2 class="add-file-ref-title">
+                            Ref No. 1
+                            <span>
+                            (Most Recent Employment)
+                            </span>
+                            <button class="ml-3 btn add-btn d-inline-block">
+                              Add
+                            </button>
+                          </h2>
+                          <a href="" > <ins>View</ins> </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="add-file-group border-bottom d-flex justify-content-between">
+                          <h2 class="add-file-ref-title">
+                            Ref No. 2
+                            <span>
+                            (Most Recent Employment)
+                            </span>
+                          </h2>
+                          <a href="" > <ins>View</ins> </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="add-file-group border-bottom d-flex justify-content-between">
+                          <h2 class="add-file-ref-title">
+                            Ref No. 3
+                            <span>
+                            (Most Recent Employment)
+                            </span>
+                          </h2>
+                          <a href="" > <ins>View</ins> </a>
+                        </div>
+                        <p class="add-file-info">
+                          YOU MUST HAVE COMPLETED THIS SECTION AS FULLY AS POSSIBLE <br>
+                          EVEN IF YOU WERE OUTSIDE THE UK FOR ANY PERIOD IN THAT TIME YOU MUST GIVE US DETAILS.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <h2 class="form-title">
+                          ARMED SERVICE/ POLICE SERVICE PARTICULARS:
+                        </h2>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12 col-sm-5">
+                        <div class="form-group">
+                          <label class="mb-2" for="regiment">Regiment/ Force etc</label>
+                          <input type="text" class="form-control" id="regiment" placeholder="Regiment/ Force etc">
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-7">
+                        <div class="form-group">
+                          <label class="mb-2" for="rank">Rank</label>
+                          <input type="text" class="form-control" id="rank" placeholder="Rank">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="joined">Date Joined</label>
+                          <input type="text" class="form-control" id="joined" placeholder="Date Joined">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="retired">Date Discharged/ Retired</label>
+                          <input type="text" class="form-control" id="retired" placeholder="Date Discharged/ Retired">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="No">No</label>
+                          <input type="text" class="form-control" id="No" placeholder="No">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-7">
+                        <div class="form-group">
+                          <label class="mb-2" for="Discharge">Conduct (Ors only, as shown in Discharge Document)</label>
+                          <input type="text" class="form-control" id="Discharge" placeholder="Conduct (Ors only, as shown in Discharge Document)">
+                        </div>
+                      </div>
+                    </div>
+
+                    <p class="paragraph-text">
+                      FULL TIME AND ANY PART TIME SPECIALIST COURSES ATTENDED &
+                      DETAILS OF PROFESSIONAL QUALIFICATIONS OBTAINED ( EG. NVQ, CITY IN GUILDS ETC)
+                    </p>
+
+                    <div class="row">
+                      <div class="col">
+                        <div class="add-file-group mb-4">
+                          <h2 class="add-file-ref-title">
+                            Ref No. 1
+                          </h2>
+                          <button class="btn add-btn d-inline-block">
+                            Add
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="form-section">
+                    <div class="row">
+                      <div class="col-12">
+                        <h2 class="form-title mb-5">
+                          SELF EMPLOYMENT:
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-sm-5">
+                        <div class="form-group">
+                          <label class="mb-2" for="full-name">Name</label>
+                          <input type="text" class="form-control" id="full-name" placeholder="Full Name">
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-7">
+                        <div class="form-group">
+                          <label class="mb-2" for="e-business">Address of business</label>
+                          <input type="text" class="form-control" id="e-business" placeholder="Address of business">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label class="mb-2" for="n-Business">Nature of Business</label>
+                          <input type="text" class="form-control" id="n-Business" placeholder="Nature of Business">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="Start">Start Date</label>
+                          <input type="text" class="form-control" id="Start" aria-describedby="Start" placeholder="Start Date">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="mb-2" for="end">End Date</label>
+                          <input type="email" class="form-control" id="end" aria-describedby="end" placeholder="End Date">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row vdivide mt-5">
+                      <div class="col-12 col-sm-6">
+                        <h3 class="mini-title">
+                          <ins>Refree 1</ins>
+                        </h3>
+                        <div class="form-group">
+                          <label class="mb-2" for="Name">Name</label>
+                          <input type="text" class="form-control" id="Name" aria-describedby="Name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                          <label class="mb-2" for="address">Address of business</label>
+                          <input type="text" class="form-control" id="address" aria-describedby="address" placeholder="address">
+                        </div>
+                        <div class="form-group">
+                          <label class="mb-2" for="Profession">Profession</label>
+                          <input type="text" class="form-control" id="Profession" placeholder="Profession">
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <h3 class="mini-title">
+                          <ins>Refree 2</ins>
+                        </h3>
+                        <div class="form-group">
+                          <label class="mb-2" for="Name2">Name</label>
+                          <input type="text" class="form-control" id="Name2" aria-describedby="Name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                          <label class="mb-2" for="address2">Address of business</label>
+                          <input type="text" class="form-control" id="address2" aria-describedby="address" placeholder="Address of bussiness">
+                        </div>
+                        <div class="form-group">
+                          <label class="mb-2" for="Profession2">Profession</label>
+                          <input type="text" class="form-control" id="Profession2" aria-describedby="Profession" placeholder="Profession">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <p class="add-file-info mt-4 text-center mb-4">
+                        Please note the following must be supplied for each period of self-employment.
+                      </p>
+                    </div>
+
+                    <div class="d-flex justify-content-end border-bottom pb-4 mt-4 mb-4">
+                      <button class="btn add-btn">
+                        Save
+                      </button>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <div class="add-file-group border-bottom mb-4">
+                          <h2 class="add-file-ref-title">
+                            Ref No. 2
+                          </h2>
+                          <button class="btn add-btn d-inline-block">
+                            Add New
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-footer">
+                  <div class="d-flex justify-content-between">
+                    <div class="">
+                    </div>
+                    <div class="">
+                      <button type="button"  class="btn btn-style start-btn">
+                        Save
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="step5" role="tabpanel" aria-labelledby="personal-referees-tab">
+          <div class="agent-form">
+            <form class="">
+              <div class="form-body">
+                <div class="form-section">
+                  <div class="row">
+                    <div class="col">
+                      <h2 class="form-title mb-2">
+                        Personal Details
+                      </h2>
+                      <p class="title-description">
+                        These must be persons who have known you continuously for at least five
+                        years and can vouch for your good character they may not be a previous employer or relative.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row vdivide">
+                    <div class="col-12 col-sm-6">
+                      <h3 class="mini-title">
+                        <ins>Refree 1</ins>
+                      </h3>
+                      <div class="form-group">
+                        <label class="mb-2" for="Name">Name</label>
+                        <input type="text" class="form-control" id="Name" aria-describedby="Name" placeholder="Name">
+                      </div>
+                      <div class="form-group">
+                        <label class="mb-2" for="address">Address</label>
+                        <input type="text" class="form-control" id="address" aria-describedby="address" placeholder="address">
+                      </div>
+                      <div class="form-group">
+                        <label class="mb-2" for="post-code">Postcode</label>
+                        <input type="text" class="form-control" id="post-code" aria-describedby="post-code" placeholder="post-code">
+                      </div>
+                      <div class="form-group">
+                        <label class="mb-2" for="tel">Tel</label>
+                        <input type="text" class="form-control" id="tel" aria-describedby="tel" placeholder="+1 00 000000">
+                      </div>
+                      <div class="form-group">
+                        <label class="mb-2" for="profession">Profession</label>
+                        <input type="text" class="form-control" id="profession" aria-describedby="profession" placeholder="Profession">
+                      </div>
+                      <div class="form-group">
+                        <label class="mb-2" for="info">How long known</label>
+                        <input type="text" class="form-control" id="info" aria-describedby="info" placeholder="How log known">
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <h3 class="mini-title">
+                        <ins>Refree 2</ins>
+                      </h3>
+                      <div class="form-group">
+                        <label class="mb-2" for="Name2">Name</label>
+                        <input type="text" class="form-control" id="Name2" aria-describedby="Name" placeholder="Name">
+                      </div>
+                      <div class="form-group">
+                        <label class="mb-2" for="address2">Address</label>
+                        <input type="text" class="form-control" id="address2" aria-describedby="address" placeholder="address">
+                      </div>
+                      <div class="form-group">
+                        <label class="mb-2" for="post-code2">Postcode</label>
+                        <input type="text" class="form-control" id="post-code2" aria-describedby="post-code" placeholder="post-code">
+                      </div>
+                      <div class="form-group">
+                        <label class="mb-2" for="tel2">Tel</label>
+                        <input type="text" class="form-control" id="tel2" aria-describedby="tel" placeholder="+1 00 000000">
+                      </div>
+                      <div class="form-group">
+                        <label class="mb-2" for="profession2">Profession</label>
+                        <input type="text" class="form-control" id="profession2" aria-describedby="profession" placeholder="Profession">
+                      </div>
+                      <div class="form-group">
+                        <label class="mb-2" for="info2">How long known</label>
+                        <input type="text" class="form-control" id="info2" aria-describedby="info" placeholder="How log known">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-section">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2 class="form-title">
+                        SCREENING & VETTING DECLARATIONS:
+                      </h2>
+                      <p class="paragraph-text">
+                        I certify that to the best of my knowledge, the information that I have given by me in
+                        this application is true and complete to the best of my knowledge and belief. I understand
+                        that any false statement or omission may render me liable to prosecution or dismissal without notice.
+                        I fully understand the consequences which may arise as a result of knowingly making a false declaration to
+                        gain employment or pecuniary advantage. (Theft Act 1968 Section 16). I accept that I may be required
+                        to undergo a medical examination where requested by the Company and I consent to the results of such
+                        examination being given to a Company Director. I further understand that a credit agency check may be
+                        carried out on me and I give my consent to this.
+                      </p>
+                      <p class="paragraph-text">
+                        I understand and agree that if so required I will make a
+                        Statutory Declaration in accordance with the provisions of the Statutory Declarations Act 1835, in
+                        confirmation of previous employment or unemployment. I authorize the company to approach Government agencies,
+                        former employers and personal referees for verification of my employment/unemployment record.
+                      </p>
+                    </div>
+                    <div class="col-12">
+                      <h2 class="form-title">
+                        DISCLOSURE:
+                      </h2>
+                      <p class="paragraph-text">
+                        You may be employed in a position of trust by a company or one of its subsidiary companies we may have to
+                        apply for a Disclosure from the Criminal Records Bureaux. However, having a criminal record does not necessarily
+                        bar you from employment. If you wish to obtain more information please ask The Company Personnel Department for
+                        their Code of Practice or their policy statement regarding ex-offenders. Disclosure information is treated in a
+                        sensitive way and is restricted to those who need to see it to make a recruitment decision. The Disclosure
+                        information is not retained i.e. it is disposed of within the timescales;
+                        recommended in the CRB Code of Practice. By signing below you agree to this process
+                      </p>
+                    </div>
+                    <div class="col-12">
+                      <h2 class="form-title">
+                        DATA PROTECTION ACT 1998:
+                      </h2>
+                      <p class="paragraph-text">
+                        We will use the information you have given on this form (together with any information which we
+                        obtain with your consent from third parties) for assessing your suitability for employment within
+                        certain contracts managed by your employers.
+                        It may be necessary to disclose your information
+                        to our agents and other service providers. <br>
+                        By returning this form to us you consent to our processing sensitive personal data about you
+                        where this is necessary, for example information about your past employment, finances,
+                        ethnic origin or criminal offences. You also consent to the transfer of your information
+                        to your employers where this is necessary. <br>
+                        Your information will be held on our computer database and in our paper filing systems.
+                        You have the right to apply for a copy
+                        of your information (for which we may charge a small fee) and to have any inaccuracies corrected.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-section">
+                  <h2 class="form-title">
+                    BANK DETAILS
+                  </h2>
+                  <div class="row v-spacer mb-5">
+                    <div class="col-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="mb-2" for="b-name">Bank Name</label>
+                        <input type="text" class="form-control" id="b-name" aria-describedby="b-name" placeholder="Bank Name">
+                      </div>
+                      <div class="form-group">
+                        <label class="mb-2" for="ac-number">Account Number</label>
+                        <input type="text" class="form-control" id="ac-number" aria-describedby="ac-number" placeholder="Account Number">
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="mb-2" for="short-code">Short Code</label>
+                        <input type="text" class="form-control" id="short-code" aria-describedby="short-code" placeholder="Short Code">
+                      </div>
+                      <div class="form-group">
+                        <label class="mb-2" for="ac-number2">Account Number</label>
+                        <input type="text" class="form-control" id="ac-number2" aria-describedby="ac-number" placeholder="Account Number">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-section">
+                  <h2 class="form-title">
+                  </h2>
+                  <div class="row bg-semi-dark pt-4 pb-4 mb-5">
+                    <div class="col-md-4 d-flex justify-content-between align-items-center">
+                      <h5 class="file-picker-label">Signature of Applicant</h5>
+                      <div class="file-picker">
+                        <input type="file" name="fileToUpload" id="applicantFileToUpload">
+                        <label for="applicantFileToUpload"> Change Image </label>
+                        <p>123456.png</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label class="mb-2" for="birth-date11">Date of Birth</label>
+                        <input type="text" class="form-control" id="birth-date11" aria-describedby="birth-date" placeholder="MM/DD/YYY">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label class="mb-2" for="partner-n">Print Name </label>
+                        <input type="email" class="form-control" id="partner-n" aria-describedby="partner-n" placeholder="Print Name">
+                      </div>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-between align-items-center">
+                      <h5 class="file-picker-label">Signature of Witness</h5>
+                      <div class="file-picker">
+                        <input type="file" name="fileToUpload" id="fileToUpload">
+                        <label> Change Image </label>
+                        <p>123456.png</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label class="mb-2" for="birth-date">Date of Birth</label>
+                        <input type="text" class="form-control" id="birth-date" aria-describedby="birth-date" placeholder="MM/DD/YYY">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group text-ellipsis">
+                        <label class="mb-2" for="Position-n">Position within Company/Relationship to Applicant</label>
+                        <input type="email" class="form-control" id="Position-n" aria-describedby="Position-n" placeholder="Position within Company/Relationship to Applicant">
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col">
-                  <p class="form-lead-text mb-4">
-                    Providing false information with the aim of securing employment
-                    could lead to charges of obtaining pecuniary
-                    reward by Deception Theft Act 1968 - section 16.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="form-footer">
-              <div class="d-flex justify-content-between">
-                <div class=""></div>
-                <div class="">
-                  <button type="button" class="btn btn-style start-btn text-uppercase text-center mr-3">
-                    Save
-                  </button>
-                  <button type="button" class="btn btn-style start-btn text-uppercase text-center">
-                    Next
-                  </button>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
 
+              <div class="form-footer">
+                <div class="d-flex justify-content-between">
+                  <div class="">
+                  </div>
+                  <div class="">
+                    <button type="button"  class="btn btn-style start-btn">
+                      Save
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -279,9 +1473,45 @@
 </div>
 <!--      Footer end-->
 
+
+<!--Application status Modal Start-->
+
+<!-- Modal -->
+<div class="modal application-status-dialog fade" id="application-status-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header pb-0">
+        <button type="button" class="close pb-0" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body pb-0">
+        <h2 class="modal-title">Your Profile is Under Review</h2>
+        <p class="text-gray font-500">Check back again</p>
+        <p class="ref-text mb-5">Reference Number</p>
+        <p class="box-text d-inline-block mb-0">9324109</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button"  class="btn btn-style start-btn" data-dismiss="modal">
+          Contact Us
+        </button>
+        <button type="button"  class="btn btn-style start-btn">
+          Logout
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Application status Modal End-->
+
 <script src="./js/jquery-3.4.1.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 
 </body>
+
+
+
+<!-- Tab panes -->
+
 </html>
 

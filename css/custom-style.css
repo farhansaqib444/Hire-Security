@@ -1,7 +1,7 @@
 /* CSS Rest*/
 /*https://xd.adobe.com/view/6e346c8a-9578-4c94-4cc8-d06aa012c247-1805/*/
 /*https://xd.adobe.com/view/26a1f490-da67-423c-4c4e-2fc3a54b2482-5090/*/   /*PM*/
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -102,6 +102,22 @@ ul li a {
 a:hover, a:focus, a:active {
   color: #FC7605 ;
 }
+.font-500 {
+  font-weight: 500 !important;
+}
+.text-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.text-ellipsis:hover {
+  white-space: initial;
+  overflow: inherit;
+  transition: .5s all 5s
+}
+.cursor-pointer {
+  cursor: pointer;
+}
 .border-bottom {
   border-bottom: 1px solid #707070!important;
 }
@@ -160,6 +176,49 @@ a:hover, a:focus, a:active {
   opacity: 1;
 }
 /* CSS Rest*/
+
+/*modal-css start*/
+.modal-header {
+  padding: 15px 15px;
+  border-bottom: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.modal-header .close {
+  padding: 15px 15px;
+  margin: -1rem -1rem -1rem auto;
+  font-size: 35px;
+  font-weight: 100;
+}
+.modal-body h2.modal-title {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  letter-spacing: 0;
+  color: #160F53;
+  opacity: 1;
+}
+.modal-footer {
+  justify-content: center;
+  padding: 30px 30px;
+  border-top: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.application-status-dialog .modal-dialog{
+  text-align: center;
+  max-width: 566px;
+  width: 100%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #FC7605;
+  opacity: 1;
+}
+.application-status-dialog .modal-content {
+  border-radius: 0;
+}
+/*modal-css End*/
 
 /*menu NavBar start*/
 .dropdown-submenu {
@@ -287,6 +346,25 @@ a:hover, a:focus, a:active {
 .file-picker {
   position: relative;
   cursor: pointer;
+}
+.file-picker-label{
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: Roboto;
+  letter-spacing: 0;
+  color: #000000;
+  opacity: 1;
+}
+.file-picker p {
+  font-size: 15px;
+  font-family: Roboto;
+  margin-bottom: 0;
+  text-align: center;
+  margin-top: 5px;
+  letter-spacing: 0;
+  color: #000000;
+  opacity: 1;
 }
 .file-picker label {
   background: #BFBCBC 0% 0% no-repeat padding-box;
@@ -523,7 +601,9 @@ input.form-control {
 }
 
 /*welcome-page*/
-
+.welcome-page {
+  margin-bottom: 160px;
+}
 .welcome-page .start-btn, .start-btn {
   width: 156px;
   height: 52px;
@@ -632,7 +712,7 @@ input.form-control {
   width: 100%;
   margin-bottom: 40px;
 }
-.agent-form .form-done-screen h1 {
+.agent-form .form-done-screen h1 , .text-gray{
   ont-family: Roboto;
   font-size: 22px;
   font-weight: 500;
@@ -641,7 +721,7 @@ input.form-control {
   color: #160F53;
   opacity: 1;
 }
-.agent-form .form-done-screen h1 + p {
+.agent-form .form-done-screen h1 + p, .text-gray {
   font-family: Roboto;
   font-size: 22px;
   font-weight: 400;
@@ -650,7 +730,7 @@ input.form-control {
   color: #9B9B9B;
   opacity: 1;
 }
-.agent-form .form-done-screen p.ref-text {
+.agent-form .form-done-screen p.ref-text, p.ref-text {
   font-family: Roboto;
   font-size: 24px;
   font-weight: 400;
@@ -659,7 +739,7 @@ input.form-control {
   color: #FC7605;
   opacity: 1;
 }
-.agent-form .form-done-screen p.box-text {
+.agent-form .form-done-screen p.box-text , p.box-text {
   font-family: Roboto;
   font-size: 17px;
   font-weight: 400;
@@ -669,8 +749,7 @@ input.form-control {
   opacity: 1;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border: 2px solid #FC7605;
-  opacity: 1;
-  padding: 2px 5px;
+  padding: 2px 15px;
 }
 .agent-form .add-file-group {
   padding-top: 25px;
@@ -876,6 +955,30 @@ input.form-control {
   opacity: 1;
 }
 
+.custom-tab {
+  border-bottom: 1px solid #FC7605;
+
+}
+.custom-tab .nav-item .nav-link {
+  background-color: #fff;
+  border: 1px solid #FC7605;
+  padding: 17px 5px;
+  border-radius: 0;
+  color: #FC7605;
+  font-size: 18px;
+  font-weight: 400;
+}
+.custom-tab  .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  font-family: Roboto;
+  color: #FFFFFF;
+  background-color: #FC7605;
+  border: 1px solid #FC7605;
+}
+
+.custom-tab .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+  background-color: #FC7605;
+  color: #FFFFFF;
+}
 /*Edit Profile styling End*/
 @media (min-width: 768px) {
   .agent-form .vdivide > div:first-child, .agent-form .v-spacer > div:first-child {
