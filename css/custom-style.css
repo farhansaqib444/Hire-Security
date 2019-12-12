@@ -284,7 +284,7 @@ a:hover, a:focus, a:active {
   }
   .navbar-expand-lg.custom-nav .navbar-nav .nav-item:last-child .nav-link {
     min-width: 175px;
-    max-width: 175px;
+    max-width: 200px;
     width: 100%;
     text-transform: capitalize;
   }
@@ -673,7 +673,7 @@ input.form-control {
   margin-bottom: 10px;
 }
 .agent-form .form-group {
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 }
 .agent-form .form-group span.switch-title {
   font-size: 20px;
