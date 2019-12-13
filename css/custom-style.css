@@ -75,11 +75,34 @@ ul {
     ul li a {
       text-decoration: none; }
 
+a.yellow-text {
+  color: #FC7605;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: Roboto;
+  letter-spacing: 0;
+  opacity: 1; }
+
 a:hover, a:focus, a:active {
   color: #FC7605; }
 
 .font-500 {
   font-weight: 500 !important; }
+
+.font-600 {
+  font-weight: 600 !important; }
+
+.font-13 {
+  font-size: 13px !important; }
+
+.font-15 {
+  font-size: 15px !important; }
+
+.font-17 {
+  font-size: 15px !important; }
+
+.font-34 {
+  font-size: 15px !important; }
 
 .text-ellipsis {
   text-overflow: ellipsis;
@@ -937,16 +960,23 @@ p.add-file-info {
 .home-page .theme-banner {
   margin-bottom: 100px; }
 
-.card {
+.card.banner-signUp {
+  position: absolute;
+  top: -145px;
+  right: 0;
   background: #FEFDFD 0% 0% no-repeat padding-box;
   border-radius: 10px;
-  opacity: 1; }
+  opacity: 1;
+  padding: 25px 40px;
+  z-index: 9; }
 
 .banner-signUp {
   max-width: 380px;
   width: 100%; }
   .banner-signUp h3 {
-    font: Bold 30px/60px Roboto;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Roboto;
     letter-spacing: 0;
     color: #160F53;
     opacity: 1; }
@@ -956,7 +986,9 @@ p.add-file-info {
       color: #160F53;
       opacity: 1; }
   .banner-signUp form label {
-    font: 400 12px/16px Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: Roboto;
     letter-spacing: 0;
     color: #160F53;
     opacity: 1;
@@ -969,7 +1001,22 @@ p.add-file-info {
     border-right: 0;
     border-left: 0;
     border-radius: 0;
-    padding: 5px 0; }
+    padding: 0; }
+  .banner-signUp form ::placeholder {
+    font-size: 13px;
+    font-family: Roboto;
+    letter-spacing: 0;
+    color: #160F53;
+    opacity: 0.5; }
+  .banner-signUp form .captcha {
+    margin-top: 30px; }
+    .banner-signUp form .captcha h5 {
+      font-size: 17px;
+      font-family: Roboto;
+      font-weight: 400;
+      letter-spacing: 0;
+      color: #160F53;
+      opacity: 0.5; }
 
 /*==============================Static page Styling End===========================*/
 /*Edit Profile styling End*/

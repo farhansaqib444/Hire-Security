@@ -203,12 +203,6 @@ a:hover{
 /*index start*/
 
 @media (min-width: 1200px) {
-	.index-contain {
-		position: relative;
-		/*text-align: center;*/
-		color: white;
-		margin-bottom: 3rem;
-	}
 	.index-contain-1 {
 		position: relative;
 		text-align: center;
@@ -221,12 +215,6 @@ a:hover{
 	}
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
-	.index-contain {
-		position: relative;
-		/*text-align: center;*/
-		color: white;
-		margin-bottom: 10rem;
-	}
 	.index-contain-1{
 		position: relative;
 		text-align: center;
@@ -240,12 +228,6 @@ a:hover{
 	}
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-	.index-contain {
-		position: relative;
-		/*text-align: center;*/
-		color: white;
-		margin-bottom: 15rem;
-	}
 	.index-contain-1 {
 		position: relative;
 		text-align: center;
@@ -258,12 +240,6 @@ a:hover{
 	}
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
-	.index-contain {
-		position: relative;
-		/*text-align: center;*/
-		color: white;
-		margin-bottom: 26rem;
-	}
 	.index-contain-1 {
 		position: relative;
 		text-align: center;
@@ -277,18 +253,6 @@ a:hover{
 }
 
 @media (max-width: 575.98px) {
-	.index-contain {
-		position: relative;
-		/*text-align: center;*/
-		color: white;
-		margin-bottom: 49rem;
-	}
-	.index-top-right {
-		position: absolute !important;
-		top: -59rem !important;
-		right: 16px !important;
-		left: 16px !important;
-	}
 	.index-contain-1 {
 		position: relative;
 		text-align: center;
@@ -323,11 +287,6 @@ a:hover{
 	left: 16px;
 }
 
-.index-top-right {
-	position: absolute;
-	top: 8px;
-	right: 16px;
-}
 
 .index-bottom-right {
 	position: absolute;
