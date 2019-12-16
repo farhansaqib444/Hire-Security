@@ -171,6 +171,25 @@ a:hover, a:focus, a:active {
   color: #FC7605;
   opacity: 1; }
 
+.btn-secondary {
+  background: #FBFBFB 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 15px 20px;
+  color: #333333; }
+  .btn-secondary:active, .btn-secondary:hover, .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active {
+    background: #FBFBFB 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    color: #333333;
+    opacity: 1; }
+
 /* CSS Rest*/
 /*modal-css start*/
 .modal-header {
@@ -563,7 +582,9 @@ input.form-control {
     opacity: 1; }
 
 .start-btn {
-  width: 156px;
+  min-width: 156px;
+  padding-left: 15px;
+  padding-right: 15px;
   height: 52px;
   font-size: 16px;
   font-weight: 400;
@@ -588,10 +609,16 @@ input.form-control {
       color: #FC7605;
       font-family: "Material Icons";
       content: "\e5cc";
-      float: right; }
+      float: right;
+      margin-right: 20px; }
     .accordion .card .card-header.collapsed:after {
       /* symbol for "collapsed" panels */
       content: "keyboard_arrow_up"; }
+    .accordion .card .card-header i {
+      position: absolute;
+      right: 10px;
+      color: #FC7605;
+      cursor: default; }
 
 .accordion > .card .card-header {
   margin-bottom: 0px; }
@@ -932,7 +959,10 @@ p.add-file-info {
 
 /*==============================Static page Styling Start ===========================*/
 .text-silver {
-  color: #C9C9C9; }
+  color: #C9C9C9 !important; }
+
+.page-section {
+  margin-bottom: 50px; }
 
 .section-title {
   font-size: 50px;
@@ -1018,6 +1048,38 @@ p.add-file-info {
       color: #160F53;
       opacity: 0.5; }
 
+.align-left-card {
+  margin-bottom: 25px; }
+  .align-left-card h5 {
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: 400;
+    margin-bottom: 8px;
+    letter-spacing: 0;
+    color: #505050;
+    opacity: 1; }
+  .align-left-card p {
+    font-size: 17px;
+    font-family: Roboto;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #7E7E7E;
+    opacity: 1; }
+
+.agent-reason {
+  min-height: 660px;
+  background: url("../images/agent-3-6.png") center center/cover no-repeat;
+  display: flex;
+  align-items: center; }
+  .agent-reason .section-title {
+    color: #FFFFFF; }
+  .agent-reason .section-title-lead {
+    color: #C9C9C9;
+    margin-bottom: 15px; }
+  .agent-reason p {
+    color: #FFFFFF;
+    margin-bottom: 15px; }
+
 /*==============================Static page Styling End===========================*/
 /*Edit Profile styling End*/
 @media (min-width: 768px) {
@@ -1076,6 +1138,9 @@ p.add-file-info {
     border-radius: 0; }
 
   .agent-register {
-    margin-bottom: 75px; } }
+    margin-bottom: 75px; }
+
+  .align-left-card {
+    text-align: center; } }
 
 /*# sourceMappingURL=custom-style.css.map */

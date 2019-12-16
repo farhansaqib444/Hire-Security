@@ -215,7 +215,28 @@ a {
   color: #FC7605;
   opacity: 1;
 }
+.btn-secondary {
+  background: #FBFBFB 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
+  border: none;
 
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 15px 20px;
+  color: #333333;
+
+  &:active, &:hover, &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active {
+    background: #FBFBFB 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    color: #333333;
+    opacity: 1;
+  }
+}
 /* CSS Rest*/
 
 /*modal-css start*/
@@ -734,7 +755,9 @@ input.form-control {
 }
 
 .start-btn {
-  width: 156px;
+  min-width: 156px;
+  padding-left: 15px;
+  padding-right: 15px;
   height: 52px;
   font-size: 16px;
   font-weight: 400;
@@ -762,10 +785,17 @@ input.form-control {
       font-family: "Material Icons";
       content: "\e5cc";
       float: right;
+      margin-right: 20px;
     }
     &.collapsed:after {
       /* symbol for "collapsed" panels */
       content: "keyboard_arrow_up";
+    }
+    i {
+      position: absolute;
+      right: 10px;
+      color: #FC7605;
+      cursor: default;
     }
   }
 }
@@ -1216,9 +1246,11 @@ p.add-file-info {
 /*==============================Static page Styling Start ===========================*/
 
 .text-silver {
-  color: #C9C9C9;
+  color: #C9C9C9 !important;
 }
-
+.page-section {
+  margin-bottom: 50px;
+}
 .section-title {
   font-size: 50px;
   font-weight: 500;
@@ -1319,7 +1351,50 @@ p.add-file-info {
     }
   }
 
+//Align left card Styling
 
+.align-left-card {
+  margin-bottom: 25px;
+  img {
+
+  }
+  h5 {
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: 400;
+    margin-bottom: 8px;
+    letter-spacing: 0;
+    color: #505050;
+    opacity: 1;
+  }
+  p{
+    font-size: 17px;
+    font-family: Roboto;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #7E7E7E;
+    opacity: 1;
+  }
+}
+
+.agent-reason {
+  min-height: 660px;
+  background: url("../images/agent-3-6.png") center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+
+  .section-title {
+    color: #FFFFFF;
+  }
+  .section-title-lead {
+    color: #C9C9C9;
+    margin-bottom: 15px;
+  }
+  p {
+    color: #FFFFFF;
+    margin-bottom: 15px;
+  };
+}
 /*==============================Static page Styling End===========================*/
 
 /*Edit Profile styling End*/
@@ -1401,5 +1476,8 @@ p.add-file-info {
 
   .agent-register {
     margin-bottom: 75px;
+  }
+  .align-left-card {
+    text-align: center;
   }
 }
