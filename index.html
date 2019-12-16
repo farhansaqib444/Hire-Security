@@ -10,6 +10,9 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
   <!--custom styling-->
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <link rel="stylesheet" href=css/pre-style.css>
   <link rel="stylesheet" href="css/custom-style.css">
 
@@ -80,7 +83,7 @@
   <div id="body" class="home-page">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6 col-md-6">
+        <div class="col-sm-6 col-md-6" data-aos="fade-right">
           <h1 class="section-title">Get Protected</h1>
           <h2 class="section-title-lead">Your day belongs to you</h2>
         </div>
@@ -93,7 +96,7 @@
       <div class="container">
         <!--          Sign Up form-->
         <div class="row">
-          <div class="col">
+          <div class="col" data-aos="fade-left">
             <div class="card banner-signUp">
               <div class="mb-4">
                 <h3>Sign Up</h3>
@@ -170,19 +173,18 @@
         </div>
         <!--          Sign Up form-->
       </div>
-
     </div>
 
     <!--      Bodyguard Section-->
     <div class="page-section">
       <div class="container">
         <div class="row pt-5">
-          <div class="col">
+          <div class="col" data-aos="fade-right">
             <h1 class="section-title">Bodyguard</h1>
             <h2 class="section-title-lead">Safety & Protection</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="row" data-aos="fade-up">
           <div class="col-sm-12 col-md-4">
             <div class="align-left-card">
               <img src="./images/cashvaluables.png" class="img-fluid">
@@ -220,7 +222,7 @@
         <div class="row mt-4 mb-3">
           <div class="col-sm-12 col-md-12 text-center">
             <!-- <button  >Basic</button> -->
-            <button class="btn btn-style start-btn">REASONS TO BE OUR CLIENT</button>
+            <button class="btn btn-style start-btn" data-aos="fade-up">REASONS TO BE OUR CLIENT</button>
           </div>
         </div>
       </div>
@@ -232,7 +234,7 @@
       <div class="agent-reason ">
         <div class="container">
           <div class="row">
-            <div class="col-sm-12 col-md-12 align-content-center">
+            <div class="col-sm-12 col-md-12 align-content-center" data-aos="fade-right">
               <h1 class="section-title">Choose your own time</h1>
               <h2 class="section-title-lead">Make what you need</h2>
               <p>
@@ -251,12 +253,12 @@
     <div class="page-section">
       <div class="container">
         <div class="row">
-          <div class="col-12 mb-5">
+          <div class="col-12 mb-5" data-aos="fade-right">
             <h2 class="section-title-lead text-silver mb-0">Meet our Agents</h2>
             <h1 class="section-title ">At your service</h1>
           </div>
         </div>
-        <div class="row">
+        <div class="row" data-aos="fade-up">
           <div class="col-sm-12 col-md-4">
             <div class="agent-info-card">
               <img src="images/agent-1.png" class="img-fluid">
@@ -303,7 +305,7 @@
             <div class="col-md-6 text-center">
               <img class="img-fluid" src="./images/Image 3.png">
             </div>
-            <div class="col-md-6 mt-5">
+            <div class="col-md-6 mt-5" data-aos="fade-left">
               <h2 class="section-title-lead text-silver mb-0">Built for work</h2>
               <h1 class="section-title mb-4">Hire Security for Business</h1>
               <p>Wireframe Kit is a professional instrument;
@@ -322,11 +324,11 @@
     <div class="page-section">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12" data-aos="fade-right">
             <h1 class="section-title mb-4">Read the latest from Hire Security</h1>
           </div>
         </div>
-        <div class="row vdivide">
+        <div class="row vdivide" data-aos="fade-up">
           <div class="col-md-6">
             <div class="media center-object align-items-center">
               <img class="align-self-center mr-3" src="images/blog.png" alt="blog-img">
@@ -355,7 +357,7 @@
     <!--      Hire Security is now In your city start-->
     <div class="page-section">
       <div class="bg-gray ptb-100">
-        <div class="city-search">
+        <div class="city-search" data-aos="fade-up">
           <div class="search-input-group">
             <h2 class="section-title-lead text-silver mb-0">Hire Security is now</h2>
             <h1 class="section-title mb-4">In your city</h1>
@@ -522,6 +524,14 @@
 <!--Script-->
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay: 500, // values from 0 to 3000, with step 50ms
+        duration: 1000
+      });
+
+    </script>
 </body>
 </html>
 
