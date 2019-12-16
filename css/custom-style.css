@@ -23,6 +23,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .bg-semi-dark {
   background-color: #F1EFEF; }
 
+.bg-gray {
+  background: #FBFBFB 0% 0% no-repeat padding-box; }
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
@@ -562,7 +565,9 @@ input.form-control {
   letter-spacing: 0;
   color: #8493A8; }
 
-.subscribe-field input {
+.subscribe-field input.form-control {
+  padding: 10px 10px;
+  height: 40px;
   background-color: #ECEFF4; }
 
 /*Become Agent Page*/
@@ -1062,6 +1067,7 @@ p.add-file-info {
     font-size: 17px;
     font-family: Roboto;
     font-weight: 400;
+    line-height: 18px;
     letter-spacing: 0;
     color: #7E7E7E;
     opacity: 1; }
@@ -1078,7 +1084,115 @@ p.add-file-info {
     margin-bottom: 15px; }
   .agent-reason p {
     color: #FFFFFF;
+    line-height: 18px;
     margin-bottom: 15px; }
+  .agent-reason button {
+    font-weight: 500; }
+
+.agent-info-card {
+  margin-bottom: 25px;
+  text-align: center; }
+  .agent-info-card img {
+    margin-bottom: 10px; }
+  .agent-info-card label.agent-name {
+    display: block;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.27px;
+    color: #333333;
+    opacity: 1; }
+  .agent-info-card label.agent-designation {
+    font-size: 13px;
+    font-family: Roboto;
+    font-weight: 400;
+    margin-bottom: 5px;
+    letter-spacing: 0.22px;
+    color: #C9C9C9;
+    opacity: 1; }
+  .agent-info-card p {
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.23px;
+    color: #333333;
+    opacity: 1; }
+
+.ptb-100 {
+  padding: 110px 0; }
+
+.hs-business {
+  background: #fff;
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto; }
+  .hs-business p {
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 400;
+    margin-bottom: 10px;
+    max-width: 313px;
+    line-height: 18px;
+    letter-spacing: 0;
+    color: #333333;
+    opacity: 1; }
+
+.media.center-object img {
+  max-width: 150px;
+  width: 100%; }
+.media.center-object h5 {
+  font-size: 28px;
+  font-family: Roboto;
+  font-weight: 400;
+  margin-bottom: 7px;
+  letter-spacing: 0;
+  color: #333333;
+  opacity: 1; }
+.media.center-object p {
+  font-size: 14px;
+  font-family: Roboto;
+  margin-bottom: 5px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #333333; }
+.media.center-object button {
+  border: none;
+  padding: 5px 20px;
+  font-size: 12px;
+  font-family: Roboto; }
+
+.city-search {
+  max-width: 900px;
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto; }
+  .city-search .search-input-group {
+    max-width: 730px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 15px; }
+  .city-search input {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+    border-bottom: 2px solid rgba(22, 15, 83, 0.2);
+    height: 52px; }
+  .city-search button {
+    font-size: 14px;
+    font-family: Roboto;
+    padding: 15px 60px; }
+
+.apps-button-group {
+  padding: 20px 0 55px 0; }
+  .apps-button-group a {
+    display: inline-block;
+    margin: 5px 8px; }
+    .apps-button-group a img {
+      max-width: 200px;
+      width: 100%; }
 
 /*==============================Static page Styling End===========================*/
 /*Edit Profile styling End*/
