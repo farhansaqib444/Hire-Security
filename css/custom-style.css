@@ -67,6 +67,9 @@ hr {
   margin-bottom: 10px;
   background: #CAD3DF 0% 0% no-repeat padding-box; }
 
+.v-separator {
+  padding: 50px 0; }
+
 .form-item__element {
   display: inline-block; }
 
@@ -1043,6 +1046,15 @@ p.add-file-info {
   color: #160F53;
   opacity: 1; }
 
+a.section-link-text {
+  font-size: 26px;
+  font-weight: 400;
+  font-family: Roboto;
+  letter-spacing: 0;
+  letter-spacing: 0;
+  color: #FC7605;
+  opacity: 1; }
+
 .theme-banner {
   background-image: url("../images/brochures---top-image.png");
   background-repeat: no-repeat;
@@ -1281,7 +1293,7 @@ p.add-file-info {
     color: #333333;
     opacity: 1;
     margin-bottom: 30px; }
-  .get-started p, .agent-extra p {
+  .get-started p.mini-paragraph-text, .agent-extra p.mini-paragraph-text {
     margin-bottom: 30px; }
   .get-started a, .agent-extra a {
     font-size: 26px;
@@ -1306,7 +1318,7 @@ p.add-file-info {
   border: 0; }
   .top-question-section .accordion .card .card-header {
     background: transparent;
-    padding: 13px 0;
+    padding: 25px 0;
     display: flex;
     align-items: flex-end; }
     .top-question-section .accordion .card .card-header:after {
@@ -1317,6 +1329,11 @@ p.add-file-info {
       font-size: 30px;
       font-weight: 400;
       font-family: Roboto; }
+
+.guard-money-bg {
+  background: url("../images/5-happy-people-thumbs-up-web.png") center center/cover no-repeat;
+  min-height: 534px;
+  box-shadow: 0px 10px 70px #00000029; }
 
 /*==============================Static page Styling End===========================*/
 /*Edit Profile styling End*/
