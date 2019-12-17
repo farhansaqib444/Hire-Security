@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>HS</title>
+	<title>Agent Overview</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--	style link-->
@@ -11,551 +11,420 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
   <!--custom styling-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <link rel="stylesheet" href=css/pre-style.css>
   <link rel="stylesheet" href="css/custom-style.css">
 
 	<!--	<link rel="icon" type="image/png" href="img/icons/p.png" />-->
 </head>
 <body>
-<div id="container">
+      <!--    Header Start-->
+    <div id="header" class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light custom-nav">
+          <a class="navbar-brand" href="#">
+            <img alt="hire-security-icon" src="./images/logo.png" class="img-fluid logo-img">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a href="#" id="menu" data-toggle="dropdown" class="nav-link dropdown-toggle">Agent</a>
+                <ul class="dropdown-menu">
+                  <!--              dropdown-submenu-->
+                  <li class="dropdown-item">
+                    <a href="#" class="nav-link">Overview</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="nav-link" >Cities</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="nav-link" >How to Work</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="nav-link" >Safety</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="nav-link" >Cost Estimator</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="nav-link" >Business</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" id="menu" data-toggle="dropdown" class="nav-link dropdown-toggle">Client</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item">
+                    <a href="#" class="nav-link" >menu-2</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="nav-link" >menu-2</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Help</a>
+              </li>
 
-  <div id="header" class="header">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light custom-nav">
-        <a class="navbar-brand" href="#">
-          <img alt="hire-security-icon" src="./images/logo.png" class="img-fluid logo-img">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a href="#" id="menu" data-toggle="dropdown" class="nav-link dropdown-toggle">Agent</a>
-              <ul class="dropdown-menu">
-                <!--              dropdown-submenu-->
-                <li class="dropdown-item">
-                  <a href="#" class="nav-link">Overview</a>
-                </li>
-                <li class="dropdown-item">
-                  <a href="#" class="nav-link" >Cities</a>
-                </li>
-                <li class="dropdown-item">
-                  <a href="#" class="nav-link" >How to Work</a>
-                </li>
-                <li class="dropdown-item">
-                  <a href="#" class="nav-link" >Safety</a>
-                </li>
-                <li class="dropdown-item">
-                  <a href="#" class="nav-link" >Cost Estimator</a>
-                </li>
-                <li class="dropdown-item">
-                  <a href="#" class="nav-link" >Business</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a href="#" id="menu" data-toggle="dropdown" class="nav-link dropdown-toggle">Client</a>
-              <ul class="dropdown-menu">
-                <li class="dropdown-item">
-                  <a href="#" class="nav-link" >menu-2</a>
-                </li>
-                <li class="dropdown-item">
-                  <a href="#" class="nav-link" >menu-2</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Help</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link header-bg d-flex align-items-center justify-content-md-start justify-content-lg-center" href="#">
-                <img alt="hire-security-icon" class="profile-icon" src="images/pro-2.png" class="mr-2 align-middle">
-                <p class="text-white text-left mb-0 ml-2"> BECOME AN AGENT </p>
-              </a>
-            </li>
-          </ul>
+              <li class="nav-item">
+                <a class="nav-link header-bg d-flex align-items-center justify-content-md-start justify-content-lg-center" href="#">
+                  <img alt="hire-security-icon" class="profile-icon" src="images/pro-2.png" class="mr-2 align-middle">
+                  <p class="text-white text-left mb-0 ml-2"> BECOME AN AGENT </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+      <!--    Header End-->
+      <!--    Body Start-->
+    <div id="body">
+      <div class="page-section">
+        <div class="container">
+          <div class="row" data-aos="fade-up">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12 align-self-center text-center text-sm-center text-lg-left">
+              <h1 class="section-title mb-4 mt-5 mt-lg-0">Agent with DOORZ in Something</h1>
+              <p class="section-title-description mb-5">Reay to make money? The first step is to sign up online.</p>
+              <div class="apps-button-group p-0">
+                <a href="#">
+                  <img src="images/app-store.png" alt="app-store">
+                </a>
+                <a href="#">
+                  <img src="images/play-store.png" alt="app-store">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 d-none d-sm-none d-md-none d-lg-block">
+              <img src="./images/Armed+Florida+Security+Officers+A1A+Security+Services.png" class="img-fluid">
+            </div>
+          </div>
         </div>
-      </nav>
+      </div>
+
+      <!--    make money back-ground section start-->
+      <div class="page-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12" data-aos="fade-up">
+              <h1 class="section-title mb-5">Make money when you want</h1>
+            </div>
+          </div>
+        </div>
+        <div class="make-money-bg">
+
+        </div>
+      </div>
+      <!--    make money back-ground section End-->
+
+      <!--    make money content section start-->
+      <div class="page-section make-money-content">
+        <div class="container">
+          <div class="row" data-aos="fade-up">
+            <div class="col-sm-12 col-md-4 mb-4 text-center text-sm-center text-md-left">
+              <img src="./images/cal.png" class="mb-2">
+              <h2>Set your own schedule</h2>
+              <p class="mini-paragraph-text">Guard Grabber is the fastest way to get protection.
+                One tap and security comes to you. Your guard
+                knows precisely where to go and payment is
+                completely cashless.</p>
+            </div>
+            <div class="col-sm-12 col-md-4 mb-4 text-center text-sm-center text-md-left">
+              <img src="./images/play.png" class="mb-2">
+              <h2>Make money on your term</h2>
+              <p class="mini-paragraph-text">Guard Grabber is the fastest way to get protection.
+                One tap and security comes to you. Your guard
+                knows precisely where to go and payment is
+                completely cashless.</p>
+            </div>
+            <div class="col-sm-12 col-md-4 mb-4 text-center text-sm-center text-md-left">
+              <img src="./images/get-app.png" class="mb-2">
+              <h2>Let the app Lead the away</h2>
+              <p class="mini-paragraph-text">Guard Grabber is the fastest way to get protection.
+                One tap and security comes to you. Your guard
+                knows precisely where to go and payment is
+                completely cashless.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--    make money content section End-->
+
+      <!--    Get Started Section Start-->
+      <div class="get-started bg-silver">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12">
+              <h1 class="section-title mb-5" data-aos="fade-up">Get started</h1>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div data-aos="fade-up" class="col-sm-12 col-md-4 mb-3 text-center text-sm-center text-md-left">
+              <img src="./images/STAR.png" class="mb-3">
+              <h2>Sign up online</h2>
+              <p class="mini-paragraph-text mb-3">Guard Grabber is the fastest way to get
+                protection.
+                One tap and security comes to you. Your guard
+                knows precisely where to go and payment is
+                completely cashless.</p>
+              <a href="#"> Sign up online <i class="material-icons align-middle ml-2"> keyboard_arrow_right </i></a>
+            </div>
+            <div data-aos="fade-up" class="col-sm-12 col-md-4  mb-3 text-center text-sm-center text-md-left">
+              <img src="./images/get.png" class="mb-3">
+              <h2>Check guard requirements</h2>
+              <p class="mini-paragraph-text mb-3">Guard Grabber is the fastest way to get
+                protection.
+                One tap and security comes to you. Your guard
+                knows precisely where to go and payment is
+                completely cashless.</p>
+              <a href="#"> Sign up online <i class="material-icons align-middle ml-2"> keyboard_arrow_right </i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--    Get Started Section End-->
+
+      <!--    agent-extra Section Start-->
+      <div class="agent-extra">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12">
+              <h1 class="section-title mb-5" data-aos="fade-up">Agent extras</h1>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div data-aos="fade-up" class="col-sm-12 col-md-4 mb-3 text-center text-sm-center text-md-left">
+              <img src="images/support.png" class="mb-3">
+              <h2>Get Support</h2>
+              <p class="mini-paragraph-text mb-3">Guard Grabber is the fastest way to get
+                protection.
+                One tap and security comes to you. Your guard
+                knows precisely where to go and payment is
+                completely cashless.</p>
+              <a href="#"> Sign up online <i class="material-icons align-middle ml-2"> keyboard_arrow_right </i></a>
+            </div>
+            <div data-aos="fade-up" class="col-sm-12 col-md-4  mb-3 text-center text-sm-center text-md-left">
+              <img src="images/contact-us.png" class="mb-3">
+              <h2>Contact us</h2>
+              <p class="mini-paragraph-text mb-3">Guard Grabber is the fastest way to get
+                protection.
+                One tap and security comes to you. Your guard
+                knows precisely where to go and payment is
+                completely cashless.</p>
+              <a href="#"> Sign up online <i class="material-icons align-middle ml-2"> keyboard_arrow_right </i></a>
+            </div>
+            <div data-aos="fade-up" class="col-sm-12 col-md-4  mb-3 text-center text-sm-center text-md-left">
+              <img src="images/safely.png" class="mb-3">
+              <h2>Guard safely</h2>
+              <p class="mini-paragraph-text mb-3">Guard Grabber is the fastest way to get
+                protection.
+                One tap and security comes to you. Your guard
+                knows precisely where to go and payment is
+                completely cashless.</p>
+              <a href="#"> Sign up online <i class="material-icons align-middle ml-2"> keyboard_arrow_right </i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--    agent-extra Section end-->
+
+      <!--    Download app section start-->
+      <div class="page-section">
+        <div class="bg-silver app-section">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-sm-12 col-md-6"  data-aos="fade-up">
+                <h1 class="section-title mb-3">The new app: built for guards, with guards</h1>
+                <p class="section-title-description mb-3">
+                  Easier to use and more reliable, the app	supports you—like a partner—at every turn.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--    Download app section End-->
+
+      <!--    Top Question Section Start-->
+      <div class="page-section">
+        <div class="top-question-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="section-title mb-5" data-aos="fade-up">Top Questions</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div id="accordion"  data-aos="fade-up" class="accordion">
+                  <div class="card mb-0">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
+                      <a class="card-title"> Item 1 </a>
+                    </div>
+                    <div id="collapseOne" class="card-body collapse" data-parent="#accordion">
+                      <p class="mini-paragraph-text">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </p>
+                    </div>
+                    <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                      <a class="card-title"> Item 2 </a>
+                    </div>
+                    <div id="collapseTwo" class="card-body collapse" data-parent="#accordion">
+                      <p class="mini-paragraph-text">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </p>
+                    </div>
+                    <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                      <a class="card-title"> Item 3 </a>
+                    </div>
+                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                      <div class="card-body">
+                        <p class="mini-paragraph-text"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. samus labore sustainable VHS. </div>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button data-aos="fade-up" class="btn btn-style start-btn mb-4 mt-5">
+            SIGN UP
+          </button>
+        </div>
+      </div>
+      <!--    Top Question Section End-->
+    </div>
+      <!--    Body End-->
+      <!--    Footer Start-->
+    <div id="footer" class="theme-footer mt-5">
+    <!--    Top Footer Start-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12  col-md-12 col-lg-3">
+          <div class="d-flex flex-column justify-content-center">
+            <div class="text-center">
+              <img alt="hire-security-icon" src="./images/logodoorzz.png" class="img-fluid">
+            </div>
+            <div class="p-2">
+              <div class="d-flex flex-row justify-content-center">
+                <div class="">
+                  <a href="#" class="btn shadow-none"><img alt="hire-security-icon" src="./images/Twitter.png"></a>
+                </div>
+                <div class="">
+                  <a href="" class="btn shadow-none"><img alt="hire-security-icon" src="./images/Facebook.png"></a>
+                </div>
+                <div class="">
+                  <a href="" class="btn shadow-none"><img alt="hire-security-icon" src="./images/Google+.png"></a>
+                </div>
+                <div class="">
+                  <a href="" class="btn shadow-none">
+                    <img alt="social-icon" src="./images/Instagram.png"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12  col-lg-6 col-md-12 footer-sep">
+          <div class="d-flex flex-row justify-content-between">
+            <div class="footer-menu">
+              <h5 class="f-title">CLIENT</h5>
+              <ul>
+                <li>
+                  <a href="#" >Cost Estimator</a>
+                </li>
+                <li>
+                  <a href="#">Business</a>
+                </li>
+                <li>
+                  <a href="#">Cities</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-menu">
+              <h5 class="f-title">AGENT</h5>
+              <ul>
+                <li>
+                  <a href="#">Sign up to Protect</a>
+                </li>
+                <li>
+                  <a href="#">Requirements</a>
+                </li>
+                <li>
+                  <a href="#">Agent App</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-menu">
+              <h5 class="f-title">About</h5>
+              <ul>
+                <li>
+                  <a href="#">How Hire Security Works</a>
+                </li>
+                <li>
+                  <a href="#" >Blog</a>
+                </li>
+                <li>
+                  <a href="#">Safety</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12  col-lg-3 col-md-12">
+          <div class="d-flex flex-column justify-content-center">
+            <div class="f-title">
+              SUBSCRIBE
+            </div>
+            <div class="subscribe-field">
+              <form>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Your Email">
+                  <div class="input-group-append">
+                    <button class="input-group-text btn btn-style">
+                      <i class="material-icons">
+                        keyboard_arrow_right
+                      </i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--      Top Footer End-->
+
+      <!--      Bottom Footer Start-->
+      <hr>
+
+      <div class="row">
+        <div class="col-sm-12  col-md-12">
+          <div class="d-flex justify-content-between align-items-center bottom-footer">
+            <div>
+              <p class="mb-2">Made with <img alt="hire-security-icon" src="./images/Heart-Icon.png"> by Designer's Logics</p>
+            </div>
+            <div>
+              <p class="mb-2 text-right" >© Hire Security, 2018. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--      Bottom Footer Start-->
     </div>
   </div>
-
-	<div id="body">
-		<div class="container">
-
-			<div class="row" style="padding-top: 73px;">
-
-				<div class="col-sm-12 col-md-6" style="padding-top: 82px;">
-
-					<p class="write-color" style="font-size: 57px;">Agent with DOORZ in Something</p>
-
-					<p class="write-color" style="font-size: 21px;">Reay to make money? The
-						first step is to sign up online.</p>
-
-					<button class="btn btn-style" style="width: 130px;outline:none;">SIGN UP</button>
-
-				</div>
-
-				<div class="col-sm-12 col-md-6">
-					<img src="./images/Armed+Florida+Security+Officers+A1A+Security+Services.png" class="img-fluid">
-				</div>
-			</div>
-			<div class="row" style="padding-top: 52px;">
-				<div class="col-sm-12 col-md-12">
-					<p class="write-color " style="font-size: 57px;margin-bottom: 0px;">Make money when you want</p>
-				</div>
-			</div>
-		</div>
-		<img src="./images/make-money-while-learning-to-code.png"
-			class="img-fluid" style="width: 100%;margin-top: -36px;">
-
-
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 col-md-4">
-					<img src="./images/cal.png" class="mb-2">
-					<p style="font-size: 30px;">Set your own schedule</p>
-					<p style="font-size: 14px;">Guard Grabber is the fastest way to get protection.
-						One tap and security comes to you. Your guard
-						knows precisely where to go and payment is
-						completely cashless.</p>
-				</div>
-				<div class="col-sm-12 col-md-4" style="padding-top: 12px;">
-
-					<img src="./images/play.png" class="mb-2">
-
-					<p style="font-size: 30px;">Make money on your term</p>
-					<p style="font-size: 14px;">Guard Grabber is the fastest way to get
-						protection.
-						One tap and security comes to you. Your guard
-						knows precisely where to go and payment is
-						completely cashless.</p>
-
-					<!-- <img src="./images/play.png" class="mb-2">
-
-					  <p style="font-size: 28px;">Make money on your term</p>
-					  <p style="font-size: 11px;">Guard Grabber is the fastest way to get protection.
-					    One tap and security comes to you. Your guard
-					    knows precisely where to go and payment is
-					    completely cashless.</p> -->
-				</div>
-
-				<div class="col-sm-12 col-md-4">
-
-					<img src="./images/get-app.png" class="mb-2">
-
-					<p style="font-size: 30px;">Let the app Lead the away</p>
-					<p style="font-size: 14px;">Guard Grabber is the fastest way to get
-						protection.
-						One tap and security comes to you. Your guard
-						knows precisely where to go and payment is
-						completely cashless.</p>
-				</div>
-
-			</div>
-
-		</div>
-
-		<div class="agent-light">
-			<div class="container">
-				<div class="row pt-3">
-					<div class="col-sm-12 col-md-12">
-						<p class="write-color " style="font-size: 57px;margin-bottom: 0px;">Get started</p>
-					</div>
-				</div>
-
-				<div class="row">
-
-					<div class="col-sm-12 col-md-4">
-
-						<img src="./images/STAR.png" class="mb-2" style="width: 35px;height: 35px;object-fit: cover;">
-
-						<p style="font-size:29px;">Sign up online</p>
-						<p style="font-size: 14px;">Guard Grabber is the fastest way to get
-							protection.
-							One tap and security comes to you. Your guard
-							knows precisely where to go and payment is
-							completely cashless.</p>
-
-						<a href="#" style="background: transparent;color: #FC7605;font-size: 26px;">Sign up online ></a>
-					</div>
-
-					<div class="col-sm-12 col-md-4">
-
-						<img src="./images/get.png" class="mb-2" style="width: 35px;height: 35px;object-fit: cover;">
-
-						<p style="font-size: 29px;">Check guard requirements</p>
-						<p style="font-size: 14px;">Guard Grabber is the fastest way to get
-							protection.
-							One tap and security comes to you. Your guard
-							knows precisely where to go and payment is
-							completely cashless.</p>
-						<a href="#" style="background: transparent;color: #FC7605;font-size: 26px;">Requirements ></a>
-						<!-- <img src="./images/play.png" class="mb-2">
-
-						    <p style="font-size: 28px;">Make money on your term</p>
-						    <p style="font-size: 11px;">Guard Grabber is the fastest way to get protection.
-							 One tap and security comes to you. Your guard
-							 knows precisely where to go and payment is
-							 completely cashless.</p> -->
-					</div>
-
-					<div class="col-sm-12 col-md-4">
-
-						<img src="./images/lic.png" class="mb-2" style="width: 35px;height: 35px;object-fit: cover;">
-
-						<p style="font-size: 29px;">Get ID</p>
-						<p style="font-size: 14px;">Guard Grabber is the fastest way to get
-							protection.
-							One tap and security comes to you. Your guard
-							knows precisely where to go and payment is
-							completely cashless.</p>
-						<a href="#" style="background: transparent;color: #FC7605;font-size: 26px;">ID Requirements ></a>
-						<!-- <img src="./images/get-app.png" class="mb-2">
-
-							 <p style="font-size: 28px;">Let the app Lead the away</p>
-							 <p style="font-size: 11px;">Guard Grabber is the fastest way to get protection.
-							   One tap and security comes to you. Your guard
-							   knows precisely where to go and payment is
-							   completely cashless.</p> -->
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-
-		<div class="">
-
-			<div class="container">
-
-				<div class="row pt-5">
-
-					<div class="col-sm-12 col-md-12">
-
-						<p class="write-color" style="font-size: 57px;margin-bottom: 0px;">Agent extras</p>
-
-					</div>
-
-				</div>
-
-				<div class="row pb-3">
-
-					<div class="col-sm-12 col-md-4">
-
-						<img src="./images/support.png" class="mb-2">
-
-						<p style="font-size: 30px;">Get Support</p>
-						<p style="font-size: 14px;">Guard Grabber is the fastest way to get
-							protection.
-							One tap and security comes to you. Your guard
-							knows precisely where to go and payment is
-							completely cashless.</p>
-
-						<a style="background: transparent;color: #FC7605;font-size: 26px;">Get Help ></a>
-
-					</div>
-
-					<div class="col-sm-12 col-md-4">
-
-						<img src="./images/contact-us.png" class="mb-2">
-
-						<p style="font-size: 30px;">Contact us</p>
-						<p style="font-size: 14px;">Guard Grabber is the fastest way to get
-							protection.
-							One tap and security comes to you. Your guard
-							knows precisely where to go and payment is
-							completely cashless.</p>
-						<a style="background: transparent;color: #FC7605;font-size: 26px;">Contact us ></a>
-						<!-- <img src="./images/play.png" class="mb-2">
-
-							 <p style="font-size: 28px;">Make money on your term</p>
-							 <p style="font-size: 11px;">Guard Grabber is the fastest way to get protection.
-							   One tap and security comes to you. Your guard
-							   knows precisely where to go and payment is
-							   completely cashless.</p> -->
-					</div>
-
-					<div class="col-sm-12 col-md-4">
-
-						<img src="./images/safely.png" class="mb-2">
-
-						<p style="font-size: 30px;">Guard safely</p>
-						<p style="font-size: 14px;">Guard Grabber is the fastest way to get
-							protection.
-							One tap and security comes to you. Your guard
-							knows precisely where to go and payment is
-							completely cashless.</p>
-						<a style="background: transparent;color: #FC7605;font-size: 26px;">Read more about
-							safely ></a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="agent-light">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 col-md-6 p-3">
-						<p style="font-size: 57px;">The new app: built
-							for guards, with
-							guards</p>
-						<p style="font-size: 17px;">Easier to use and more reliable, the app
-							supports you—like a
-							partner—at every turn.</p>
-
-						<p style="background: transparent;color: #FC7605;font-size: 26px;">Learn more ></p>
-					</div>
-
-
-					<div class="col-sm-12 col-md-6 p-0">
-						<img src="./images/app.png" class="img-fluid" style="background: transparent; max-width: 375px;">
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="">
-			<div class="container">
-
-				<div class="row pt-5">
-
-					<div class="col-sm-12 col-md-12">
-
-						<p class="write-color pl-5" style="font-size: 52px;margin-bottom: 0px;">Top Questions</p>
-
-					</div>
-
-				</div>
-				<div class="row pb-3 pt-4" >
-					<div class="col-sm-12 col-md-12 text-center">
-						<div class="accordion" id="accordionExample">
-							<div class="card m-2  bg-transparent border-top-0 border-right-0 border-left-0 "style="border-bottom: 1px #FC7605 solid;">
-								<div class="card-header p-0 bg-white" id="headingFive">
-									<h2 class="mb-0">
-
-
-										<button class="btn btn-link faq-collapse-btn " type="button" data-toggle="collapse" data-target="#collapseFive"
-											   aria-expanded="false" aria-controls="collapseFive">
-											<div class="d-flex flex-row justify-content-between">
-												<div>
-													<p class="mb-0 text-left" style="padding-right: 42px;font-size: 34px;color: #9B9B9B;">
-														Can I guard with DOORZ in my city?
-													</p>
-												</div>
-												<div>
-													<i class="fas fa-chevron-right pull-right"></i>
-													<i class="fas fa-chevron-down pull-right"></i>
-												</div>
-											</div>
-
-
-										</button>
-
-
-									</h2>
-								</div>
-							</div>
-							<div id="collapseFive" class="collapse shadow m-2" aria-labelledby="headingFive" data-parent="#accordionExample">
-								<div class="card-body pt-0" style="text-align: initial;">
-									Aenean non accumsan ante. Duis et risus accumsan sem tempus porta nec sit amet est. Sed ut euismod quam. Suspendisse potenti.
-									Aliquam fringilla orci tincidunt, ullamcorper erat in, malesuada metus. Vivamus luctus maximus vestibulum. Donec et enim
-									vitae tellus auctor ornare. Aenean leo diam, feugiat sed nulla sed, consequat venenatis est. Praesent commodo consequat
-									pharetra. Fusce fermentum ante ac metus interdum elementum. Nam arcu lectus, lacinia non augue a, mollis bibendum augue.
-								</div>
-							</div>
-
-							<div class="card  bg-transparent border-top-0 border-right-0 border-left-0 "style="border-bottom: 1px #FC7605 solid;">
-								<div class="card-header bg-white" id="headingSix">
-									<h2 class="mb-0">
-
-
-										<button class="btn btn-link faq-collapse-btn " type="button" data-toggle="collapse" data-target="#collapseSix"
-											   aria-expanded="false" aria-controls="collapseSix">
-											<div class="d-flex flex-row justify-content-between">
-												<div>
-													<p class="mb-0 text-left" style="padding-right: 42px;font-size: 34px;color: #9B9B9B;">Is DOORZ safe?</p>
-												</div>
-												<div>
-													<i class="fas fa-chevron-right pull-right"></i>
-													<i class="fas fa-chevron-down pull-right"></i>
-												</div>
-											</div>
-
-
-										</button>
-
-
-									</h2>
-								</div>
-							</div>
-							<div id="collapseSix" class="collapse shadow m-2" aria-labelledby="headingSix" data-parent="#accordionExample">
-								<div class="card-body bg-transparent pt-0" style="text-align: initial;">
-									Aenean non accumsan ante. Duis et risus accumsan sem tempus porta nec sit amet est. Sed ut euismod quam. Suspendisse potenti.
-									Aliquam fringilla orci tincidunt, ullamcorper erat in, malesuada metus. Vivamus luctus maximus vestibulum. Donec et enim
-									vitae tellus auctor ornare. Aenean leo diam, feugiat sed nulla sed, consequat venenatis est. Praesent commodo consequat
-									pharetra. Fusce fermentum ante ac metus interdum elementum. Nam arcu lectus, lacinia non augue a, mollis bibendum augue.
-								</div>
-							</div>
-
-
-						</div>
-					</div>
-					<!--					<div class="col-md-2 text-center">-->
-					<!--						<ul class="bar">-->
-					<!--							<li></li>-->
-					<!--							<li>element 2</li>-->
-					<!--							<li>element 3</li>-->
-					<!--							<li>element 4</li>-->
-					<!--							<li></li>-->
-					<!--						</ul>-->
-					<!--					</div>-->
-
-				</div>
-
-				<div class="row pt-5 pb-5">
-
-					<div class="col-sm-12 col-md-12 text-center">
-
-						<button class="btn btn-style" style="width: 135px;outline:none;">SIGN UP</button>
-
-					</div>
-
-				</div>
-			</div>
-
-		</div>
-	</div>
-	<div id="footer">
-		<div class="container">
-			<div class="row" style="margin-top: 31px;margin-bottom: 30px;">
-				<div class="col-sm-12 col-md-12 col-lg-3">
-					<div class="d-flex flex-column justify-content-center">
-						<div class="p-2 text-center">
-							<img src="./images/logodoorzz.png" class="img-fluid">
-						</div>
-						<div class="p-2">
-							<div class="d-flex flex-row justify-content-center">
-								<div class="">
-									<button href="/#" class="btn shadow-none"><img src="./images/Twitter.png"></button>
-								</div>
-								<div class="">
-									<button href="/#" class="btn shadow-none"><img src="./images/Facebook.png"></button>
-								</div>
-								<div class="">
-									<button href="/#" class="btn shadow-none"><img src="./images/Google+.png"></button>
-								</div>
-								<div class="">
-									<button href="/#" class="btn shadow-none"><img
-										   src="./images/Instagram.png"></button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="col-sm-12 col-lg-6 col-md-12" style="border-color:#CAD3DF;border: 1px black solid;
-      border-top: none;
-      border-bottom: none;">
-					<div class="d-flex flex-row justify-content-between">
-						<div class="d-flex flex-column justify-content-center">
-							<div class="p-2" class="footer-color" style="font-size: 22px;">
-								CLIENT
-							</div>
-							<div class="p-2">
-								<a class="footer-color text-decoration-none" href="#">Sign up to be Protected</a>
-							</div>
-							<div class="p-2">
-								<a href="/CostEstimator" class="footer-color text-decoration-none">Cost Estimator</a>
-							</div>
-							<div class="p-2">
-								<a href="/Business" class="footer-color text-decoration-none">Business</a>
-							</div>
-							<div class="p-2">
-								<a href="/Cities" class="footer-color text-decoration-none">Cities</a>
-							</div>
-						</div>
-						<div class="d-flex flex-column justify-content-center">
-							<div class="p-2" class="footer-color" style="font-size: 22px;">
-								AGENT
-							</div>
-							<div class="p-2">
-								<a href="/Cities" class="footer-color text-decoration-none">Sign up to Protect</a>
-							</div>
-							<div class="p-2">
-								<a href="/Cities" class="footer-color text-decoration-none">Doorzz vs Other Jobs</a>
-							</div>
-							<div class="p-2">
-								<a href="/Requirements" class="footer-color text-decoration-none">Requirements</a>
-							</div>
-							<div class="p-2">
-								<a href="/Requirements" class="footer-color text-decoration-none">Agent App</a>
-							</div>
-						</div>
-						<div class="d-flex flex-column justify-content-center">
-							<div class="p-2" class="footer-color" style="font-size: 22px;">
-								ABOUT
-							</div>
-							<div class="p-2">
-								<a href="/HowSecurtiyWorks" class="footer-color text-decoration-none"> How Doorzz Works</a>
-							</div>
-							<div class="p-2">
-								<a href="/Blogs" class="footer-color text-decoration-none"> Blog</a>
-							</div>
-							<div class="p-2">
-								<a href="/Safety" class="footer-color text-decoration-none">Safety</a>
-							</div>
-							<div class="p-2">
-								<a href="/Api" class="footer-color text-decoration-none">Doorzz API</a>
-							</div>
-						</div>
-
-					</div>
-				</div>
-				<div class="col-sm-12 col-lg-3 col-md-12">
-					<div class="d-flex flex-column justify-content-center">
-						<div class="p-2" class="footer-color" style="font-size: 22px;">
-							SUBSCRIBE
-						</div>
-						<div class="p-2">
-							<div class="input-group mb-3">
-								<input type="text" class="form-control shadow-none" placeholder="Enter email address" aria-label="Recipient's username"
-									  aria-describedby="button-addon2" style="background-color: #ECEFF4;">
-								<div class="input-group-append">
-									<button class="btn btn-style shadow-none" style="outline: none;" type="button" id="button-addon2"><i
-										   class="fas fa-angle-right"></i></button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12 col-md-12">
-					<hr>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12 col-md-12">
-					<div class="d-flex flex-row justify-content-between">
-						<div class="p-2">
-							<p style="color: #8493A8;">Made with <img src="./images/Heart Icon.png"> by Designer's Logics</p>
-						</div>
-						<div class="p-2">
-							<p style="color: #8493A8;">© Doorzz, 2018. All Rights Reserved.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-</div>
+      <!--    Footer Start-->
 <!--Script-->
 <script src="./js/jquery-3.4.1.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          delay: 700, // values from 0 to 3000, with step 50ms
+          duration: 700
+        });
+      </script>
 </body>
 </html>
 

@@ -14,7 +14,36 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit;
   vertical-align: baseline;
 }
-
+.overflow-x-h{
+  overflow-x: hidden;
+}
+.fadeInLeft {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  animation-delay: 1s;
+}
+.fadeInRight {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  animation-delay: 1s;
+}
+.fadeInUp {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+  animation-delay: 1s;
+}
 ::placeholder {
   font-size: 18px;
   font-family: Roboto;
@@ -30,6 +59,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 .bg-gray {
   background: #FBFBFB 0% 0% no-repeat padding-box;
+}
+.bg-silver {
+  background: rgba(252, 118, 5, 0.05) 0% 0% no-repeat padding-box;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -174,7 +206,10 @@ a {
 .agent-employment-form .paragraph-text {
   line-height: 25px;
 }
-
+button:focus {
+  outline: 0;
+  outline: none;
+}
 .btn-style {
   background: #FC7605 0% 0% no-repeat padding-box;
   border-radius: 10px;
@@ -326,9 +361,18 @@ a {
   opacity: 1;
 }
 
-.custom-nav .material-icons {
-  font-size: 17px;
+.custom-nav{
+  .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border: none;
+  }
+  .material-icons {
+    font-size: 17px;
+
+  }
 }
+
+
 
 .navbar-nav .nav-link {
   padding-right: 10px;
@@ -1251,7 +1295,15 @@ p.add-file-info {
 }
 
 /*==============================Static page Styling Start ===========================*/
-
+.mini-paragraph-text {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Roboto;
+  letter-spacing: 0;
+  color: #7E7E7E;
+  line-height: 18px;
+  opacity: 1;
+}
 .text-silver {
   color: #C9C9C9 !important;
 }
@@ -1275,6 +1327,14 @@ p.add-file-info {
   color: #160F53;
   opacity: 1;
   margin-bottom: 20px;
+}
+.section-title-description {
+  font-size: 21px;
+  font-weight: 400;
+  font-family: Roboto;
+  letter-spacing: 0;
+  color: #160F53;
+  opacity: 1;
 }
 .theme-banner {
   background-image: url("../images/brochures---top-image.png");
@@ -1532,6 +1592,101 @@ p.add-file-info {
     }
   }
 }
+
+//Agent Overview Pages
+
+.make-money-bg {
+  background: url("../images/make-money-while-learning-to-code.png") center center/cover no-repeat;
+  min-height: 534px;
+  box-shadow: 0px 10px 70px #00000029;
+}
+.make-money-content {
+  margin-bottom: 70px;
+  padding-top: 25px;
+  img {
+    width: 42px;
+    height: 42px;
+  }
+  h2 {
+    font-size: 30px;
+    font-family: Roboto;
+    letter-spacing: 0;
+    margin-bottom: 13px;
+    color: #333333;
+    opacity: 1;
+  }
+}
+.get-started, .agent-extra {
+  padding: 50px 0;
+
+  img {
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 30px;
+    font-family: Roboto;
+    letter-spacing: 0;
+    color: #333333;
+    opacity: 1;
+    margin-bottom: 30px;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+  a {
+    font-size: 26px;
+    font-weight: 400;
+    font-family: Roboto;
+    letter-spacing: 0;
+    letter-spacing: 0;
+    color: #FC7605;
+    opacity: 1;
+    i {
+      font-size: 30px;
+    }
+  }
+}
+
+.app-section {
+  padding-top: 50px;
+  h1 {
+    line-height: 77px;
+  }
+  .row {
+    background: url(../images/app.png) center right/contain no-repeat;
+    height: 400px;
+  }
+}
+
+.top-question-section {
+  .accordion {
+    .card {
+      border: 0;
+      .card-header {
+        background: transparent;
+        padding: 13px 0;
+        display: flex;
+        align-items: flex-end;
+        &:after {
+          content: "\e145";
+          margin-right: 0;
+        }
+        .card-title {
+          color: #9B9B9B;
+          font-size: 30px;
+          font-weight: 400;
+          font-family: Roboto;
+        }
+      }
+      .card-body {
+        padding: {
+
+        };
+      }
+    }
+  }
+}
 /*==============================Static page Styling End===========================*/
 
 /*Edit Profile styling End*/
@@ -1569,7 +1724,12 @@ p.add-file-info {
     top: 0;
   }
 }
-
+@media (max-width: 768px) {
+  .header .logo-img {
+    max-width: 115px;
+    width: 100%;
+  }
+}
 @media (max-width: 767px) {
   .row.vdivide [class*='col-']:not(:last-child):after {
     border-right: none;
