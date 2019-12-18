@@ -141,10 +141,16 @@ a:hover, a:focus, a:active {
   font-size: 15px !important; }
 
 .font-17 {
-  font-size: 15px !important; }
+  font-size: 17px !important; }
+
+.font-18 {
+  font-size: 18px !important; }
 
 .font-34 {
-  font-size: 15px !important; }
+  font-size: 34px !important; }
+
+.text-medium {
+  font-weight: 500 !important; }
 
 .text-ellipsis {
   text-overflow: ellipsis;
@@ -517,6 +523,13 @@ h1.head-title {
   font-weight: 400;
   letter-spacing: 0;
   color: #160F53;
+  opacity: 1; }
+
+.title-lead {
+  font-family: Roboto;
+  font-size: 18px;
+  letter-spacing: 0;
+  color: #000000;
   opacity: 1; }
 
 .custom-form {
@@ -1427,6 +1440,16 @@ a.section-link-text {
     letter-spacing: 0;
     color: #9B9B9B;
     opacity: 1; }
+
+.cost-estimator {
+  margin-top: 70px; }
+
+.map-card {
+  padding: 25px 25px; }
+
+.cost-estimator-help {
+  background-color: #FC7605;
+  padding: 30px 0; }
 
 /*==============================Static page Styling End===========================*/
 /*Edit Profile styling End*/

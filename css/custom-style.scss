@@ -168,12 +168,17 @@ a {
   font-size: 15px !important;
 }
 .font-17 {
-  font-size: 15px !important;
+  font-size: 17px !important;
+}
+.font-18 {
+  font-size: 18px !important;
 }
 .font-34 {
-  font-size: 15px !important;
+  font-size: 34px !important;
 }
-
+.text-medium {
+  font-weight: 500!important;
+}
 .text-ellipsis {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -659,7 +664,13 @@ h1.head-title {
   opacity: 1;
 }
 
-.title-lead {}
+.title-lead {
+  font-family: Roboto;
+  font-size: 18px;
+  letter-spacing: 0;
+  color: #000000;
+  opacity: 1;
+}
 
 .custom-form {
   max-width: 345px;
@@ -1828,7 +1839,24 @@ a.section-link-text {
 }
 //help page styling end
 
+//cost-estimator-help start
+.cost-estimator {
+  margin-top: 70px;
+}
+.map-card {
+  padding: 25px 25px;
+  .card-header {
 
+  }
+  .card-body {
+
+  }
+}
+.cost-estimator-help {
+  background-color: #FC7605;
+  padding: 30px 0;
+}
+//cost-estimator-help End
 /*==============================Static page Styling End===========================*/
 
 /*Edit Profile styling End*/
