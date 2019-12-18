@@ -76,7 +76,9 @@ hr {
 .v-separator {
   padding: 50px 0;
 }
-
+hr.section-divider {
+  border-bottom: 1px solid #FC7605;
+}
 .form-item__element {
   display: inline-block;
 }
@@ -1713,9 +1715,65 @@ a.section-link-text {
 .help-banner {
   background: url("../images/Untitled-1.png") center center/cover no-repeat;
   min-height: 495px;
+  margin-bottom: 110px;
+  h1 {
+    font-size: 54px;
+    font-weight: 500;
+    font-family: Roboto;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-shadow: 3px 3px 2px #00000029;
+    opacity: 1;
+  }
+  h2{
+    font-size: 56px;
+    font-weight: 400;
+    font-family: Roboto;
+    letter-spacing: 0;
+    color: #7B7B7B;
+    margin-bottom: 40px;
+    opacity: 1;
+  }
+  .input-group {
+    button {
+
+    }
+    input {
+      height: 80px;
+      font-size: 23px;
+      color: #FC7605;
+      border: none;
+      &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        font-size: 23px;
+        font-weight: 400;
+        font-family: Roboto;
+        letter-spacing: 0;
+        color: #FC7605;
+        opacity: 1; /* Firefox */
+      }
+
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        font-size: 23px;
+        font-weight: 400;
+        font-family: Roboto;
+        letter-spacing: 0;
+        color: #FC7605;
+        opacity: 1; /* Firefox */
+      }
+
+      &::-ms-input-placeholder { /* Microsoft Edge */
+        font-size: 23px;
+        font-weight: 400;
+        font-family: Roboto;
+        letter-spacing: 0;
+        color: #FC7605;
+        opacity: 1; /* Firefox */
+      }
+    }
+  }
 }
 .media.help-card {
-  margin-bottom: 30px;
+  margin-bottom: 80px;
   img {
 
   }
@@ -1743,7 +1801,34 @@ a.section-link-text {
     }
   }
 }
+.get-app-section {
+  .media {
+    margin-bottom: 15px;
+    img {
+
+    }
+    .media-body {
+      h5 {
+        font-size: 17px;
+        font-weight: 500;
+        font-family: Roboto;
+        letter-spacing: 0;
+        margin-bottom: 10px;
+        color: #160F53;
+        opacity: 1;
+      }
+      p {
+        font: Regular 14px/15px Neo Sans;
+        letter-spacing: 0;
+        color: #9B9B9B;
+        opacity: 1;
+      }
+    }
+  }
+}
 //help page styling end
+
+
 /*==============================Static page Styling End===========================*/
 
 /*Edit Profile styling End*/
