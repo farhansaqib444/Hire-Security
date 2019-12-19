@@ -128,6 +128,9 @@ a.yellow-text {
 a:hover, a:focus, a:active {
   color: #FC7605; }
 
+.text-chilean {
+  color: #FC7605 !important; }
+
 .font-500 {
   font-weight: 500 !important; }
 
@@ -148,6 +151,9 @@ a:hover, a:focus, a:active {
 
 .font-34 {
   font-size: 34px !important; }
+
+.font-22 {
+  font-size: 22px !important; }
 
 .text-medium {
   font-weight: 500 !important; }
@@ -728,6 +734,12 @@ input.form-control {
   bottom: 0;
   right: 0;
   min-height: 70px; }
+
+.vdivide.vdivide-chilean [class*='col-']:not(:last-child):after, .border-right-chilean {
+  border-right: 1px solid #FC7605; }
+
+.border-bottom-chilean {
+  border-bottom: 1px solid #FC7605; }
 
 .agent-form .form-tag-line {
   font-family: Roboto;
@@ -1539,10 +1551,9 @@ a.section-link-text {
   padding: 10px 10px;
   vertical-align: top;
   font-size: 21px;
-  border-top: none;
-  border-top: none;
   font-family: Roboto;
-  font-weight: 400; }
+  font-weight: 400;
+  border-top: none; }
 .table.table-striped thead th {
   vertical-align: bottom;
   border-bottom: none; }
@@ -1552,6 +1563,60 @@ a.section-link-text {
 .table.table-striped tbody tr:nth-of-type(odd) {
   background-color: #fff;
   color: #FC7605; }
+
+.requirement-container {
+  max-width: 678px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px; }
+  .requirement-container .media {
+    margin-bottom: 60px; }
+    .requirement-container .media img {
+      width: 77px; }
+    .requirement-container .media .media-body h5 {
+      font-size: 32px;
+      font-family: Roboto;
+      font-weight: 500;
+      margin-bottom: 15px;
+      letter-spacing: 0;
+      color: #160F53;
+      opacity: 1; }
+    .requirement-container .media .media-body p {
+      font-size: 21px;
+      font-family: Roboto;
+      font-weight: 400;
+      letter-spacing: 0;
+      color: #160F53;
+      margin-bottom: 15px;
+      opacity: 1; }
+    .requirement-container .media .media-body ul li {
+      font-size: 21px;
+      font-family: Roboto;
+      font-weight: 400;
+      letter-spacing: 0;
+      color: #160F53;
+      margin-bottom: 15px;
+      opacity: 1; }
+
+.support-content .media {
+  margin-bottom: 25px; }
+  .support-content .media .media-body h5 {
+    font-size: 37px;
+    font-family: Roboto;
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: 0;
+    color: #160F53;
+    opacity: 1; }
+  .support-content .media .media-body p {
+    font-size: 22px;
+    font-family: Roboto;
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 25px;
+    letter-spacing: 0;
+    color: #160F53;
+    opacity: 1; }
 
 /*==============================Static page Styling End===========================*/
 /*Edit Profile styling End*/

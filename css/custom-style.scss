@@ -155,6 +155,10 @@ a {
   }
 }
 
+.text-chilean {
+  color: #FC7605 !important;
+}
+
 .font-500 {
   font-weight: 500 !important;
 }
@@ -175,6 +179,9 @@ a {
 }
 .font-34 {
   font-size: 34px !important;
+}
+.font-22 {
+  font-size: 22px !important;
 }
 .text-medium {
   font-weight: 500!important;
@@ -920,6 +927,12 @@ input.form-control {
   bottom: 0;
   right: 0;
   min-height: 70px;
+}
+.vdivide.vdivide-chilean [class*='col-']:not(:last-child):after, .border-right-chilean {
+  border-right: 1px solid #FC7605;
+}
+.border-bottom-chilean {
+  border-bottom: 1px solid #FC7605;
 }
 
 .agent-form {
@@ -1956,10 +1969,9 @@ a.section-link-text {
     padding: 10px 10px;
     vertical-align: top;
     font-size: 21px;
-    border-top: none;
-    border-top: none;
     font-family: Roboto;
     font-weight: 400;
+    border-top: none;
   }
   thead th {
     vertical-align: bottom;
@@ -1976,6 +1988,80 @@ a.section-link-text {
 }
 
 //Cities page styling End
+
+//requirement Page Styling Start
+.requirement-container {
+  max-width: 678px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  .media {
+    margin-bottom: 60px;
+    img {
+      width: 77px;
+    }
+    .media-body {
+      h5 {
+        font-size: 32px;
+        font-family: Roboto;
+        font-weight: 500;
+        margin-bottom: 15px;
+        letter-spacing: 0;
+        color: #160F53;
+        opacity: 1;
+      }
+      p {
+        font-size: 21px;
+        font-family: Roboto;
+        font-weight: 400;
+        letter-spacing: 0;
+        color: #160F53;
+        margin-bottom: 15px;
+        opacity: 1;
+      }
+      ul li {
+        font-size: 21px;
+        font-family: Roboto;
+        font-weight: 400;
+        letter-spacing: 0;
+        color: #160F53;
+        margin-bottom: 15px;
+        opacity: 1;
+      }
+    }
+  }
+}
+.support-content {
+  .media {
+    margin-bottom: 25px;
+    img {
+
+    }
+    .media-body {
+      h5 {
+        font-size: 37px;
+        font-family: Roboto;
+        font-weight: 500;
+        margin-bottom: 10px;
+        letter-spacing: 0;
+        color: #160F53;
+        opacity: 1;
+      }
+      p {
+        font-size: 22px;
+        font-family: Roboto;
+        font-weight: 400;
+        margin-bottom: 30px;
+        line-height: 25px;
+        letter-spacing: 0;
+        color: #160F53;
+        opacity: 1;
+      }
+    }
+  }
+}
+//requirement Page Styling End
+
 /*==============================Static page Styling End===========================*/
 
 /*Edit Profile styling End*/
