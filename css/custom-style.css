@@ -1527,6 +1527,32 @@ a.section-link-text {
     background-color: #fff;
     padding: 25px 25px; }
 
+.cities-banner {
+  background: url(../images/images@2x.png) center center/cover no-repeat;
+  min-height: 495px;
+  margin-bottom: 110px; }
+  .cities-banner .banner-card {
+    background-color: #fff;
+    padding: 25px 25px; }
+
+.table.table-striped tr td, .table.table-striped tr th {
+  padding: 10px 10px;
+  vertical-align: top;
+  font-size: 21px;
+  border-top: none;
+  border-top: none;
+  font-family: Roboto;
+  font-weight: 400; }
+.table.table-striped thead th {
+  vertical-align: bottom;
+  border-bottom: none; }
+.table.table-striped tbody tr:nth-of-type(even) {
+  background-color: #FDAC69;
+  color: white !important; }
+.table.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #fff;
+  color: #FC7605; }
+
 /*==============================Static page Styling End===========================*/
 /*Edit Profile styling End*/
 @media (min-width: 768px) {

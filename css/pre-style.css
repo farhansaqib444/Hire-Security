@@ -555,21 +555,6 @@ button[aria-expanded=false] .fa-chevron-down {
 	color: white;
 }
 
-.table-striped tbody tr:nth-of-type(odd) {
-	background-color: #FDAC69 !important;
-	color: white !important;
-}
-tr{
-	color: #FDAC69 !important;
-}
-
-.table thead th {
-	vertical-align: bottom !important;
-	border-bottom: none !important;
-}
-.table td, .table th {
-	border-top: none !important;
-}
 
 /*Cities end*/
 
