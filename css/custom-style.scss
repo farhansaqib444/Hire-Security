@@ -1901,6 +1901,45 @@ a.section-link-text {
 }
 
 //cost-estimator-help End
+
+//business page Css Start
+.banner-page {
+  h2 {
+    font-size: 45px;
+    font-weight: 500;
+    font-family: Roboto;
+    margin-bottom: 20px;
+    color: #160F53;
+    opacity: 1;
+  }
+  h3 {
+    font-size: 36px;
+    font-weight: 500;
+    font-family: Roboto;
+    margin-bottom: 55px;
+    letter-spacing: 0;
+    color: #160F53;
+    opacity: 1;
+  }
+  p {
+    font-size: 27px;
+    font-weight: 400;
+    font-family: Roboto;
+    letter-spacing: 0;
+    color: #160F53;
+    opacity: 1;
+  }
+}
+.business-banner {
+  background: url(../images/citi.png) center center/cover no-repeat;
+  min-height: 495px;
+  margin-bottom: 110px;
+  .banner-card {
+    background-color: #fff;
+    padding: 25px 25px;
+  }
+}
+//business page Css End
 /*==============================Static page Styling End===========================*/
 
 /*Edit Profile styling End*/
