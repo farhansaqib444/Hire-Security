@@ -1,310 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>HS</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--	style link-->
-	<link rel="stylesheet" href="css/style.CSS">
-	<link rel="stylesheet" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" href="./css/bootstrap-grid.min.css">
-	<!--	Font awesom-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-		 crossorigin="anonymous">
-
-	<!--	<link rel="icon" type="image/png" href="img/icons/p.png" />-->
+  <title>Safety</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--	style link-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!--	Font awesome-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+  <!--custom styling-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href=css/pre-style.css>
+  <link rel="stylesheet" href="css/custom-style.css">
 </head>
 <body>
-<div id="container">
+  <!--    Header Start-->
+  <div id="header" class="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light custom-nav">
+        <a class="navbar-brand" href="#">
+          <img alt="hire-security-icon" src="./images/logo.png" class="img-fluid logo-img">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a href="#" id="menu" data-toggle="dropdown" class="nav-link dropdown-toggle">Agent</a>
+              <ul class="dropdown-menu">
+                <!--              dropdown-submenu-->
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link">Overview</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link" >Cities</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link" >How to Work</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link" >Safety</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link" >Cost Estimator</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link" >Business</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" id="menu" data-toggle="dropdown" class="nav-link dropdown-toggle">Client</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link" >menu-2</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link" >menu-2</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
 
-	<div id="header">
-		<div class="d-flex flex-column flex-md-row justify-content-between flex-sm-column">
-			<a href="">
-				<img src="./images/Group 128.png" style="padding-left: 25px;padding-top: 12px;"></a>
-
-			<div class="header-bg header-set ml-auto header-sign-up-btn-1" style="width: fit-content">
-				<a href="/SignUp" class=""> <img src="./images/ic_contacts_24px.png" class="pr-2">
-					<p class="text-white mb-0" style="display: inline-block">SIGN UP </p></a>
-			</div>
-			<div class="card  p-0 border-0 header-blur ml-auto header-card-width" style="width: 30rem;height: 4.04rem;">
-				<div class="card-body p-0" style="padding: 5px 0px 5px 5px;height: 65px;">
-					<div class="d-flex flex-row justify-content-end">
-						<div class="header-set">
-							<a href="/Agent" style="color: #FC7605;">AGENT</a>
-						</div>
-						<div class="header-set">
-							<a href="/Client" style="color: #FC7605;">CLIENT</a>
-						</div>
-						<div class="header-set">
-							<a href="/Help" style="color: #160F53">HELP</a>
-						</div>
-						<div class="header-set">
-							<a href="/SignIn" style="color: #160F53"> SIGN IN</a>
-						</div>
-						<div class="header-set" style="border-left: 1px #CBD9E7 solid;">
-							<a href="#" style="color: #160F53"> <i class="fas fa-map-marker-alt"></i></a>
-						</div>
-						<div class="header-bg header-set header-sign-up-btn-2">
-							<a href="/SignUp" class=""> <img src="./images/ic_contacts_24px.png" class="pr-2">
-								<p class="text-white mb-0" style="display: inline-block">SIGN UP </p></a>
-						</div>
-					</div>
-				</div>
-			</div>
+            <li class="nav-item">
+              <a class="nav-link header-bg d-flex align-items-center justify-content-md-start justify-content-lg-center" href="#">
+                <img alt="hire-security-icon" class="profile-icon" src="images/pro-2.png" class="mr-2 align-middle">
+                <p class="text-white text-left mb-0 ml-2"> BECOME AN AGENT </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!--    Header End-->
+	<div id="body" class="safety-page">
+		<div class="safety-banner page-section">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="safety-banner-card" data-aos="fade-up">
+              <h1 class="section-title text-white mb-3">Our commitment to safety</h1>
+              <p class="section-title-description text-white">You deserve to be able to move safely. To look forward to the
+                opportunities ahead. To be connected to people and
+                places that matter most. Which is why we’re focused on your
+                safety, from setting new standards to developing
+                technology with the goal of reducing incidents.</p>
+            </div>
+          </div>
+        </div>
+      </div>
 		</div>
-	</div>
-	<div id="body">
-		<div class="safety-contain">
-			<img src="./images/sssssss.png" alt="Snow" style="width:100%;" class="img-fluid">
+<!--    How safety is built into your experience-->
+    <div class="page-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="page-title text-left" data-aos="fade-up">How safety is built into your experience</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--    How safety is built into your experience end-->
 
-			<div class="safety-top-left">
-				<div class="">
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-12 col-md-12 col-lg-12 carasoul-color col-head-color-set">
-								<p style="font-size: 59px;">Our commitment to safety</p>
-								<p class="text-justify" style="padding-left: 50px;padding-right: 50px;font-size: 25px;">You deserve to be able to move safely. To look forward to the
-									opportunities ahead. To be connected to people and
-									places that matter most. Which is why we’re focused on your
-									safety, from setting new standards to developing
-									technology with the goal of reducing incidents.</p>
-							</div>
-							<div class=" col-lg-3">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+    <div class="page-section">
+      <div class="container">
+        <div class="row ">
+          <div data-aos="fade-up" class="col-sm-12 col-md-4">
+            <div class="matrix-card">
+              <div class="matrix-body">
+                <h3 class="card-title write-color">Safety features in the app</h3>
+                <p class="card-text write-color">Tap a button for emergency assistance.
+                  Share your trip details with loved ones.
+                  Our technology helps put peace of
+                  mind at your fingertips.</p>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="col-sm-12 col-md-4">
+            <div class="matrix-card">
+              <div class="matrix-body">
+                <h3 class="card-title write-color">Safety features in the app</h3>
+                <p class="card-text write-color">Tap a button for emergency assistance.
+                  Share your trip details with loved ones.
+                  Our technology helps put peace of
+                  mind at your fingertips.</p>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="col-sm-12 col-md-4">
+            <div class="matrix-card">
+              <div class="matrix-body">
+                <h3 class="card-title write-color">Safety features in the app</h3>
+                <p class="card-text write-color">Tap a button for emergency assistance.
+                  Share your trip details with loved ones.
+                  Our technology helps put peace of
+                  mind at your fingertips.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		</div>
-		<div class="container">
-			<div class="row pt-5 pb-4">
-				<div class="col-sm-12 col-md-12">
-					<p class="write-color" style="font-size: 31px;">How safety is built into your experience</p>
-				</div>
-			</div>
-			<div class="row pt-5 pb-4">
-				<div class="col-sm-12 col-md-4 p-2">
-					<div class="card" style="border: 1px #FC7605 solid;height: 20rem;">
-						<div class="card-body">
-							<p class="card-title write-color" style="font-size: 21px;">Safety features in the app</p>
-							<p class="card-text write-color">Tap a button for emergency assistance.
-								Share your trip details with loved ones.
-								Our technology helps put peace of
-								mind at your fingertips.</p>
+<!--    Building safer journeys for everyone-->
+    <div class="page-section">
+      <div class="container">
+        <div class="row pt-5 pb-4">
+          <div class="col-sm-12 col-md-12">
+            <h1 class="page-title text-left" data-aos="fade-up">Building safer journeys for everyone</h1>
+          </div>
+        </div>
+        <div class="row pt-5 pb-4 ">
+          <div data-aos="fade-up" class="col-md-6 ">
+            <div class="safe-card">
+              <div class="safe-card-bg">
 
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-4 p-2">
-					<div class="card" style="border: 1px #FC7605 solid;height: 20rem;">
-						<div class="card-body">
-							<p class="card-title write-color" style="font-size: 21px;">Safety features in the app</p>
-							<p class="card-text write-color">Tap a button for emergency assistance.
-								Share your trip details with loved ones.
-								Our technology helps put peace of
-								mind at your fingertips.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-4 p-2">
+              </div>
+              <div class="safe-card-body">
+                <h5>Fare Estimate</h5>
+                <p>Enter a destination to see the
+                  price before
+                  you ride. Sharing an DOORZ with friends?
+                  Choose 'Split Fare' as you ride to share
+                  the cost with them too.</p>
+                <a href="#" class="section-link-text text-chilean font-17">SEE DETAILS
+                  <i class="material-icons">
+                    keyboard_arrow_right
+                  </i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="col-md-6 ">
+            <div class="safe-card">
+              <div class="safe-card-bg">
 
-					<div class="card" style="border: 1px #FC7605 solid;height: 20rem;">
-						<div class="card-body">
-							<p class="card-title write-color" style="font-size: 21px;">Safety features in the app</p>
-							<p class="card-text write-color">Tap a button for emergency assistance.
-								Share your trip details with loved ones.
-								Our technology helps put peace of
-								mind at your fingertips.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row pt-5 pb-4">
-				<div class="col-sm-12 col-md-12">
-					<p class="write-color" style="font-size: 31px;">Building safer journeys for everyone</p>
-				</div>
-			</div>
-			<div class="row pt-5 pb-4">
-				<div class="col-sm-12 col-md-6">
-					<div class="card border-0">
-						<img src="./images/o-HAPPY-facebook.png" class="card-img-top" alt="...">
-						<div class="card-body pl-0">
-							<p class="card-title write-color" style="font-size: 29px;">Guard safety</p>
-							<p class="card-text write-color">Tap a button for emergency assistance. Share your trip details
-								with loved ones. Our technology helps put peace of mind
-								at your fingertips.</p>
-							<button  class="btn text-center" style="background: transparent; color:#FC7605;outline:none;">LEARN MORE <i class="pr-2 fas fa-angle-right"></i></button>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-6">
-					<div class="card border-0">
-						<img src="./images/o-HAPPY-facebook.png" class="card-img-top" alt="...">
-						<div class="card-body pl-0">
-							<p class="card-title write-color" style="font-size: 29px;">Client safety</p>
-							<p class="card-text write-color">Tap a button for emergency assistance. Share your trip details
-								with loved ones. Our technology helps put peace of mind
-								at your fingertips.</p>
-							<button  class="btn text-center" style="background: transparent; color:#FC7605;outline:none;">LEARN MORE <i class="pr-2 fas fa-angle-right"></i></button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row pt-5 pb-4">
-				<div class="col-sm-12 col-md-8" style="padding: 74px;">
-					<p class="write-color" style="font-size: 33px;">The future of safety</p>
-					<p class="write-color" style="font-size: 17px;">Tap a button for emergency assistance. Share your trip details with loved ones.
-						Our technology helps put peace of mind at your fingertips.</p>
-					<button  class="btn text-center" style="background: transparent; color:#FC7605;outline:none;">LEARN MORE <i class="pr-2 fas fa-angle-right"></i></button>
-				</div>
-				<div class="col-sm-12 col-md-4">
-					<img src="./images/Carmel-Majidi-People-Behind-the-Science-1024x826.png" class="img-fluid" alt="..." style="min-width: 100%;object-fit: cover;">
-				</div>
-			</div>
-			<div class="row pt-5 pb-4">
-				<div class="col-sm-12 col-md-4">
-					<img src="./images/Carmel-Majidi-People-Behind-the-Science-1024x826.png" class="img-fluid" alt="..." style="min-width: 100%;object-fit: cover;">
-				</div>
-				<div class="col-sm-12 col-md-8" style="padding: 74px;">
-					<p class="write-color" style="font-size: 33px;">The future of safety</p>
-					<p class="write-color">Tap a button for emergency assistance. Share your trip details with loved ones.
-						Our technology helps put peace of mind at your fingertips.</p>
-					<button class="btn text-center" style="background: transparent; color:#FC7605;outline:none;">LEARN MORE <i class="pr-2 fas fa-angle-right"></i></button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="footer">
-		<div class="container">
-			<div class="row" style="margin-top: 31px;margin-bottom: 30px;">
-				<div class="col-sm-12 col-md-12 col-lg-3">
-					<div class="d-flex flex-column justify-content-center">
-						<div class="p-2 text-center">
-							<img src="./images/logodoorzz.png" class="img-fluid">
-						</div>
-						<div class="p-2">
-							<div class="d-flex flex-row justify-content-center">
-								<div class="">
-									<button href="/#" class="btn shadow-none"><img src="./images/Twitter.png"></button>
-								</div>
-								<div class="">
-									<button href="/#" class="btn shadow-none"><img src="./images/Facebook.png"></button>
-								</div>
-								<div class="">
-									<button href="/#" class="btn shadow-none"><img src="./images/Google+.png"></button>
-								</div>
-								<div class="">
-									<button href="/#" class="btn shadow-none"><img
-										   src="./images/Instagram.png"></button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+              </div>
+              <div class="safe-card-body">
+                <h5>Fare Estimate</h5>
+                <p>Enter a destination to see the
+                  price before
+                  you ride. Sharing an DOORZ with friends?
+                  Choose 'Split Fare' as you ride to share
+                  the cost with them too.</p>
+                <a href="#" class="section-link-text text-chilean font-17">SEE DETAILS
+                  <i class="material-icons">
+                    keyboard_arrow_right
+                  </i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--    Building safer journeys for everyone End-->
 
+<!--    The future of safety -->
+    <div class="page-section safety-feature">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-8" data-aos="fade-up">
+            <h1 class="page-title text-left">The future of safety</h1>
+            <p class="title-lead">Tap a button for emergency assistance. Share your trip details with loved ones.
+              Our technology helps put peace of mind at your fingertips.</p>
+            <a href="#" class="section-link-text text-chilean font-17">SEE DETAILS
+              <i class="material-icons">
+                keyboard_arrow_right
+              </i>
+            </a>          </div>
+          <div class="col-sm-12 col-md-4" data-aos="fade-up">
+            <img src="./images/Carmel-Majidi-People-Behind-the-Science-1024x826.png" class="img-fluid" alt="..." style="min-width: 100%;object-fit: cover;">
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-4" data-aos="fade-up">
+            <img src="./images/Carmel-Majidi-People-Behind-the-Science-1024x826.png" class="img-fluid" alt="..." style="min-width: 100%;object-fit: cover;">
+          </div>
+          <div class="col-sm-12 col-md-8" data-aos="fade-up">
+            <h1 class="page-title text-left">The future of safety</h1>
+            <p class="title-lead">Tap a button for emergency assistance. Share your trip details with loved ones.
+              Our technology helps put peace of mind at your fingertips.</p>
+            <a href="#" class="section-link-text text-chilean font-17">SEE DETAILS
+              <i class="material-icons">
+                keyboard_arrow_right
+              </i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--    The future of safety End-->
 
-				<div class="col-sm-12 col-lg-6 col-md-12" style="border-color:#CAD3DF;border: 1px black solid;
-      border-top: none;
-      border-bottom: none;">
-					<div class="d-flex flex-row justify-content-between">
-						<div class="d-flex flex-column justify-content-center">
-							<div class="p-2" class="footer-color" style="font-size: 22px;">
-								CLIENT
-							</div>
-							<div class="p-2">
-								<a class="footer-color text-decoration-none" href="#">Sign up to be Protected</a>
-							</div>
-							<div class="p-2">
-								<a href="/CostEstimator" class="footer-color text-decoration-none">Cost Estimator</a>
-							</div>
-							<div class="p-2">
-								<a href="/Business" class="footer-color text-decoration-none">Business</a>
-							</div>
-							<div class="p-2">
-								<a href="/Cities" class="footer-color text-decoration-none">Cities</a>
-							</div>
-						</div>
-						<div class="d-flex flex-column justify-content-center">
-							<div class="p-2" class="footer-color" style="font-size: 22px;">
-								AGENT
-							</div>
-							<div class="p-2">
-								<a href="/Cities" class="footer-color text-decoration-none">Sign up to Protect</a>
-							</div>
-							<div class="p-2">
-								<a href="/Cities" class="footer-color text-decoration-none">Doorzz vs Other Jobs</a>
-							</div>
-							<div class="p-2">
-								<a href="/Requirements" class="footer-color text-decoration-none">Requirements</a>
-							</div>
-							<div class="p-2">
-								<a href="/Requirements" class="footer-color text-decoration-none">Agent App</a>
-							</div>
-						</div>
-						<div class="d-flex flex-column justify-content-center">
-							<div class="p-2" class="footer-color" style="font-size: 22px;">
-								ABOUT
-							</div>
-							<div class="p-2">
-								<a href="/HowSecurtiyWorks" class="footer-color text-decoration-none"> How Doorzz Works</a>
-							</div>
-							<div class="p-2">
-								<a href="/Blogs" class="footer-color text-decoration-none"> Blog</a>
-							</div>
-							<div class="p-2">
-								<a href="/Safety" class="footer-color text-decoration-none">Safety</a>
-							</div>
-							<div class="p-2">
-								<a href="/Api" class="footer-color text-decoration-none">Doorzz API</a>
-							</div>
-						</div>
+<!--     App Button Start-->
+    <div class="container">
+      <div class="text-center">
+        <div class="apps-button-group" data-aos="fade-up">
+          <a href="#">
+            <img src="images/app-store.png" alt="app-store">
+          </a>
+          <a href="#">
+            <img src="images/play-store.png" alt="app-store">
+          </a>
+        </div>
+      </div>
+    </div>
+<!--     App Button End-->
 
-					</div>
-				</div>
-				<div class="col-sm-12 col-lg-3 col-md-12">
-					<div class="d-flex flex-column justify-content-center">
-						<div class="p-2" class="footer-color" style="font-size: 22px;">
-							SUBSCRIBE
-						</div>
-						<div class="p-2">
-							<div class="input-group mb-3">
-								<input type="text" class="form-control shadow-none" placeholder="Enter email address" aria-label="Recipient's username"
-									  aria-describedby="button-addon2" style="background-color: #ECEFF4;">
-								<div class="input-group-append">
-									<button class="btn btn-style shadow-none" style="outline: none;" type="button" id="button-addon2"><i
-										   class="fas fa-angle-right"></i></button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12 col-md-12">
-					<hr>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12 col-md-12">
-					<div class="d-flex flex-row justify-content-between">
-						<div class="p-2">
-							<p style="color: #8493A8;">Made with <img src="./images/Heart Icon.png"> by Designer's Logics</p>
-						</div>
-						<div class="p-2">
-							<p style="color: #8493A8;">© Doorzz, 2018. All Rights Reserved.</p>
-						</div>
-					</div>
-				</div>
-			</div>
+<!--    Footer Start-->
+  <div id="footer" class="theme-footer pt-5">
+    <!--    Top Footer Start-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12  col-md-12 col-lg-3">
+          <div class="d-flex flex-column justify-content-center">
+            <div class="text-center">
+              <img alt="hire-security-icon" src="./images/logodoorzz.png" class="img-fluid">
+            </div>
+            <div class="p-2">
+              <div class="d-flex flex-row justify-content-center">
+                <div class="">
+                  <a href="#" class="btn shadow-none"><img alt="hire-security-icon" src="./images/Twitter.png"></a>
+                </div>
+                <div class="">
+                  <a href="" class="btn shadow-none"><img alt="hire-security-icon" src="./images/Facebook.png"></a>
+                </div>
+                <div class="">
+                  <a href="" class="btn shadow-none"><img alt="hire-security-icon" src="./images/Google+.png"></a>
+                </div>
+                <div class="">
+                  <a href="" class="btn shadow-none">
+                    <img alt="social-icon" src="./images/Instagram.png"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12  col-lg-6 col-md-12 footer-sep">
+          <div class="d-flex flex-row justify-content-between">
+            <div class="footer-menu">
+              <h5 class="f-title">CLIENT</h5>
+              <ul>
+                <li>
+                  <a href="#" >Cost Estimator</a>
+                </li>
+                <li>
+                  <a href="#">Business</a>
+                </li>
+                <li>
+                  <a href="#">Cities</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-menu">
+              <h5 class="f-title">AGENT</h5>
+              <ul>
+                <li>
+                  <a href="#">Sign up to Protect</a>
+                </li>
+                <li>
+                  <a href="#">Requirements</a>
+                </li>
+                <li>
+                  <a href="#">Agent App</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-menu">
+              <h5 class="f-title">About</h5>
+              <ul>
+                <li>
+                  <a href="#">How Hire Security Works</a>
+                </li>
+                <li>
+                  <a href="#" >Blog</a>
+                </li>
+                <li>
+                  <a href="#">Safety</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12  col-lg-3 col-md-12">
+          <div class="d-flex flex-column justify-content-center">
+            <div class="f-title">
+              SUBSCRIBE
+            </div>
+            <div class="subscribe-field">
+              <form>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Your Email">
+                  <div class="input-group-append">
+                    <button class="input-group-text btn btn-style">
+                      <i class="material-icons">
+                        keyboard_arrow_right
+                      </i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--      Top Footer End-->
 
-		</div>
-	</div>
+      <!--      Bottom Footer Start-->
+      <hr>
 
-</div>
+      <div class="row">
+        <div class="col-sm-12  col-md-12">
+          <div class="d-flex justify-content-between align-items-center bottom-footer">
+            <div>
+              <p class="mb-2">Made with <img alt="hire-security-icon" src="./images/Heart-Icon.png"> by Designer's Logics</p>
+            </div>
+            <div>
+              <p class="mb-2 text-right" >© Hire Security, 2018. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--      Bottom Footer Start-->
+    </div>
+  </div>
+<!--    Footer Start-->
+
 <!--Script-->
-<script src="./js/jquery-3.4.1.min.js"></script>
-<script src="./js/bootstrap.min.js"></script>
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      delay: 700, // values from 0 to 3000, with step 50ms
+      duration: 700
+    });
+  </script>
 </body>
 </html>
 

@@ -144,7 +144,9 @@ q {
     content: none;
   }
 }
-
+p {
+  line-height: 22px;
+}
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -2226,6 +2228,64 @@ a.section-link-text {
   }
 }
 //blog styling end
+
+//safety-banner style start
+.safety-banner {
+  background: url("../images/safety-banner.png") center center/cover no-repeat;
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+  .safety-banner-card {
+    width: 100%;
+    max-width: 900px;
+    padding: 40px 40px;
+    background: rgba(158, 158, 158, 0.29) 0% 0% no-repeat padding-box;
+    p {
+      max-width: 680px;
+      width: 100%;
+    }
+  }
+}
+.safety-page {
+  .safe-card {
+    .safe-card-bg {
+      background: url(../images/safe-card.png) center center/cover no-repeat;
+      min-height: 265px;
+    }
+  }
+  .safety-feature {
+    h1.page-title {
+      margin-bottom: 10px;
+    }
+    p.title-lead {
+      margin-bottom: 35px;
+    }
+  }
+}
+.matrix-card {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #FC7605;
+  padding: 20px 20px;
+  height: 20rem;
+
+  h3 {
+    font-weight: 500;
+    font-size: 21px;
+    font-family: Roboto;
+    margin-bottom: 25px;
+    letter-spacing: 0;
+    color: #160F53;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: Roboto;
+    line-height: 22px;
+    color: #160F53;
+  }
+}
+//safety-banner style End
+
 
 /*==============================Static page Styling End===========================*/
 
