@@ -63,7 +63,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .bg-silver {
   background: rgba(252, 118, 5, 0.05) 0% 0% no-repeat padding-box;
 }
-
+.bg-gray-ultra {
+  background-color: #F8F8F8;
+}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
@@ -161,6 +163,9 @@ a {
 
 .font-500 {
   font-weight: 500 !important;
+}
+.font-400 {
+  font-weight: 400 !important;
 }
 .font-600 {
   font-weight: 600 !important;
@@ -1373,6 +1378,10 @@ a.section-link-text {
   letter-spacing: 0;
   color: #FC7605;
   opacity: 1;
+  .material-icons {
+    vertical-align: middle;
+    margin-bottom: 2px;
+  }
 }
 .theme-banner {
   background-image: url("../images/brochures---top-image.png");
@@ -2062,6 +2071,41 @@ a.section-link-text {
 }
 //requirement Page Styling End
 
+//how its work styling start
+.how-works-page {
+  .page-banner {
+    background: url("../images/photo-businessman-use-mobile-phone.png") center center/cover no-repeat;
+    min-height: 495px;
+  }
+}
+.safe-card {
+  margin-bottom: 20px;
+  .safe-card-bg {
+    background: url("../images/safe-card.png") center center/cover no-repeat;
+    min-height: 171px;
+  }
+  .safe-card-body {
+    padding: 10px 10px;
+    background-color: #fff;
+  }
+  h5 {
+    font-size: 27px;
+    font-family: Roboto;
+    font-weight: 400;
+    margin-bottom: 5px;
+    letter-spacing: 0;
+    color: #160F53;
+  }
+
+  p {
+    font-size: 17px;
+    font-family: Roboto;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+}
+//how its work styling end
+
 /*==============================Static page Styling End===========================*/
 
 /*Edit Profile styling End*/
@@ -2102,6 +2146,10 @@ a.section-link-text {
 @media (max-width: 768px) {
   .header .logo-img {
     max-width: 115px;
+    width: 100%;
+  }
+  .apps-button-group a img {
+    max-width: 130px;
     width: 100%;
   }
 }
