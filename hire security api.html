@@ -1,315 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>HS</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--	style link-->
-	<link rel="stylesheet" href="css/style.CSS">
-	<link rel="stylesheet" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" href="./css/bootstrap-grid.min.css">
-	<!--	Font awesom-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-		 crossorigin="anonymous">
-
-	<!--	<link rel="icon" type="image/png" href="img/icons/p.png" />-->
+  <title>Hire Security API</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--	style link-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!--	Font awesome-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+  <!--custom styling-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href=css/pre-style.css>
+  <link rel="stylesheet" href="css/custom-style.css">
 </head>
 <body>
-<div id="container">
+  <!--    Header Start-->
+  <div id="header" class="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light custom-nav">
+        <a class="navbar-brand" href="#">
+          <img alt="hire-security-icon" src="./images/logo.png" class="img-fluid logo-img">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a href="#" id="menu" data-toggle="dropdown" class="nav-link dropdown-toggle">Agent</a>
+              <ul class="dropdown-menu">
+                <!--              dropdown-submenu-->
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link">Overview</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link" >Cities</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link" >How to Work</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link" >Safety</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link" >Cost Estimator</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link" >Business</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" id="menu" data-toggle="dropdown" class="nav-link dropdown-toggle">Client</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link" >menu-2</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link" >menu-2</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
 
-	<div id="header">
-		<div class="d-flex flex-column flex-md-row justify-content-between flex-sm-column">
-			<a href="">
-				<img src="./images/Group 128.png" style="padding-left: 25px;padding-top: 12px;"></a>
+            <li class="nav-item">
+              <a class="nav-link header-bg d-flex align-items-center justify-content-md-start justify-content-lg-center" href="#">
+                <img alt="hire-security-icon" class="profile-icon" src="images/pro-2.png" class="mr-2 align-middle">
+                <p class="text-white text-left mb-0 ml-2"> BECOME AN AGENT </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!--    Header End-->
+  <div id="body" class="hire-api-page">
+    <div class="container">
+      <div class="row align-items-center page-section">
+        <div class="col-md-6 mb-4">
+          <div class="api-page-grid">
+            <h3>GUARD REQUESTS</h3>
+            <h2>Get a guard</h2>
+            <h1>for your users</h1>
+            <p class="write-color">Increase engagement with your services and earn new revenue from DOORZ
+              Available in more than 450 cities, with millions of riders each day,
+              Uber is the smartest way to get around. Quickly get your users moving with
+              an Uber Ride Request button or Deeplink into the DOORZ app.
+              Want to go deeper? Build a custom integration with the Ride Requests
+              and Client Libraries.</p>
 
-			<div class="header-bg header-set ml-auto header-sign-up-btn-1" style="width: fit-content">
-				<a href="/SignUp" class=""> <img src="./images/ic_contacts_24px.png" class="pr-2">
-					<p class="text-white mb-0" style="display: inline-block">SIGN UP </p></a>
-			</div>
-			<div class="card  p-0 border-0 header-blur ml-auto header-card-width" style="width: 30rem;height: 4.04rem;">
-				<div class="card-body p-0" style="padding: 5px 0px 5px 5px;height: 65px;">
-					<div class="d-flex flex-row justify-content-end">
-						<div class="header-set">
-							<a href="/Agent" style="color: #FC7605;">AGENT</a>
-						</div>
-						<div class="header-set">
-							<a href="/Client" style="color: #FC7605;">CLIENT</a>
-						</div>
-						<div class="header-set">
-							<a href="/Help" style="color: #160F53">HELP</a>
-						</div>
-						<div class="header-set">
-							<a href="/SignIn" style="color: #160F53"> SIGN IN</a>
-						</div>
-						<div class="header-set" style="border-left: 1px #CBD9E7 solid;">
-							<a href="#" style="color: #160F53"> <i class="fas fa-map-marker-alt"></i></a>
-						</div>
-						<div class="header-bg header-set header-sign-up-btn-2">
-							<a href="/SignUp" class=""> <img src="./images/ic_contacts_24px.png" class="pr-2">
-								<p class="text-white mb-0" style="display: inline-block">SIGN UP </p></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="body">
-		<div class="container">
+            <div class="d-flex flex-row justify-content-start">
+              <div class="pr-3">
+                <button class="btn start-btn bg-transparent">LEARN MORE</button>
+              </div>
+              <div class="pl-3">
+                <button class="btn start-btn text-white">VIEW DOCS
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" mb-4 col-md-6 text-center">
+          <img src="./images/Group 89.png" class="img-fluid">
+        </div>
+      </div>
+      <div class="row align-items-center page-section">
+        <div class="col-md-6 text-center mb-4">
+          <img src="./images/security-man.png" class="img-fluid">
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="api-page-grid">
+            <h3>GUARDS</h3>
+            <h2>Make guard</h2>
+            <h1>more rewarding</h1>
+            <p class="write-color">Increase engagement with your services and earn new revenue from DOORZ
+              Available in more than 450 cities, with millions of riders each day,
+              Uber is the smartest way to get around. Quickly get your users moving with
+              an Uber Ride Request button or Deeplink into the DOORZ app.
+              Want to go deeper? Build a custom integration with the Ride Requests
+              and Client Libraries.</p>
 
+            <div class="d-flex flex-row justify-content-start">
+              <div class="pr-3">
+                <button class="btn start-btn bg-transparent">LEARN MORE</button>
+              </div>
+              <div class="pl-3">
+                <button class="btn start-btn text-white">VIEW DOCS
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center page-section">
+        <div class="col-md-6 mb-4">
+          <div class="api-page-grid">
+            <h3>FOR ORGANIZATIONS</h3>
+            <h2>HIRE SECURITY for Business</h2>
+            <h1>automating business worlflows</h1>
+            <p class="write-color">Increase engagement with your services and earn new revenue from DOORZ
+              Available in more than 450 cities, with millions of riders each day,
+              Uber is the smartest way to get around. Quickly get your users moving with
+              an Uber Ride Request button or Deeplink into the DOORZ app.
+              Want to go deeper? Build a custom integration with the Ride Requests
+              and Client Libraries.</p>
 
+            <div class="d-flex flex-row justify-content-start">
+              <div class="pr-3">
+                <button class="btn start-btn bg-transparent">LEARN MORE</button>
+              </div>
+              <div class="pl-3">
+                <button class="btn start-btn text-white">VIEW DOCS
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 text-center mb-4">
+          <img src="./images/connection.png" class="img-fluid">
+        </div>
+      </div>
+    </div>
+    <div class="blog-listing pt-5 pb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h2 class="">Recent Blog Posts</h2>
+            <div class="post-card">
+              <a href="#">DOORZ for Business</a>
+              <p>Support is just a few taps away. You can also get your
+                questions answered by using our help section.</p>
+            </div>
+            <div class="post-card">
+              <a href="#">DOORZ for Business</a>
+              <p>Support is just a few taps away. You can also get your
+                questions answered by using our help section.</p>
+            </div>
+            <div class="post-card">
+              <a href="#">DOORZ for Business</a>
+              <p>Support is just a few taps away. You can also get your
+                questions answered by using our help section.</p>
+            </div>
+            <div class="post-card">
+              <a href="#">DOORZ for Business</a>
+              <p>Support is just a few taps away. You can also get your
+                questions answered by using our help section.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-			<div class="row pt-4 pb-4">
+    <!--     App Button Start-->
+    <div class="container">
+      <div class="text-center mt-5">
+        <div class="apps-button-group">
+          <a href="#">
+            <img src="images/app-store.png" alt="app-store">
+          </a>
+          <a href="#">
+            <img src="images/play-store.png" alt="app-store">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--     App Button End-->
+  </div>
+  <!--    Footer Start-->
+  <div id="footer" class="theme-footer pt-5">
+    <!--    Top Footer Start-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12  col-md-12 col-lg-3">
+          <div class="d-flex flex-column justify-content-center">
+            <div class="text-center">
+              <img alt="hire-security-icon" src="./images/logodoorzz.png" class="img-fluid">
+            </div>
+            <div class="p-2">
+              <div class="d-flex flex-row justify-content-center">
+                <div class="">
+                  <a href="#" class="btn shadow-none"><img alt="hire-security-icon" src="./images/Twitter.png"></a>
+                </div>
+                <div class="">
+                  <a href="" class="btn shadow-none"><img alt="hire-security-icon" src="./images/Facebook.png"></a>
+                </div>
+                <div class="">
+                  <a href="" class="btn shadow-none"><img alt="hire-security-icon" src="./images/Google+.png"></a>
+                </div>
+                <div class="">
+                  <a href="" class="btn shadow-none">
+                    <img alt="social-icon" src="./images/Instagram.png"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12  col-lg-6 col-md-12 footer-sep">
+          <div class="d-flex flex-row justify-content-between">
+            <div class="footer-menu">
+              <h5 class="f-title">CLIENT</h5>
+              <ul>
+                <li>
+                  <a href="#" >Cost Estimator</a>
+                </li>
+                <li>
+                  <a href="#">Business</a>
+                </li>
+                <li>
+                  <a href="#">Cities</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-menu">
+              <h5 class="f-title">AGENT</h5>
+              <ul>
+                <li>
+                  <a href="#">Sign up to Protect</a>
+                </li>
+                <li>
+                  <a href="#">Requirements</a>
+                </li>
+                <li>
+                  <a href="#">Agent App</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-menu">
+              <h5 class="f-title">About</h5>
+              <ul>
+                <li>
+                  <a href="#">How Hire Security Works</a>
+                </li>
+                <li>
+                  <a href="#" >Blog</a>
+                </li>
+                <li>
+                  <a href="#">Safety</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12  col-lg-3 col-md-12">
+          <div class="d-flex flex-column justify-content-center">
+            <div class="f-title">
+              SUBSCRIBE
+            </div>
+            <div class="subscribe-field">
+              <form>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Your Email">
+                  <div class="input-group-append">
+                    <button class="input-group-text btn btn-style">
+                      <i class="material-icons">
+                        keyboard_arrow_right
+                      </i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--      Top Footer End-->
 
-				<div class=" col-sm-12 col-md-6" style="padding-top: 56px;padding-left: 16px;">
-					<p style="color: #747474;font-size: 20px;" class="mb-0">GUARD REQUESTS</p>
-					<p class="write-color mb-0" style="font-size: 30px;">Get a guard</p>
-					<h1 style="color: #FC7605;" class="">for your users</h1>
-					<p class="write-color">Increase engagement with your services and earn new revenue from DOORZ
-						Available in more than 450 cities, with millions of riders each day,
-						Uber is the smartest way to get around. Quickly get your users moving with
-						an Uber Ride Request button or Deeplink into the DOORZ app.
-						Want to go deeper? Build a custom integration with the Ride Requests
-						and Client Libraries.</p>
+      <!--      Bottom Footer Start-->
+      <hr>
 
-					<div class="d-flex flex-row justify-content-start">
-						<div class="pr-3">
-							<button class="btn" style="width: 132px;background: transparent; color:#FC7605;outline:none;border: 1px #FC7605 solid">LEARN MORE</button>
-						</div>
-						<div class="pl-3">
-							<button class="btn btn-style" style="outline: none;
-				          height: 38px;
-				          width: 132px;">VIEW DOCS
-							</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-6  text-center" style="padding-top: 52px;">
-					<img src="./images/Group 89.png" class="img-fluid " style="width: 12rem;
-				      object-fit: cover;">
-				</div>
-			</div>
-			<div class="row pt-4 pb-4">
-				<div class="col-sm-12 col-md-6 text-center">
-					<img src="./images/security-man.png" class="img-fluid " style="width: 19rem;
-
-        object-fit: contain;">
-				</div>
-				<div class="col-sm-12 col-md-6" style="padding-top: 56px;
-        padding-left: 16px;">
-					<p style="color: #747474;font-size: 20px;" class="mb-0">GUARDS</p>
-					<p class="write-color mb-0" style="font-size: 30px;">Make guard</p>
-					<h1 style="color: #FC7605;" class="">more rewarding</h1>
-					<p class="write-color">DOORZ gives millions of people the flexibility to make money on their
-						own schedule. Our Guard API lets you build services and solutions that
-						make the guard experience more productive and rewarding.
-						With the guard's permission, you can use trip data, earnings, ratings
-						and more to shape the future of the on-demand economy.</p>
-
-					<div class="d-flex flex-row justify-content-start">
-						<div class="pr-3">
-							<button class="btn" style="width: 132px;background: transparent; color:#FC7605;outline:none;border: 1px #FC7605 solid">LEARN MORE</button>
-						</div>
-						<div class="pl-3">
-							<button class="btn btn-style" style="outline: none;
-              height: 38px;
-              width: 132px;">VIEW DOCS
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row pt-4 pb-4">
-				<div class="col-sm-12 col-md-6" style="padding-top: 56px;
-        padding-left: 16px;">
-					<p style="color: #747474;font-size: 20px;" class="mb-0">FOR ORGANIZATIONS</p>
-					<p class="write-color mb-0" style="font-size: 30px;">DOORZ for Business</p>
-					<h1 style="color: #FC7605;" class="">automating business
-						worlflows</h1>
-					<p class="write-color">DOORZ gives millions of people the flexibility to make money on their
-						own schedule. Our Guard API lets you build services and solutions that
-						make the guard experience more productive and rewarding.
-						With the guard's permission, you can use trip data, earnings, ratings
-						and more to shape the future of the on-demand economy.</p>
-					<div class="d-flex flex-row justify-content-start">
-						<div class="pr-3">
-							<button class="btn" style="width: 132px;background: transparent; color:#FC7605;outline:none;border: 1px #FC7605 solid">LEARN MORE</button>
-						</div>
-						<div class="pl-3">
-							<button class="btn btn-style" style="outline: none;
-              height: 38px;
-              width: 132px;">VIEW DOCS
-							</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-6 text-center" style="padding-top: 52px;">
-					<img src="./images/connection.png" class="img-fluid " style="width: 22rem;
-          object-fit: cover;">
-				</div>
-			</div>
-		</div>
-		<div class="api-color">
-			<div class="container">
-				<div class="row pt-3 mt-5 mb-5">
-					<div class="col-sm-12 col-md-7">
-						<h3 class="pt-4 pb-4">Recent Blog Posts</h3>
-						<div class="pt-2 pb-2">
-							<p class="mb-0" style="font-size: 20px;">DOORZ for Business</p>
-							<p class="mb-0">Support is just a few taps away. You can also get your
-								questions answered by using our help section.</p>
-						</div>
-						<div class="pt-2 pb-2">
-							<p class="mb-0" style="font-size: 20px;">DOORZ for Business</p>
-							<p class="mb-0">Support is just a few taps away. You can also get your
-								questions answered by using our help section.</p>
-						</div>
-						<div class="pt-2 pb-2">
-							<p class="mb-0" style="font-size: 20px;">DOORZ for Business</p>
-							<p class="mb-0">Support is just a few taps away. You can also get your
-								questions answered by using our help section.</p>
-						</div>
-						<div class="pt-2 pb-2">
-							<p class="mb-0" style="font-size: 20px;">DOORZ for Business</p>
-							<p class="mb-0">Support is just a few taps away. You can also get your
-								questions answered by using our help section.</p>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-5">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="footer">
-		<div class="container">
-			<div class="row" style="margin-top: 31px;margin-bottom: 30px;">
-				<div class="col-sm-12 col-md-12 col-lg-3">
-					<div class="d-flex flex-column justify-content-center">
-						<div class="p-2 text-center">
-							<img src="./images/logodoorzz.png" class="img-fluid">
-						</div>
-						<div class="p-2">
-							<div class="d-flex flex-row justify-content-center">
-								<div class="">
-									<button href="/#" class="btn shadow-none"><img src="./images/Twitter.png"></button>
-								</div>
-								<div class="">
-									<button href="/#" class="btn shadow-none"><img src="./images/Facebook.png"></button>
-								</div>
-								<div class="">
-									<button href="/#" class="btn shadow-none"><img src="./images/Google+.png"></button>
-								</div>
-								<div class="">
-									<button href="/#" class="btn shadow-none"><img
-										   src="./images/Instagram.png"></button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="col-sm-12 col-lg-6 col-md-12" style="border-color:#CAD3DF;border: 1px black solid;
-      border-top: none;
-      border-bottom: none;">
-					<div class="d-flex flex-row justify-content-between">
-						<div class="d-flex flex-column justify-content-center">
-							<div class="p-2" class="footer-color" style="font-size: 22px;">
-								CLIENT
-							</div>
-							<div class="p-2">
-								<a class="footer-color text-decoration-none" href="#">Sign up to be Protected</a>
-							</div>
-							<div class="p-2">
-								<a href="/CostEstimator" class="footer-color text-decoration-none">Cost Estimator</a>
-							</div>
-							<div class="p-2">
-								<a href="/Business" class="footer-color text-decoration-none">Business</a>
-							</div>
-							<div class="p-2">
-								<a href="/Cities" class="footer-color text-decoration-none">Cities</a>
-							</div>
-						</div>
-						<div class="d-flex flex-column justify-content-center">
-							<div class="p-2" class="footer-color" style="font-size: 22px;">
-								AGENT
-							</div>
-							<div class="p-2">
-								<a href="/Cities" class="footer-color text-decoration-none">Sign up to Protect</a>
-							</div>
-							<div class="p-2">
-								<a href="/Cities" class="footer-color text-decoration-none">Doorzz vs Other Jobs</a>
-							</div>
-							<div class="p-2">
-								<a href="/Requirements" class="footer-color text-decoration-none">Requirements</a>
-							</div>
-							<div class="p-2">
-								<a href="/Requirements" class="footer-color text-decoration-none">Agent App</a>
-							</div>
-						</div>
-						<div class="d-flex flex-column justify-content-center">
-							<div class="p-2" class="footer-color" style="font-size: 22px;">
-								ABOUT
-							</div>
-							<div class="p-2">
-								<a href="/HowSecurtiyWorks" class="footer-color text-decoration-none"> How Doorzz Works</a>
-							</div>
-							<div class="p-2">
-								<a href="/Blogs" class="footer-color text-decoration-none"> Blog</a>
-							</div>
-							<div class="p-2">
-								<a href="/Safety" class="footer-color text-decoration-none">Safety</a>
-							</div>
-							<div class="p-2">
-								<a href="/Api" class="footer-color text-decoration-none">Doorzz API</a>
-							</div>
-						</div>
-
-					</div>
-				</div>
-				<div class="col-sm-12 col-lg-3 col-md-12">
-					<div class="d-flex flex-column justify-content-center">
-						<div class="p-2" class="footer-color" style="font-size: 22px;">
-							SUBSCRIBE
-						</div>
-						<div class="p-2">
-							<div class="input-group mb-3">
-								<input type="text" class="form-control shadow-none" placeholder="Enter email address" aria-label="Recipient's username"
-									  aria-describedby="button-addon2" style="background-color: #ECEFF4;">
-								<div class="input-group-append">
-									<button class="btn btn-style shadow-none" style="outline: none;" type="button" id="button-addon2"><i
-										   class="fas fa-angle-right"></i></button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12 col-md-12">
-					<hr>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12 col-md-12">
-					<div class="d-flex flex-row justify-content-between">
-						<div class="p-2">
-							<p style="color: #8493A8;">Made with <img src="./images/Heart Icon.png"> by Designer's Logics</p>
-						</div>
-						<div class="p-2">
-							<p style="color: #8493A8;">© Doorzz, 2018. All Rights Reserved.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-</div>
+      <div class="row">
+        <div class="col-sm-12  col-md-12">
+          <div class="d-flex justify-content-between align-items-center bottom-footer">
+            <div>
+              <p class="mb-2">Made with <img alt="hire-security-icon" src="./images/Heart-Icon.png"> by Designer's Logics</p>
+            </div>
+            <div>
+              <p class="mb-2 text-right" >© Hire Security, 2018. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--      Bottom Footer Start-->
+    </div>
+  </div>
+  <!--    Footer Start-->
 <!--Script-->
 <script src="./js/jquery-3.4.1.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    delay: 700, // values from 0 to 3000, with step 50ms
+    duration: 700
+  });
+</script>
 </body>
 </html>
 

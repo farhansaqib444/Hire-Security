@@ -1,6 +1,5 @@
 /* CSS Rest*/
-/*https://xd.adobe.com/view/6e346c8a-9578-4c94-4cc8-d06aa012c247-1805/*/
-/*https://xd.adobe.com/view/26a1f490-da67-423c-4c4e-2fc3a54b2482-5090/*/
+/*https://xd.adobe.com/view/e644bd8c-c248-4ca7-687e-03a4790b722c-9075/*/
 /*PM*/
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -687,6 +686,11 @@ input.form-control {
   border-radius: 10px;
   opacity: 1; }
 
+.start-btn.bg-transparent {
+  border: 1px solid #FC7605;
+  border-radius: 10px;
+  color: #FC7605; }
+
 .accordion .card {
   border: 1px solid #FC7605; }
   .accordion .card .card-header {
@@ -765,6 +769,9 @@ input.form-control {
 
 .border-bottom-chilean {
   border-bottom: 1px solid #FC7605; }
+
+.border-chilean {
+  border: 1px solid #FC7605; }
 
 .agent-form .form-tag-line {
   font-family: Roboto;
@@ -1795,6 +1802,60 @@ a.section-link-text {
     font-family: Roboto;
     line-height: 22px;
     color: #160F53; }
+
+.hire-api-page .api-page-grid h3 {
+  font-weight: 400;
+  font-size: 24px;
+  font-family: Roboto;
+  margin-bottom: 10px;
+  letter-spacing: 0;
+  color: #747474; }
+.hire-api-page .api-page-grid h2 {
+  font-weight: 500;
+  font-size: 45px;
+  font-family: Roboto;
+  margin-bottom: 10px;
+  letter-spacing: 0;
+  color: #160F53; }
+.hire-api-page .api-page-grid h1 {
+  font-weight: 500;
+  font-size: 71px;
+  font-family: Roboto;
+  margin-bottom: 20px;
+  letter-spacing: 0;
+  color: #FC7605; }
+.hire-api-page .api-page-grid p {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: Roboto;
+  margin-bottom: 55px;
+  letter-spacing: 0;
+  color: #160F53; }
+.hire-api-page .blog-listing {
+  background-color: #FC7605; }
+  .hire-api-page .blog-listing h2 {
+    font-weight: 500;
+    font-size: 49px;
+    margin-bottom: 40px;
+    font-family: Roboto;
+    letter-spacing: 0;
+    color: #FFFFFF; }
+  .hire-api-page .blog-listing .post-card {
+    margin-bottom: 25px; }
+    .hire-api-page .blog-listing .post-card a {
+      font-weight: 500;
+      display: inline-block;
+      font-size: 33px;
+      font-family: Roboto;
+      margin-bottom: 10px;
+      letter-spacing: 0;
+      color: #FFFFFF; }
+    .hire-api-page .blog-listing .post-card p {
+      font-weight: 400;
+      font-size: 24px;
+      font-family: Roboto;
+      letter-spacing: 0;
+      color: #F2F2F2; }
 
 /*==============================Static page Styling End===========================*/
 /*Edit Profile styling End*/
