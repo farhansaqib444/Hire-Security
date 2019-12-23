@@ -622,13 +622,6 @@ button[aria-expanded=false] .fa-chevron-down {
 }
 
 
-.blogs-carasoul-color{
-	/* background: transparent;
-	background-color: rgba(252, 118, 5); */
-	background-color:rgba(252,118,5,0.5);
-	/* color: white; */
-}
-
 .blogs-col-head-color-set{
 	padding-top: 50px;
 	padding-bottom: 81px;

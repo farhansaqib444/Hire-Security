@@ -14,6 +14,25 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit;
   vertical-align: baseline;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FC7605 ;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 .overflow-x-h{
   overflow-x: hidden;
 }
@@ -1372,6 +1391,7 @@ p.add-file-info {
 }
 a.section-link-text {
   font-size: 26px;
+  display: inline-block;
   font-weight: 400;
   font-family: Roboto;
   letter-spacing: 0;
@@ -1381,6 +1401,7 @@ a.section-link-text {
   .material-icons {
     vertical-align: middle;
     margin-bottom: 2px;
+    display: inline-block;
   }
 }
 .theme-banner {
@@ -2079,20 +2100,33 @@ a.section-link-text {
   }
 }
 .safe-card {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  background-color: #F8F8F8;
+  box-shadow: 0px 3px 6px #00000029;
+  .safe-card-head {
+    padding: 15px 15px 25px 15px ;
+    background-color: #fff;
+    label {
+      font-size: 16px;
+      font-family: Roboto;
+      font-weight: 400;
+      color: #747474;
+    }
+  }
   .safe-card-bg {
     background: url("../images/safe-card.png") center center/cover no-repeat;
     min-height: 171px;
+    margin-bottom: 30px;
   }
   .safe-card-body {
-    padding: 10px 10px;
-    background-color: #fff;
+    padding: 0 15px 30px 15px;
+    background-color: #F8F8F8;
   }
   h5 {
     font-size: 27px;
     font-family: Roboto;
     font-weight: 400;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     letter-spacing: 0;
     color: #160F53;
   }
@@ -2105,6 +2139,93 @@ a.section-link-text {
   }
 }
 //how its work styling end
+
+//blog styling start
+.blog-banner {
+  background: url("../images/progress2.png") center center/cover no-repeat;
+  min-height: 530px;
+  .blog-card {
+    max-width: 660px;
+    position: relative;
+    width: 100%;
+    min-height: 390px;
+    background: rgba(252, 118, 5, 0.5) 0% 0% no-repeat;
+    .card-content {
+      position:absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    h1.section-title {
+      font-size: 47px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 17px;
+    }
+    h1, h2, p.section-title-description {
+      color: #fff;
+    }
+  }
+}
+.blogs-carasoul-color{
+  background-color:rgba(252,118,5,0.5);
+}
+.blog-banner-bottom {
+  background: url("../images/photo-businessman-use-mobile-phone.png") center center/cover no-repeat;
+  min-height: 530px;
+  display: flex;
+  align-items: center;
+  .banner-card {
+    background: rgba(252, 118, 5, 0.5) 0% 0% no-repeat padding-box;
+    padding: 30px 30px 15px 30px;
+    height: 390px;
+    overflow-y: auto;
+  }
+  h2 {
+    font-size: 33px;
+    font-weight: 400;
+    font-family: Roboto;
+    margin-bottom: 20px;
+    letter-spacing: 0;
+    color: #FFFFFF;
+  }
+  .date-widget {
+    color:white;
+    font-family: Roboto;
+    background-color: #FC7605;
+    width: 200px;
+    text-align: center;
+    h2 {
+      font-size: 44px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 17px;
+      font-weight: 400;
+      margin-bottom: 5px;
+    }
+  }
+  .date-updates {
+    background-color:#EBEBEB;
+    text-align: left;
+    padding: 15px 15px;
+    p {
+      font-size: 14px;
+      font-family: Roboto;
+      letter-spacing: 0;
+      color: #160F53;
+      line-height: 19px;
+      font-weight: 400;
+    }
+  }
+}
+//blog styling end
 
 /*==============================Static page Styling End===========================*/
 
